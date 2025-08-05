@@ -1,0 +1,70 @@
+
+
+
+
+
+
+.contact-icons-2 {
+
+    background: #002d62;
+
+    color: #fff
+
+}
+
+.contact-icons-21 {
+
+    background: #002d62;
+
+    color: #fff
+
+}
+
+
+.contact-icons-2 {
+
+    height: 50px;
+
+    width: 50px;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding-top: 10px
+
+}
+
+.contact-icons-21 {
+
+    height: 50px;
+
+    width: 50px;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+
+}
+.contact-us-2 p a {
+
+    color: rgb(74, 74, 74); /* Change color here */
+
+    text-decoration: none; 
+
+    font-size: 16px;
+
+    font-family: 'VERDANA' !important;
+
+    line-height: 1.9;
+
+  }

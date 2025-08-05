@@ -1,0 +1,11035 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Mr+De+Haviland&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inspiration&family=Mr+De+Haviland&display=swap'); */
+
+
+
+@font-face {
+
+    font-family: 'HolidayFree';
+
+    src: url('../fonts/HolidayFreeRegular.woff2') format('woff2'),
+
+        url('../fonts/HolidayFreeRegular.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+.MbsSearchWidget .searchBtn {
+    background-color: #002d62 !important;
+}
+
+@font-face {
+
+    font-family: 'VERDANAB';
+
+    src: url('../fonts/VERDANAB.eot');
+
+    src: url('../fonts/VERDANAB.eot') format('embedded-opentype'),
+
+         url('../fonts/VERDANAB.woff2') format('woff2'),
+
+         url('../fonts/VERDANAB.woff') format('woff'),
+
+         url('../fonts/VERDANAB.ttf') format('truetype'),
+
+         url('../fonts/VERDANAB.svg#VERDANAB') format('svg');
+
+}
+
+@font-face {
+
+    font-family: 'VERDANA';
+
+    src: url('../fonts/VERDANA.eot');
+
+    src: url('../fonts/VERDANA.eot') format('embedded-opentype'),
+
+         url('../fonts/VERDANA.woff2') format('woff2'),
+
+         url('../fonts/VERDANA.woff') format('woff'),
+
+         url('../fonts/VERDANA.ttf') format('truetype'),
+
+         url('../fonts/VERDANA.svg#VERDANA') format('svg');
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Luthon Southard Script';
+
+    src: url('../fonts/LuthonSouthardScript.woff2') format('woff2'),
+
+        url('../fonts/LuthonSouthardScript.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Luthon Southard Serif';
+
+    src: url('../fonts/LuthonSouthardSerif.woff2') format('woff2'),
+
+        url('../fonts/LuthonSouthardSerif.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho';
+
+    src: url('../fonts/AgathoBold.woff2') format('woff2'),
+
+        url('../fonts/AgathoBold.woff') format('woff');
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho BoldCAPS';
+
+    src: url('../fonts/AgathoBoldCAPS.woff2') format('woff2'),
+
+        url('../fonts/AgathoBoldCAPS.woff') format('woff');
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho';
+
+    src: url('../fonts/AgathoMedium.woff2') format('woff2'),
+
+        url('../fonts/AgathoMedium.woff') format('woff');
+
+    font-weight: 500;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho';
+
+    src: url('../fonts/AgathoLight.woff2') format('woff2'),
+
+        url('../fonts/AgathoLight.woff') format('woff');
+
+    font-weight: 300;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho LightCAPS';
+
+    src: url('../fonts/AgathoLightCAPS.woff2') format('woff2'),
+
+        url('../fonts/AgathoLightCAPS.woff') format('woff');
+
+    font-weight: 300;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho Narrow';
+
+    src: url('../fonts/AgathoNarrow.woff2') format('woff2'),
+
+        url('../fonts/AgathoNarrow.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho';
+
+    src: url('../fonts/AgathoRegular.woff2') format('woff2'),
+
+        url('../fonts/AgathoRegular.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Agatho RegularCAPS';
+
+    src: url('../fonts/AgathoRegularCAPS.woff2') format('woff2'),
+
+        url('../fonts/AgathoRegularCAPS.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap;
+
+} 
+
+:root{
+
+    --bs-black:#000000;
+
+    --bs-white:#ffffff;
+
+}
+
+
+
+
+
+ .new-rj-block .global-heading {
+
+    margin-top: 4rem !important;
+
+    font-family: 'Agatho'!important;
+
+}
+
+.new-rj-block .global-heading, .new-rj-block .global-heading-1{
+
+    color: #4a4a4a!important;
+
+    font-family: 'VERDANA' !important;
+
+}
+
+.inner-hd:after{transition: width .3s;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    height: 2px;
+    content: "";
+    display: block;
+    width: 60px !important;
+    background: #000 !important;}
+
+.new-rj-block .global-heading:after, .new-rj-block .global-heading-1:after{
+  color: #171718;
+  position: relative;
+}
+.global-heading-gurugram{
+    
+    color: #000000!important;
+
+    font-family: 'VERDANA' !important;
+}
+.row.hoften-hotel{
+margin-bottom: -150px;
+}
+section.search-content.new-rj-block.hoften-hotel{
+
+    width: 100% !important;
+    transform: translate(0px, -150px) !important;
+    margin-bottom: -50px;
+}
+
+.about-conteeent .new-about-text{
+
+        max-height: 74px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+
+  
+
+
+
+ .about-conteeent .check {
+
+    appearance: none;
+
+    border: none;
+
+    padding: 0em;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    margin-top: 0rem;
+
+    font-weight: 600;
+
+    color: #000;
+
+  }
+
+  
+
+  .about-conteeent .check::before {
+
+    content: "Read more..";
+
+  }
+
+  
+
+  .about-conteeent .check:checked::before {
+
+    content: "Read less";
+
+  }
+
+  
+
+ .about-conteeent p:has(+ .check:checked) {
+
+    max-height: none;
+
+  }
+
+
+
+.add-read-more.show-less-content .second-section,
+
+.add-read-more.show-less-content .read-less {
+
+   display: none;
+
+}
+
+
+
+.add-read-more.show-more-content .read-more {
+
+   display: none;
+
+}
+
+.stay-alive-title {
+
+    font-size: 26px !important;
+
+    font-family: "Grey Qo", serif !important;
+
+    color: #002d62;
+
+    font-family: 'HolidayFree' !important;
+
+    font-weight: 650;
+
+}
+
+.stay-alive-title:after{
+
+    display: none!important;
+
+}
+
+
+
+.add-read-more .read-more,
+
+.add-read-more .read-less {
+
+   font-weight: bold;
+
+   margin-left: 2px;
+
+   color: blue;
+
+   cursor: pointer;
+
+}
+
+
+
+.add-read-more{
+
+  max-width: 600px;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+}
+
+
+
+.your-break{
+
+    padding-top: 4rem;
+
+}
+
+.winter-box{
+
+    border-radius: 0px;
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+}
+
+.winter-box img {
+
+    height: 240px;
+
+    object-fit: cover;
+
+    width: 100%;
+
+}
+.winter-box video{    height: 240px;
+
+    object-fit: cover;
+
+    width: 100%;}
+
+.winter-box .winter-box-content {
+
+    padding: 10px;
+
+}
+
+.winter-box .winter-box-content .winter-box-heading {
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+margin-top: 5px !important;
+    font-family: 'Agatho' !important;
+    margin-bottom: 1rem;
+    font-size: 16px !important;
+
+}
+
+.winter-box .winter-box-content .winter-box-para {
+
+    font-size: 13px;
+
+    color: #3b3b3b;
+
+    font-family: 'VERDANA' !important;
+
+    line-height: 24px;
+
+    text-align:initial;
+
+}
+
+.winter-box-btn{
+
+    margin-top: 22px;
+
+    margin-bottom: 0.5rem;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+}
+
+
+
+.winter-box-btn .box-btn.know-more {
+
+    font-size: 14px;
+
+    padding: 4px 10px;
+
+    border-radius: 0px;
+
+    border: 1px solid #002d62;
+
+    color: #002d62;
+    text-decoration:none;
+
+}
+
+.winter-box-btn .box-btn.book-noww {
+
+    font-size: 13px;
+
+    padding: 5px 8px;
+
+    border-radius: 0px;
+
+    background-color: #002d62;
+
+    border: 1px solid #002d62;
+
+    color: #fff;
+    text-decoration:none;
+
+}
+
+.winter-box-btn .box-btn:hover{
+
+    text-decoration: none;
+
+}
+
+
+
+.winter-box-btn .box-btn{    
+
+    width: 120px !important;
+
+    height: 35px !important;
+
+    position: relative;
+
+    display: inline-block;
+
+    
+
+}
+
+
+
+.new-hotels .hotel-box .winter-box-content .winter-box-heading {
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+.winter-box.hotel-box .winter-box-content .winter-box-heading {
+
+    font-size: 13px;
+
+}
+
+.winter-box.hotel-box .winter-box-btn .box-btn {
+
+    font-size: 10px;
+
+    padding: 7px 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.experience-section{
+
+    padding: 4rem 0;
+
+        position: relative;
+
+}
+
+.absolute-experience {
+
+        position: absolute;
+
+    font-size: 11vw;
+
+    top: 44%;
+
+    opacity: 0.2;
+
+    left: 0;
+
+    right: 0;
+
+    text-align: center;
+
+}
+
+.experience-section .swiper-slide { 
+backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+
+}
+
+.experience-section .swiper-slide{
+
+  opacity:0.4;
+
+  transition:.4s ease all;
+
+  /* margin:0 20px; */
+
+  transform:scale(.5);
+
+      position: relative;
+
+      padding: 0 20px;
+
+}
+
+@media(max-width:1000px){
+
+  .experience-section .swiper-slide{margin:0; transform:scale(.9)}
+
+}
+
+.experience-section .swiper-slide.swiper-slide-active{
+
+  opacity:1;
+
+  transform:scale(1);
+
+} 
+
+
+
+.corbet-logo{ filter: invert(1) brightness(2) !important;}
+
+
+
+
+
+
+.experience-section .inner{
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: -130px;
+
+    right: 0;
+
+    /* text-align: center; */
+
+    background-color: #000000d4;
+
+    display: table;
+
+    padding: 2rem;
+
+    width: 200px;
+
+    height: auto;
+
+
+
+}
+
+.experience-slider {
+
+    margin-top: 0rem;
+
+}
+
+.expmodal.modal-backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .expmodal .modal-content {
+    background: #fff;
+    border-radius: 0;
+    width: 90%;
+    max-width: 584px;
+    padding: 0px 20px;
+    position: relative;
+
+  }
+  .expmodal .modal-close {
+    cursor: pointer;
+    background: 0 0;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    padding: 2px 4px;
+  }
+  .linkmodal {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
+.experience-section .inner a.link{ font-size: 14px !important; text-decoration: underline; color: #fff;}
+
+.experience-section .inner a {
+
+   color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s ease border-color;
+
+    font-size: 28px;
+
+    padding-top: 3rem;
+
+    text-decoration: none;
+
+        font-family: 'Agatho' !important;
+
+        line-height: 36px;
+
+}
+
+.experience-section .inner p{ color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s ease border-color;
+
+    font-size: 28px;
+
+    padding-top: 0rem;
+
+    text-decoration: none;
+
+        font-family: 'Agatho' !important;
+
+        line-height: 36px;
+}
+.experience-section .swiper-slide .inner{
+
+    display: none;
+
+}
+
+
+
+.experience-section .swiper-slide img {
+    height: 250px;
+    object-fit: cover;
+    margin-top: 15%;
+    width: 50%;
+
+}
+
+
+
+
+.experience-section .swiper-slide.swiper-slide-active .inner{
+
+    display: block;
+
+}
+
+.experience-section .inner .category {
+
+    color: #fff;
+
+    font-size: 18px;
+
+    margin-bottom: 1rem;
+
+    font-family: 'Agatho' !important;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+
+}
+
+.pop-ex-heading {
+
+    font-weight: 600;
+
+    font-size: 17px;
+
+}
+
+.experience-section .inner a:hover{border-color:#fff;text-decoration: none;}
+
+.experience-section .black .inner a{color:#fff; border-color:rgba(0,0,0,0.4); text-decoration: none;}
+
+.experience-section .black .inner a:hover{border-color:#000;text-decoration: none;}
+
+
+
+
+
+
+.rooms-info-block.gurugram-hotel-meeting{
+    width: 100% !important;
+    transform: translate(0px, -100px) !important;
+}
+
+.rooms-info-block.gurugram-hotel-meeting .container .tab-content{
+    width: 100% !important;
+    margin-top: 40px;
+}
+.experience-section .owl-controls{position:absolute; margin-top:300px;}
+
+.experience-section .swiper-nav {
+
+    position: absolute;
+
+    bottom: 120px;
+
+    right: 28%;
+
+}
+
+
+
+.experience-section .swiper-nav div[class*='swiper-button'] {
+
+    background-color: #fff;
+
+    font-size: 18px;
+
+    height: 40px;
+
+    width: 40px;
+
+    display: block;
+
+    line-height: initial;
+
+    padding: 10px 18px;
+
+    text-align: center;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+/* .experience-section .swiper-nav .swiper-button-prev{} */
+
+.experience-section .swiper-nav .swiper-button-next{right:-90px}
+
+.experience-section .swiper-nav .swiper-button-prev:after, .experience-section .swiper-nav .swiper-button-next:after{
+
+    font-size: 18px;
+
+    color: var(--bs-black);
+
+    font-weight: 600;
+
+}
+
+
+
+
+
+/*experience tyle*/
+
+
+
+
+
+.experience-popup .modal-body p {
+
+        line-height: 24px;
+
+    color: #3b3b3b;
+
+}
+
+
+
+.modal-dialog.modal-dialog-centered {
+
+   
+
+    align-content: center;
+
+    /* display: inline-block; */
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    height: 100%;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+
+.experience-popup .modal-body button.close {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    background-color: #000;
+
+    color: #fff;
+
+    opacity: 1;
+
+    padding: 4px;
+
+    font-weight: 200;
+
+}
+
+.experience-popup .modal-content {
+
+    border-radius: 0;
+
+    
+
+}
+
+.experience-popup .modal-body{
+
+    border-bottom: 5px solid #000;
+
+}
+
+
+
+
+
+.filter-section-offer .active-btn {
+
+    background-color: #000;
+
+    color: #fff;
+
+    border-radius: 0;
+
+}
+
+.filter-section-offer .filter-button {
+
+    border-radius: 0;
+
+    border: 1px solid #000;
+
+    width: 76px;
+
+}
+
+.filter-new-btns{
+
+    margin-top: 3rem;
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+.new-offer-sectionss .offer-name {
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+
+    font-family: 'Agatho' !important;
+
+    font-size: 18px !important;
+
+    color: #000;
+
+    margin-top: 2rem;
+
+}
+
+.new-offer-sectionss .offer-name:after{
+
+    display: none!important;
+
+}
+
+
+
+.new-offer-sectionss:hover .offer-name:after{
+
+display: none!important;
+
+}
+
+
+
+
+
+.new-offer-sectionss .filterr img{
+
+    height: 400px;
+
+    width: 100%;
+
+    object-fit: cover;
+
+}
+
+/* .new-offer-sectionss .filterr img:hover{
+
+   filter: grayscale(0%);
+
+} */
+
+.our-brands.experience-section .swiper-nav {
+
+    position: absolute;
+
+    bottom: 80px;
+
+    right: 15%;
+
+} 
+
+
+
+.new-our-brands .inner {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 50px;
+
+    right: 0;
+
+    text-align: center!important;
+
+    background-color: #000000d4;
+
+    display: table;
+
+    padding: 3rem;
+
+    width: 200px;
+
+    height: calc(100% - 0px);
+
+}
+
+
+
+.new-our-brands .category-image img {
+
+    width: 70px;
+
+    height: auto!important;
+
+    text-align: center;
+
+    margin: auto;
+
+}
+
+.new-our-brands .inner {
+
+    text-align: center;
+
+    padding-top: 10rem;
+
+}
+
+.new-our-brands .inner a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.5); */
+
+    transition: .3s ease border-color;
+
+    font-size: 23px;
+
+    padding-top: 3rem;
+
+    display: block;
+
+    text-decoration: none;
+
+    font-family: 'Agatho' !important;
+
+}
+
+/*.new-our-brands .item img {
+
+    height: 450px;
+
+    object-fit: cover;
+
+    
+
+}*/
+
+
+
+.new-our-brands{
+
+    padding: 4rem 0!important;
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+.new-bg-block{
+
+    min-height: 250px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    margin-top: 3rem;
+
+    margin-bottom: 2rem;
+
+    position: relative;
+
+}
+
+.up-exp-sec .new-bg-block{
+
+    min-height: 340px;
+
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+margin-top: 3rem;
+
+margin-bottom: 2rem;
+
+position: relative;
+transform: translate(0px , -50px);
+
+}
+.brand-new-content {
+
+    position: absolute;
+
+    width: 62%;
+
+    text-align: left;
+
+    transform: translateY(-50%);
+
+    display: block;
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 60px;
+
+    text-align: left;
+
+}
+
+.our-brands.experience-section.about-us.new-our-brands.up-exp-sec .offers-slider .brand-new-content p{
+  
+    margin-left: -15px;
+    font-size: 13px;
+    line-height: 25px;
+
+}
+.brand-new-content p{
+    text-align: justify;
+}
+
+.new-our-brands .inner .category-image {
+
+    display: block;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 0;
+
+    right: 0;
+
+    text-align: center;
+
+    transform: translate(100px, -50px);
+
+}
+
+
+
+.new-our-brands .inner.alivaa-bg{
+
+    background-color: #f5f5dc!important;
+    width: 200px;
+
+}
+
+.new-our-brands .inner.hoften-bg{
+
+    background-color: #c3dd35!important;
+    width: 200px;
+
+}
+
+.media-box .media-item {
+
+    margin-bottom: 1.5rem;
+
+}
+
+.media-box .media-item img {
+
+    border-radius: 0px;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    width: 100%;
+
+}
+
+.media-n-news{
+
+    margin-bottom: 1rem;
+
+}
+
+.media-box{
+
+    margin-top: 3rem;
+
+}
+
+.card-texttt {
+
+    display: inline;
+
+    font-size: 13px;
+
+    color: #3b3b3b;
+
+    font-family: 'VERDANA' !important;
+
+}
+
+.carddd .read-more-btnnn {
+
+    color: #3b3b3b;
+
+    text-decoration: underline;
+    font-size: 13px;
+    padding-left: 10px;
+
+}
+
+
+
+.tooltipp {
+
+  position: relative;
+
+  display: inline-block;
+
+  border-bottom: 1px dotted black;
+
+}
+
+
+
+.tooltipp .tooltiptextt {
+
+  visibility: hidden;
+
+    width: 120px;
+
+    background-color: black;
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 6px;
+
+    padding: 5px 0;
+
+    position: absolute;
+
+    z-index: 1;
+
+    top: -22px;
+
+    left: 0;
+
+}
+
+
+
+.tooltipp:hover .tooltiptextt {
+
+  visibility: visible;
+
+}
+
+
+
+
+
+/* *,
+
+body {
+
+    margin: 0;
+
+} */
+
+
+
+.btn-primary:hover::after,
+
+.darkHeader,
+
+header {
+
+    background: #000
+
+}
+
+.btn-primary:hover::after,
+
+.darkHeader,
+
+header {
+
+    background: #000
+
+}
+
+
+
+.book-now,
+
+.booking-form-section,
+
+.dine-listing-block,
+
+.dropdown-submenu,
+
+.position-relative,
+
+footer .form-inline {
+
+    position: relative;
+
+    z-index: 12;
+
+}
+
+
+
+.content-section h1,
+
+.main-hero-title,
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+
+    font-family: 'VERDANA' !important;
+
+}
+
+
+
+.global-heading,
+
+.global-heading-1 {
+
+    color: #4a4a4a  !important;
+
+    font-size: 26px !important;
+
+    text-transform: capitalize !important
+
+}
+.global-heading-gurugram-1{
+    
+    color: #000000 !important;
+
+    font-family: 'VERDANA' !important;
+    font-size: 26px !important;
+
+}
+.global-heading-2 {
+
+    color: #000 !important;
+
+    font-size: 20px !important;
+
+    margin-top: 10px;
+
+    text-transform: capitalize !important
+
+}
+
+/* .navbar-default .navbar-nav>.active>a {
+
+    color: #000 !important
+
+} */
+
+/* end */
+.new-rj-block .check {
+
+    appearance: none;
+
+    border: none;
+
+    padding: 0em;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    margin-top: 0rem;
+
+    font-weight: 500;
+
+    color: #000;
+
+}
+
+.new-rj-block .check:focus{
+
+    box-shadow: none;
+
+    border: none;
+
+    outline: none;
+
+}
+
+
+
+.new-rj-block .check::before {
+
+    content: "Read more..";
+
+    transition:1s all ease-in-out;
+
+  }
+  .corporatebannerbutton {
+    padding: 6px !important;
+    border-radius: 25px !important;
+    height: 35px;
+    width: 35px;
+    line-height: 13px;
+    background-color: #000 !important;
+    bottom: 150px;
+    left: 47%;
+    transform: translate(-50%, -20px);
+    right: auto;
+    top: auto;
+    text-align: center;
+    border: 1px solid #fff !important;
+}
+  
+
+  .new-rj-block .check:checked::before {
+
+    content: "Read less";
+
+    transition:1s all ease-in-out;
+
+  }
+
+  .new-rj-block .new-text {
+
+    max-height: 54px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    transition:1s all ease-in-out;
+
+}
+
+  
+
+  .new-rj-block .new-text:has(+ .check:checked) {
+
+    max-height: none;
+
+    transition:1s all ease-in-out;
+
+  }
+
+
+
+/* .navbar-default .navbar-nav>.active>a::after {
+
+    position: absolute;
+
+    content: "";
+
+    height: 2px;
+
+    width: 60px;
+
+    background-color: #000;
+
+    bottom: 6px;
+
+    left: 0;
+
+    right: 0;
+
+    text-align: center;
+
+    margin: auto
+
+} */
+
+
+
+body {
+
+    font-size: 12px;
+
+    line-height: 24px;
+
+    color: #3b3b3b;
+
+    font-family: 'VERDANA' !important;
+
+    overflow-x: hidden
+
+}
+
+
+
+* {
+
+    padding: 0
+
+}
+
+
+
+.voffset-1 {
+
+    margin-top: 10px
+
+}
+
+
+
+.voffset-2 {
+
+    margin-top: 20px
+
+}
+
+
+
+.voffset-3 {
+
+    margin-top: 30px
+
+}
+
+
+
+.voffset-4 {
+
+    margin-top: 40px
+
+}
+
+
+
+.voffset-5 {
+
+    margin-top: 50px
+
+}
+
+
+
+.voffset-bottom-1 {
+
+    margin-bottom: 10px
+
+}
+
+
+
+.voffset-bottom-2 {
+
+    margin-bottom: 20px
+
+}
+
+
+
+.voffset-bottom-3,
+
+.voffset-bottom2 {
+
+    margin-bottom: 30px
+
+}
+
+
+
+.voffset-bottom-4 {
+
+    margin-bottom: 40px
+
+}
+
+
+
+.voffset-bottom-5 {
+
+    margin-bottom: 50px
+
+}
+
+
+
+.no-pad,
+
+.no-padd {
+
+    padding-left: 0;
+
+    padding-right: 0
+
+}
+
+
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 99;
+
+}
+
+
+
+header {
+
+    background-color: #fff !important;
+
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+
+   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+
+}
+
+
+
+.navbar-brand {
+
+    padding: 5px 15px 0;
+
+    height: auto
+
+}
+
+
+
+.navbar-brand>img {
+margin-top:2px;
+    width: 120px;
+    height: 78px;
+ /*
+    filter: invert(1); */
+
+    margin-bottom: 5px;
+
+}
+
+.navbar-brand {
+    margin:0px;
+
+    margin-left:2em;
+       float: none;
+
+    text-align: center;
+
+    display: inline-block;
+
+    padding: 5px;
+
+}
+
+.navbar-header {
+
+    float: none;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 100%;
+    align-items: center;
+        padding-right: 3%;
+    padding-left: 3%;
+
+}
+
+
+
+.navbar-default {
+
+    background: 0 0;
+
+    border: 0;
+
+    margin-bottom: 0;
+
+    padding: 0px 0
+
+}
+
+
+
+.dropdown-menu>li.kopie>a {
+
+    padding-left: 5px
+
+}
+
+
+
+.dropdown-submenu>.dropdown-menu {
+
+    top: 0;
+
+    left: 100%;
+
+    margin-top: -6px;
+
+    margin-left: -1px;
+
+    -webkit-border-radius: 0 6px 6px 6px;
+
+    -moz-border-radius: 0 6px 6px;
+
+    border-radius: 0 6px 6px
+
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+
+    font-size: 20px;
+
+    color:#000;
+
+}
+
+.gallery-section {
+
+    padding: 50px 0;
+
+    overflow: hidden;
+
+}
+
+.testimonials_inner_profile a img {
+
+    width: 40px !important;
+
+}
+
+.dropdown-submenu>a:after {
+
+    border-color: transparent transparent transparent #333;
+
+    border-style: solid;
+
+    border-width: 5px 0 5px 5px;
+
+    content: " ";
+
+    display: block;
+
+    float: right;
+
+    height: 0;
+
+    margin-right: -10px;
+
+    margin-top: 5px;
+
+    width: 0
+
+}
+
+
+
+.dropdown-submenu:hover>a:after {
+
+    border-left-color: #555
+
+}
+
+
+
+.dropdown-menu>.active>a:hover,
+
+.dropdown-menu>li>a:hover {
+
+    text-decoration: underline
+
+}
+
+
+
+.banner-section,
+
+.room-block {
+
+    display: inline-block;
+
+    width: 100%;
+
+    position: relative
+
+}
+
+.banner-section{
+   
+
+    display: inline-block;
+
+    width: 100%;
+
+    position: relative;
+    margin-top: 4px;
+}
+
+
+/* .banner-section .myvideo{
+
+    width: 930%;
+    height: 100% !important;
+} */
+/* .banner-section::after {
+
+    background: rgba(0, 0, 0, .3);
+
+    background: rgba(0, 0, 0, 0%);
+
+    position: absolute;
+
+    z-index: 1;
+
+    height: calc(100% - 0px);
+
+    width: 100%;
+
+    margin: auto;
+
+    left: 0;
+
+    top: 0;
+
+    content: ''
+
+} */
+ 
+/* .about-conteeent.heading .content-boxx-gurgaon-hotel{
+
+    transform: translate(0px, 0px);
+    font-size: 13px;
+ 
+   } */
+   .container {
+    margin-bottom: 0rem;
+}
+.our-offers.about-us .container .new-rj-block{
+transform: translate(0px, -30px);
+}
+ .our-offers .content-boxx a{
+
+        background-color: transparent;
+
+        color: #000;
+
+        text-decoration: none;
+
+ }
+
+ .inner-mid-title {
+
+    margin-bottom:1rem;
+
+    padding-bottom:0!important;
+
+ }
+
+
+
+.booking-form-section {
+
+    z-index: 9999999999 !important;
+
+    /* display: none */
+
+}
+
+
+
+.booking-form-section.special-offer{
+    width: 100% !important;
+    transform: translate(0px, -100px) !important;
+}
+
+/* .booking-form-section.special-offer .search-content{
+    width: 100% !important;
+    transform: translate(0px, -100px) !important;
+} */
+ 
+section.search-content.new-rj-block{
+    width: 100% !important;
+    transform: translate(0px, -10px) !important;
+  
+}
+.booking-form-section {
+
+    /* position: fixed;
+
+    top: -100%;
+
+    left: 0; */
+
+    width: 100%;
+
+    /* background: white;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+
+    transition: transform 0.5s ease-in-out;
+
+    z-index: 9999;
+
+  }
+
+
+
+  .slide-in {
+
+    transform: translateY(0%);
+
+    /* opacity: 1; */
+
+    visibility: visible;
+
+  }
+
+
+
+  .slide-out {
+
+    transform: translateY(-100%);
+
+    /* opacity: 0; */
+
+    visibility: hidden;
+
+    display: none;
+
+  }
+
+
+
+  .slide-in-inner {
+
+    transform: translateY(-10%);
+
+    /* opacity: 1; */
+
+    visibility: visible;
+
+  }
+
+
+  .location-div{
+
+    margin-bottom: -250px;
+
+}
+
+  .slide-out-inner {
+
+    transform: translateY(-100%);
+
+    /* opacity: 0; */
+
+    visibility: hidden;
+
+    display: none;
+
+  }
+
+
+
+  .slide-in-inner-img {
+
+    transform: translateY(-120%);
+
+    /* opacity: 1; */
+
+    visibility: visible;
+
+  }
+
+
+
+  .slide-out-inner-img {
+
+    transform: translateY(-80%);
+
+    /* opacity: 0; */
+
+    visibility: hidden;
+
+    display: none;
+
+  }
+  .booking-form-section.slide-in {
+    transform: translateY(-48%);}
+.banner-img-home{
+    
+    display: inline-block;
+
+    width: calc(91% - 0px);
+
+    height: 70vh !important;
+
+    object-fit: cover;
+/* 
+    padding-top: 80px; */
+}
+.home-hdr-hght{ height:160px;   
+    position: relative;
+    z-index: 99999999; 
+}
+
+.banner-img,
+
+.custom-form-outer-div .input-group,
+
+.full-row-b,
+
+.full-w,
+
+.gallery-section,
+
+.inner-testimonial,
+
+.services-block {
+
+    display: inline-block;
+
+    width: 100%
+
+}
+
+.alivaa-new-offers-see img{
+
+height: 400px;
+
+object-fit: cover;
+
+}
+
+.ghotel img{
+
+    height: 400px;
+    
+    object-fit: cover;
+    
+    }
+
+
+
+section.banner-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    position: relative;
+
+
+    /* overflow: hidden; */
+
+    /* background-color: #fff; */
+
+}
+
+#roomsDropdown .btn-close{ font-size:1.5em;}
+.w-80{ width:90%;}
+
+/*.banner-img{
+
+        display: inline-block;
+
+    width: calc(100% - 100px);
+
+    height: 90vh;
+
+    object-fit: cover;
+
+    padding-top: 80px;
+
+}*/
+.hght0{ height:0px;}
+.banner_img_room {
+
+display: inline-block;
+
+/* width: calc(100% - 0px); */
+width:91% !important;
+
+height: 70vh !important;
+
+object-fit: cover;
+object-position: 50% 30%; /* Adjust as needed */
+width: 100%; /* Ensure it fills the container */
+/* height: 100vh;  Match viewport height */
+padding-top: 80px;
+}
+
+.banner_img_room2 {
+
+display: inline-block;
+
+/* width: calc(100% - 0px); */
+width:100% !important;
+
+height: 80vh !important;
+
+object-fit: cover;
+object-position: 50% 30%; /* Adjust as needed */
+width: 100%; /* Ensure it fills the container */
+/* height: 100vh;  Match viewport height */
+padding-top: 0px;
+}
+.btm15 {
+    /* margin-top: 19rem !important; */
+    position: absolute;
+    bottom: -15px !important;
+}
+.blog_page .alivaa-album img{ height:250px; object-fit:cover;}
+.blog_page p{ text-align:left !important;}
+.room_cs p{ font-size:14px;}
+
+.banner-img {display: inline-block;
+
+    /* width: calc(100% - 0px); */
+    width:91% !important;
+
+    height: 70vh !important;
+
+    object-fit: cover;
+    object-position: 50% 50%; /* Adjust as needed */
+    width: 100%; /* Ensure it fills the container */
+    /* height: 100vh;  Match viewport height */
+    padding-top: 80px;
+}
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.banner-img-contact{ object-position: 50% 80% !important; /* Adjust as needed */}
+
+.social-icon-banner {
+
+    display: grid;
+
+    /* width: 100%; */
+
+    /* text-align: center; */
+
+    margin-top: 50px;
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 150px;
+
+}
+
+.social-icon-banner .btn-social{
+
+    background-color: transparent;
+
+    height: 25px;
+
+    width: 40px;
+
+    border-radius: 50%;
+
+    padding: 6px;
+
+    font-size: 20px;
+
+    color: #000;
+
+    margin-right: 7px;
+
+    transition: .5s linear;
+
+        transform: none;
+
+}
+
+.updown-arrow img {
+
+    width: 27px!important;
+    height: 100%!important;
+
+}
+
+span.updown-arrow {
+
+    position: absolute;
+
+    right: 10px;
+
+    bottom: 20px;
+
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}
+
+
+.our-offers.about-us .container .new-rj-block .global-heading.gurgaon-fac{
+    font-size: 25px !important;
+    width: 100%!important;
+}
+.our-offers.about-us .container .new-rj-block .content-boxx.gurgaon-fac{
+font-size: 14px !important;
+    width: 90%!important;
+margin-left: 50px;
+}
+/* .content-boxx.gurgaon-attrac{
+font-size: 14px !important;
+    width: 90% !important;
+margin-left: 350px !important;
+} */
+.row.gurgaon-offers{
+
+    width: 100% !important;
+    margin-bottom: -110px !important;
+}
+section.search-content.new-rj-block.gurgaon-offers{
+    width: 100% !important;
+    transform: translate(0px, -150px) !important;
+    margin-bottom: -150px !important;
+}
+section.search-content .container.gurgaon-offers .new-rj-block .global-heading.gurgaon-offers{
+    font-size: 25px !important;
+    width: 100%!important;
+}
+section.search-content .container.gurgaon-offers .new-rj-block .content-boxx.gurgaon-offers{
+    font-size: 13px !important;
+    width: 90%!important;
+    margin-left: 50px;
+}
+
+.w80{ width:60%;}
+@keyframes bounce {
+
+50% {
+
+    transform: translateY(-30px);
+
+  }
+
+}
+
+.social-icon-banner .social-icon {
+    filter: invert(1);
+}
+.bg-ps{ object-position:50% 55% !important}
+.social-icon-banner .btn-social:hover, .social-icon-banner .btn-social:focus{
+    background: transparent;
+    color: #000;
+    transform: none;
+}
+@media (min-width:1366px) {
+
+
+.corporatebannerbutton{        bottom: 0px !important;
+    position: absolute;
+}}
+@media only screen and (max-width: 1366px) {
+    .over-room-vd{
+    height: 322px;
+    object-fit: cover;
+}
+    /* .corporatebannerbutton {
+       
+        margin-top: 19rem; 
+    } */
+}
+
+
+@media (min-width: 768px) {
+
+    /* .navbar-collapse.collapse {
+
+        display: none !important;
+
+        height: auto !important;
+
+        padding-bottom: 0;
+
+        overflow: visible !important;
+
+    } */
+
+        .navbar-toggle {
+
+        display: block;
+
+        position: absolute;
+
+        left: 10px;
+
+        top: 20px;
+
+    }
+
+}
+
+    .content-section {
+
+       bottom: 5% !important;
+
+       top: auto !important;
+
+    }
+
+.book-now-headerr{
+
+    position: static !important;
+
+    right: 10px;
+
+    top: 30px;
+    margin-right: 15px;
+    background: #002d62 !important;
+
+    border: 1px solid #fff !important;
+
+    border-color: #fff !important;
+
+    font-size: 12px !important;
+
+    padding: 6px 8px;
+
+    border-radius: 0px !important;
+
+    color: #fff !important;
+
+    -webkit-transition: all 0.5s ease 0s;
+
+    -moz-transition: all 0.5s ease 0s;
+
+    -ms-transition: all 0.5s ease 0s;
+
+    transition: all 0.5s ease 0s;
+
+}
+
+.book-now-headerr:hover, .book-now-headerr:focus{background-color: #ffffff!important;border:1px solid rgba(0,0,0,0.5)!important;color: #000000 !important;border-color:rgba(0,0,0,0.5)!important}
+
+.btn{ font-size:13px !important;}
+.corporatebannerbutton {
+
+    padding: 6px !important;
+
+    border: none !important;
+
+    border-radius: 25px;
+
+    height: 35px;
+
+    width: 35px;
+
+    /* line-height: 21px; */
+
+    line-height: 13px;
+
+    background-color: #000;
+
+    /* position: absolute; */
+
+    /* bottom: 0; */
+
+    bottom: 150px;
+
+    left: 47%;
+
+    transform: translate(-50%, -20px);
+
+    right: auto;
+
+    top:auto;
+
+    text-align: center;
+
+    border: 1px solid #fff !important;
+
+}
+
+.corporatebannerbutton img.search-iconimage {
+
+    width: 16px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+
+    background-color: #000000;
+
+}
+
+.navbar-default .navbar-toggle{
+
+    border: none;
+
+}
+
+.navbar-default .navbar-toggle:hover{
+
+    background-color: transparent;
+
+}
+
+/* .row.gurgaon-acco-content{
+
+    width: 100%!important;
+    margin-bottom: -250px;
+
+} */
+.booking-form-section.contact-us-main{
+    width: 100% !important;
+    transform: translate(0px, -100px) !important;
+}
+
+
+.corporatebannerbutton:after{
+
+    display: none;
+
+}
+
+.navbar-nav {
+
+    margin: 16px 15px 0 50px
+
+}
+
+
+
+
+
+footer i.fa-brands {
+
+    color: #fff
+
+}
+
+
+
+.navbar-default .navbar-nav>.active>a,
+
+.navbar-default .navbar-nav>.active>a:focus,
+
+.navbar-default .navbar-nav>.active>a:hover {
+
+    background: 0 0;
+
+    color: #fff
+
+}
+
+
+
+.navbar-default .navbar-nav>li>a:focus,
+
+.navbar-default .navbar-nav>li>a:hover {
+
+    color: #051b29
+
+}
+
+
+
+.navbar-default .navbar-nav>.open>a,
+
+/* .navbar-default .navbar-nav>.open>a:focus, */
+
+.navbar-default .navbar-nav>.open>a:hover {
+
+    background: 0 0;
+
+    color: #051b29
+
+}
+
+
+
+.nav .dropdown-menu {
+
+    background:#000;
+
+}
+
+
+
+
+
+.navbar .nav .dropdown-menu a:hover{
+
+    color: #000;
+
+    background-color: #fff;
+
+}
+
+
+
+.book-now:after,
+
+.book-now:hover::after {
+
+    background: #fff
+
+}
+
+
+
+.nav .dropdown-menu>li>a {
+
+    color: #000000;
+
+    padding: 7px 10px
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-more a,
+
+.nav .dropdown-menu>li>a:hover,
+
+.service-listing li a:focus,
+
+.service-listing li a:hover {
+
+    text-decoration: none
+
+}
+
+
+
+.dropdown-menu>li>a:focus,
+
+.nav .dropdown-menu>li>a:hover {
+
+    background: 0 0;
+
+    color: #000;
+
+    transition: .4s
+
+}
+
+
+.special-offers.about-us.new-rj-block .electric-vehicle{
+
+    margin-bottom: -150px;
+    /* transform: translate(0px, 230px) !important; */
+ }
+/* .container .gurgaon-fac{
+margin-bottom: 0px;
+} */
+
+.book-now {
+
+    background: 0 0;
+
+    border-radius: 0;
+
+    padding: 10px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    margin-top: 5px;
+
+    font-family: 'VERDANA' !important;
+
+}
+
+
+
+.book-now:after {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    width: 100%;
+
+    height: 1px;
+
+    content: '';
+
+    z-index: 1;
+
+    bottom: -8px
+
+}
+
+
+
+.search-content.contact-us.new-rj-block.gurugram-offers .container .global-heading-gurugram.gurugram-offers{
+
+    transition: transform 1.9s ease-in-out 0.5s;
+}
+.book-now:focus,
+
+.book-now:hover {
+
+    border: 1px solid #fff;
+
+    color: #fff;
+
+    transition: .4s;
+
+    background: #000
+
+}
+
+
+
+.content-section {
+
+    position: absolute;
+
+    z-index: 9;
+
+    /* left: 0; */
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    right: 0;
+
+    margin: 0 auto;
+
+    top: 40%
+
+}
+
+
+.content-section.about-us-main {
+
+    position: absolute;
+
+    z-index: 9;
+
+    /* left: 0; */
+
+    left: 50%;
+
+    transform: translate(-50%, -90%);
+
+    right: 0;
+
+    margin: 0 auto;
+
+    top: 40%
+
+}
+
+@keyframes scrollGallery {
+
+    0% {
+
+        transform: translateX(0);
+
+    }
+
+    100% {
+
+        transform: translateX(-100%);
+
+    }
+
+}
+
+
+.about-us h2, h2, .inner-hd{ margin-top:1em;}
+.owl-stage {
+
+    display: flex;
+
+    animation: scrollGallery 20s linear infinite;
+
+}
+.our-brands-content .nav.nav-tabs {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.our-brands-content .nav:before {
+    display: table;
+    content: " ";
+}
+.our-brands-content .nav:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+/* .corporatebannerbutton {
+
+    margin-top: 10rem;
+
+} */
+
+.row .container .container .nav-tabs{
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+
+.row .container .container .nav-tabs .nav-item .nav-link.active{
+    background-color: #fff;
+    color: #000;
+    /* transform: translate(0px, -15px); */
+    border: 1px solid #ddd;
+    margin-left: 2px;
+}
+.row .container .container .nav-tabs .nav-item .nav-link{
+    
+    color: #fff;
+    background-color: #002d62;
+    /* transform: translate(0px, -15px); */
+    border: 1px solid #ddd;
+    margin-left: 2px;
+}
+
+
+.ourbrand.our-offers.about-us .container .container .nav-tabs1{
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+.ourbrand.our-offers.about-us .container .container .nav-tabs1 .nav-item1 .nav-link.active{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    font-size: 13px;
+}
+.ourbrand.our-offers.about-us .container .container .nav-tabs1 .nav-item1 .nav-link{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ddd;
+    font-family: 'VERDANA' !important;
+    font-size: 13px; 
+    width: 120px ; 
+    height: 40px; 
+    padding:1px 14px;
+    border-radius: 0;
+}
+.content-section h1,
+
+.main-hero-title {
+
+    color: #fff;
+
+    font-size: 3.8rem;
+
+    margin: 10px 0;
+
+    text-shadow: 2px 0 0 #000;
+
+    margin-top: 16rem;
+
+}
+.bg-green{ background-color:#568b5a !important; height:100px}
+.hght100vh{ height:90vh !important; top: 20vh;
+    position: relative; object-position:50% 80%}
+/* .bg-green .navbar-brand>img{ filter:none !important;} */
+.btm20{ bottom:20% !important;}
+.footer-link,
+#privacy_policy .content-boxx{ text-align:left;}
+.loc,
+
+.owl-carousel.testimonial-slider h4 span {
+
+    font-size: 14px
+
+}
+
+
+
+.banner-list li a span,
+
+.bottom-footer,
+
+.contactus-form .form-control,
+
+.footer-link,
+
+footer .form-inline p,
+
+footer .top-t {
+
+    font-family: 'Open Sans'
+
+}
+
+
+
+.content-section small {
+
+    color: #fff;
+
+    font-size: 2rem
+
+}
+
+
+
+.banner-list {
+
+    float: right;
+
+    list-style: none;
+
+    width: 50%;
+
+    text-align: right;
+
+    margin-top: 110px
+
+}
+
+.gurugram-hotel-offer-main .service-listing2 li:before {
+
+    
+
+    background: #000;
+
+}
+
+ 
+
+.banner-list li {
+
+    display: inline-block;
+
+    text-align: center
+
+}
+
+.hoften-main-contactt .center h1{
+
+    color: #000!important;
+    font-family: 'VERDANA !important';
+
+}
+
+.hoften-main-contactt .center h2{
+
+    color: #000!important;
+
+}
+
+.hoften-main-contactt  .contact-icons-hoften{
+
+    background-color: #000000 !important;
+
+}
+
+.hoften-main-contactt  .contactus-section p a{
+
+    color: #000000 !important;
+
+}
+div#quickbook-widget .MbsSearchWidget .dayUseLable {
+    color: #171718 !important;
+}
+.hoften-main-contactt  .our-offers .btn-primary {
+
+    border-radius: 0;
+
+    padding: 9px 20px;
+
+    color: #fff;
+
+    position: relative;
+
+    font-size: 14px;
+
+    background: #002d62 !important;
+
+    border: 1px solid #fff !important;
+
+    border-color: #fff !important;
+
+}
+
+.global-heading-about-2 {
+        position: relative;
+        margin-top: 15px;
+        color: #464646;
+        font-weight: 570;
+        line-height: 1;
+        font-size: 25px !important;
+        font-family: VERDANA !important;
+
+}
+
+.global-heading-about-2::after {
+    position: relative;
+    content: "";
+    color: #464646;
+
+}
+.booking-form-section.gurgaon-accom {
+    width: 100% !important;
+    /* transform: translate(0px, -100px) !important; */
+    transition: transform 1.9s ease-in-out 0.5s;
+
+}
+
+
+.main-contact-us.search-content.new-rj-block{
+    width: 100% !important;
+    transform: translate(0px, -100px) !important;
+    margin-bottom: -150px;
+}
+.main-contact-us .banner-list li a {
+
+    --e-transform-translateY: 0px;
+
+    background-color: #000;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 100px;
+
+    height: 100px;
+
+    padding-top: 18px;
+
+    margin: 0 15px;
+
+    border: 1px solid #fffFFF36;
+
+    -webkit-transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+
+    transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+
+    -webkit-transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+
+    -ms-transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+
+    transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+
+    -webkit-transition: -webkit-transform var(--e-transform-transition-duration, .4s);
+
+    transition: -webkit-transform var(--e-transform-transition-duration, .4s);
+
+    -o-transition: transform var(--e-transform-transition-duration, .4s);
+
+    transition: transform var(--e-transform-transition-duration, .4s);
+
+    transition: transform var(--e-transform-transition-duration, .4s), -webkit-transform var(--e-transform-transition-duration, .4s)
+
+}
+
+
+
+.banner-list li a::before {
+
+    content: "";
+
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    -webkit-backdrop-filter: blur(5px);
+
+    backdrop-filter: blur(5px);
+
+    display: inline-block;
+
+    text-align: center
+
+}
+
+
+
+.banner-list li a:hover {
+
+    --e-transform-translateY: -10px;
+
+    --e-transform-scale: 0.9;
+
+    -webkit-transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+
+    transform: perspective(var(--e-transform-perspective, 0)) rotate(var(--e-transform-rotateZ, 0)) rotateX(var(--e-transform-rotateX, 0)) rotateY(var(--e-transform-rotateY, 0)) translate(var(--e-transform-translate, 0)) translateX(var(--e-transform-translateX, 0)) translateY(var(--e-transform-translateY, 0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX, 0)) skewY(var(--e-transform-skewY, 0));
+
+    -webkit-transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+
+    -ms-transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+
+    transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);
+
+    -webkit-transition: -webkit-transform var(--e-transform-transition-duration, .4s);
+
+    transition: -webkit-transform var(--e-transform-transition-duration, .4s);
+
+    -o-transition: transform var(--e-transform-transition-duration, .4s);
+
+    transition: transform var(--e-transform-transition-duration, .4s);
+
+    transition: transform var(--e-transform-transition-duration, .4s), -webkit-transform var(--e-transform-transition-duration, .4s);
+
+    background: #000
+
+}
+
+
+
+.image:hover .overlay,
+
+.image:hover img {
+
+    transform: scale(1.1)
+
+}
+
+
+
+.banner-list li a i {
+
+    font-size: 22px;
+
+    color: #fff;
+
+    position: relative;
+
+    margin-bottom: 10px
+
+}
+
+
+
+.banner-list li a span {
+
+    display: inline-block;
+
+    width: 100%;
+
+    font-size: 12px;
+
+    color: #fff;
+
+    text-align: center;
+
+    position: relative;
+
+    text-transform: uppercase;
+
+    font-weight: 400
+
+}
+
+
+
+.banner-list li a i.fa-phone-volume {
+
+    transform: rotate(-30deg)
+
+}
+
+
+
+.about-us {
+
+    background-color: #fff;
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 40px 0 60px;
+
+}
+
+
+
+.about-us h1,
+
+.about-us h2,
+
+.about-us h4,
+
+
+
+.contact-us {
+
+    background-color: #fff;
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 40px 0 10px
+
+}
+
+
+
+.contact-us h1,
+
+.contact-us h2,
+
+.contact-us h4,
+
+.gallery-section h1,
+
+.gallery-section h4,
+
+.rooms-info-block h1,
+
+.rooms-info-block h4,
+
+.services-block h1,
+
+.services-block h4,
+
+.testimonials h1,
+
+.testimonials h4 {
+
+    color: #000;
+
+    font-size: 26px;
+
+    position: relative
+
+}
+
+
+
+.testimonials h1:after,
+
+.testimonials h4:after {
+
+    transition: width .3s;
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    height: 2px;
+
+    width: 0;
+
+    background: #000;
+
+    content: '';
+
+    display: block
+
+}
+
+
+
+.about-us h1:after,
+
+.about-us h2:after,
+
+.about-us h4:after,
+
+.rooms-info-block h1:after,
+
+.rooms-info-block h4:after,
+
+.services-block h1:after,
+
+.services-block h4:after {
+
+    transition: width .3s;
+
+    left: 0;
+
+    right: 0;
+
+    margin: auto;
+
+    bottom: -5px;
+
+    height: 2px;
+
+    width: 60px!important;
+
+    background: #000 !important;
+
+    content: '';
+
+    display: block
+
+}
+
+
+
+.about-us.accomodation-main h1:after,
+
+.about-us.accomodation-main h4:after,
+
+.contact-us.accomodation-main h1:after,
+
+.contact-us.accomodation-main h4:after,
+
+.contact-us.accomodation-main h1:after,
+
+.gallery-section h1:after,
+
+.gallery-section h4:after {
+
+    transition: width .3s;
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    height: 2px;
+
+    width: 60px!important;
+
+    background: #00a3e0;
+
+    content: '';
+
+    display: block;
+
+    right: 0;
+
+    margin: 0 auto;
+
+    transition: .4s;
+
+    background-size: 100% var(--border-width)
+
+}
+
+.gallery-section.gurugram-hotel h4:after {
+
+    transition: width .3s;
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    height: 2px;
+
+    width: 60px!important;
+
+    background: #000000;
+
+    content: '';
+
+    display: block;
+
+    right: 0;
+
+    margin: 0 auto;
+
+    transition: .4s;
+
+    background-size: 100% var(--border-width)
+
+}
+
+
+
+
+
+.about-us:hover h1:after,
+
+.about-us:hover h4:after,
+
+.contact-us:hover h1:after,
+
+.contact-us:hover h4:after,
+
+.your-break:hover h3:after,
+
+.gallery-section:hover h1:after,
+
+.gallery-section:hover h4:after,
+
+.rooms-info-block:hover h1:after,
+
+.rooms-info-block:hover h4:after,
+
+.services-block:hover h1:after,
+
+.services-block:hover h4:after,
+
+.testimonials:hover h1:after,
+
+.testimonials:hover h4:after {
+
+    display: block;
+
+    width: 60px
+
+}
+
+
+
+.about-us:hover h1,
+
+.contact-us:hover h1,
+
+.about-us:hover h4,
+
+.gallery-section:hover h1,
+
+.gallery-section:hover h4,
+
+.rooms-info-block:hover h1,
+
+.rooms-info-block:hover h4,
+
+.services-block:hover h1,
+
+.services-block:hover h4,
+
+.testimonials:hover h1,
+
+.testimonials:hover h4 {
+
+    transition: .4s;
+
+    background-size: 100% var(--border-width)
+
+}
+
+
+
+.dine-service-block .image-b img,
+
+.image img,
+
+.overlay {
+
+    transition: .5s
+
+}
+
+
+
+.about-us h2,
+
+.contact-us h2,
+
+.gallery-section h2,
+
+.rooms-info-block h2,
+
+.services-block h2,
+
+.testimonials h2 {
+
+    margin-top: 10px 0
+
+}
+
+
+
+.about-us p,
+
+.contact-us p,
+
+.gallery-section p,
+
+.rooms-info-block p,
+
+.services-block p,
+
+.testimonials p {
+
+    line-height: 24px;
+
+    color: #3b3b3b;
+
+    margin-bottom: 1rem;
+
+}
+
+.btn{
+
+    font-family: 'VERDANA' !important;
+
+}
+
+.btn-primary {
+
+    background: #000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+.btn-primary.view1-info-hoften {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+
+.btn-primary.view1-info-hoften:hover {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+
+.btn-primary.view2-info-hoften {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+
+.btn-primary.view2-info-hoften:hover {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+
+.btn-primary.view3-info-hoften {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+
+.btn-primary.view3-info-hoften:hover {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+/* .btn-primary.view1-info-hoften:after {
+
+    background: #000000;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+} */
+
+
+.btn-primary:after,
+
+.icon-box.icon-box-body .icon-box-link:after {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #000;
+
+    content: '';
+
+    z-index: 1000;
+
+    bottom: -5px
+
+}
+
+
+
+.btn-primary.focus,
+
+.btn-primary:focus,
+
+.btn-primary:hover {
+
+    border: 1px solid #000;
+
+    color: #fff;
+
+    transition: .4s;
+
+    background: #000
+
+}
+
+
+
+.rooms-info-block {
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 45px 0 80px;
+
+    border-bottom: 1px solid #f0f0f0
+
+}
+
+
+
+.btn.active.focus,
+
+.btn.active:focus,
+
+.btn.focus,
+
+.btn:active.focus,
+
+.btn:active:focus,
+
+.btn:focus {
+
+    outline: 0;
+
+    outline-offset: 0px
+
+}
+
+
+
+.btn-primary.active.focus,
+
+.btn-primary.active:focus,
+
+.btn-primary.active:hover,
+
+.btn-primary:active.focus,
+
+.btn-primary:active:focus,
+
+.btn-primary:active:hover,
+
+.open>.dropdown-toggle.btn-primary.focus,
+
+.open>.dropdown-toggle.btn-primary:focus,
+
+.open>.dropdown-toggle.btn-primary:hover {
+
+    color: #fff;
+
+    background-color: #000;
+
+    border-color: #000
+
+}
+
+
+
+.image {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    opacity: 1;
+
+    position: relative;
+
+    overflow: hidden
+
+}
+
+.gurgaon-hotel-content-section{
+margin-bottom: -250px;
+}
+
+.icon-box.icon-box-body,
+
+.overlay {
+
+    position: absolute;
+
+    width: 100%;
+
+    left: 0
+
+}
+
+
+
+.image:hover img {
+
+    overflow: hidden
+
+}
+
+
+
+.overlay {
+
+    top: 0;
+
+    background: rgba(0, 0, 0, .1);
+
+    z-index: 9;
+
+    content: '';
+
+    height: 100%
+
+}
+
+
+
+.icon-box.icon-box-body {
+
+    padding: 15px;
+
+    bottom: -2px;
+
+    z-index: 9;
+
+    right: 0;
+
+    margin: auto;
+
+    text-align: center
+
+}
+
+
+
+.icon-box.icon-box-body h3 {
+
+    font-size: 14px;
+
+    color: #fff;
+
+    margin: 5px 0
+
+}
+
+
+.about-us.accomodation-main.new-hoften-acco-fac{
+
+    transform: translate(0px, 200px) !important;
+}
+.our-offers.about-us.event-hoften{
+
+    transform: translate(0px, -150px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .custom-img-responsive{
+
+    transform: translate(-50px, -30px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .custom-img-responsive-2{
+
+    transform: translate(-20px, 0px) !important;
+}
+
+/* .our-offers.about-us.event-hoften .room-block .room-main-info.ballroom{
+
+    transform: translate(20px, -150px) !important;
+} */
+.icon-box.icon-box-body p {
+
+    font-size: 22px;
+
+    color: #fff;
+
+    font-family: MarcellusRegular;
+
+    margin-bottom: 20px
+
+}
+
+
+
+.icon-box.icon-box-body .icon-box-link {
+
+    background: #002d62;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #002d62;
+
+    position: relative;
+
+    text-decoration: none
+
+}
+
+
+.our-brands.experience-section.about-us.new-our-brands.up-exp-sec{
+    width: 100%;
+    transform: translate(0px, 30px) !important;
+
+}
+
+.icon-box.icon-box-body .icon-box-link-hoften {
+
+    background: #245704 !important;
+
+    border-radius: 0;
+
+    padding: 10px 25px;
+
+    color: #fff;
+
+    border: 1px solid #245704 !important;
+
+    position: relative;
+
+    text-decoration: none
+
+}
+
+.new-our-offers.our-offers.about-us .li-para{
+
+    font-size: 15px;
+}
+.new-hoften-mt-20{
+
+    margin-top:15rem;
+
+}
+
+.btn-primary:after,
+
+.icon-box.icon-box-body .icon-box-link-hoften:after {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #000000 !important;
+
+    content: '';
+
+    z-index: 1;
+
+    bottom: -5px
+
+}
+
+.services-block {
+
+    padding: 45px 0 0
+
+}
+
+
+
+.jeg-elementor-kit.jkit-pie-chart .chart-float {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: center;
+
+    -ms-flex-pack: center;
+
+    justify-content: center
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .portfolio-gallery-container {
+
+    position: relative;
+
+    overflow: hidden
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-items {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+
+    flex-wrap: wrap
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .gallery-items {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item {
+
+    height: 90vh;
+
+    padding: 0;
+
+    position: relative;
+
+    z-index: 2;
+
+    border-right: 1px solid rgba(255, 255, 255, .3);
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    -ms-flex: 0 0 25%;
+
+    -webkit-box-flex: 0;
+
+    flex: 0 0 25%;
+
+    max-width: 25%
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item:hover .row-item-info:after {
+
+    height: 100%
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item:hover .row-item-info1:after {
+
+    height: 100%
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item:hover .row-item-info2:after {
+
+    height: 100%
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item:hover .row-item-info3:after {
+
+    height: 100%
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item:hover .row-item-info4:after {
+
+    height: 100%
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item:hover .row-item-more {
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+
+    opacity: 1
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item.current-item:before {
+
+    position: absolute;
+
+    content: "";
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    z-index: 1;
+
+    background: rgba(0, 0, 0, .1)
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info {
+
+    padding: 40px 10px 40px 20px;
+
+    position: relative;
+
+    text-align: center;
+
+    z-index: 2;
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    overflow: hidden
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info1 {
+
+    padding: 40px 10px 40px 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 2;
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    overflow: hidden
+
+}
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info2 {
+
+    padding: 40px 10px 40px 20px;
+
+    position: relative;
+
+    text-align: center;
+
+    z-index: 2;
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    overflow: hidden
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info3 {
+
+    padding: 40px 10px 40px 20px;
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    overflow: hidden
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info4 {
+
+    padding: 40px 10px 40px 20px;
+
+    position: relative;
+
+    text-align: center;
+
+    z-index: 2;
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    overflow: hidden
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info .info-title {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info1 .info-title {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info2 .info-title {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info3 .info-title {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info4 .info-title {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+
+
+.row-item:hover .row-item-info .info-title {
+
+    color: #000  !important
+
+}
+
+.row-item:hover .row-item-info1 .info-title {
+
+    color: #000  !important
+
+}
+
+.row-item:hover .row-item-info2 .info-title {
+
+    color: #000  !important
+
+}
+
+.row-item:hover .row-item-info3 .info-title {
+
+    color: #000  !important
+
+}
+
+.row-item:hover .row-item-info4 .info-title {
+
+    color: #000  !important
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info .info-subtitle {
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info1 .info-subtitle {
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info2 .info-subtitle {
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info3 .info-subtitle {
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info4 .info-subtitle {
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    background: #fff;
+
+    z-index: -1;
+
+    -webkit-transition: .4s;
+
+    transition: .4s
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info1:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    background: #fff;
+
+    z-index: -1;
+
+    -webkit-transition: .4s;
+
+    transition: .4s
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info2:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    background: #fff;
+
+    z-index: -1;
+
+    -webkit-transition: .4s;
+
+    transition: .4s
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info3:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    background: #fff;
+
+    z-index: -1;
+
+    -webkit-transition: .4s;
+
+    transition: .4s
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info4:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    background: #fff;
+
+    z-index: -1;
+
+    -webkit-transition: .4s;
+
+    transition: .4s
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-more {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    color: #fff;
+
+    width: 100%;
+
+    padding: 25px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+
+    -webkit-transform: translateY(20%);
+
+    transform: translateY(20%);
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
+
+    z-index: 2
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-more svg {
+
+    width: 13px
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .image-item {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    -webkit-transform: scale(1.1, 1.1);
+
+    transform: scale(1.1, 1.1);
+
+    -webkit-transition: .7s;
+
+    transition: .7s;
+
+    background-size: cover;
+
+    background-position: center center
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .image-item.current-item {
+
+    -webkit-transform: scale(1, 1);
+
+    transform: scale(1, 1);
+
+    opacity: 1
+
+}
+
+
+
+.inner-testimonial {
+
+    /* background: url(../images/testimonials-bg.jpg) 0 0/cover no-repeat fixed; */
+
+    height: 380px
+
+}
+
+
+
+.owl-carousel.testimonial-slider .owl-item p {
+
+    color: #fff;
+
+    font-size: 15px;
+
+    font-family: NunitoRegular;
+
+    font-weight: 400;
+
+    line-height: 26px;
+
+    margin-top: 80px
+
+}
+
+
+
+.offers-section .icon-box.icon-box-body h3,
+
+footer h4 {
+
+    font-size: 22px
+
+}
+
+.our-offers .nav-tabs{display: flex;justify-content: center;margin:0px 0 35px 0;border:none;gap:5px}
+
+.our-offers .nav-tabs .nav-item .nav-link{font-family: 'VERDANA' !important;font-size: 13px; width: 172px ; height: 30px; border:1px solid #002d62;padding:1px 14px;border-radius: 0;color: var(--bs-black);}
+
+.our-offers .nav-tabs .nav-item .nav-link.active{background-color: #002d62;border:1px solid transparent;color: var(--bs-white)}
+
+.our-offers .btn-primary {
+
+    background: #002d62!important;
+
+    border-radius: 0;
+
+    padding: 7px 20px;
+
+    color: #fff;
+
+    border: 1px solid #fff !important;
+
+    border-color: #fff !important;
+
+    position: relative;
+
+    font-size: 14px;
+
+}
+
+.main-contact-us-form .btn-primary{
+    
+    background: #002d62;
+
+    border-radius: 0;
+
+    padding: 12px 26px;
+
+    color: #fff;
+
+    border: 1px solid #fff !important;
+
+    border-color: #fff !important;
+
+    position: relative;
+
+    font-size: 15px;
+}
+.our-offers.about-us.home-our-offers .btn-primary{
+    
+    background: #002d62!important;
+
+    border-radius: 0;
+
+    padding: 12px 26px;
+
+    color: #fff;
+
+    border: 1px solid #fff !important;
+
+    border-color: #fff !important;
+
+    position: relative;
+
+    font-size: 15px;
+}
+
+
+.our-new-offers .offer-name {
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+
+    font-family: 'Agatho' !important;
+
+    font-size: 20px !important;
+
+    color: #000;
+
+    margin-top: 2rem;
+
+}
+
+
+
+.owl-carousel.testimonial-slider h4 {
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: #fff;
+
+    margin: 30px 0 0 !important;
+
+    line-height: 30px
+
+}
+
+
+
+.gallery-section {
+
+    padding: 50px 0
+
+}
+
+
+
+.gallery-section .owl-dots,
+
+.mobile-video,
+
+.offers-slider .owl-dots {
+
+    display: none
+
+}
+
+
+
+.gal-slider .item .inner-img-section {
+
+    margin: 8px 0
+
+}
+
+
+.enqiure-inner {
+
+    display: inline-block;
+
+    width: 100%;
+
+    background: #fff;
+
+    padding: 10px 25px 30px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+
+    margin: -70px 0 50px;
+
+    position: relative
+
+}
+
+
+
+.commerce-blog-wrapper{
+
+    margin-left: 50px !important;
+
+}
+
+.i-amphtml-form .blog-reply-submit-button {
+
+    margin-left: 320px !important; 
+
+    width: 100px !important;
+
+    display: block !important;
+
+    font-family: VERDANA !important;
+
+    color: #FFFFFF !important;
+
+    background-color: #000 !important;
+
+    border-color: #000 !important;
+
+    font-size: 13px !important;
+
+    text-decoration: none
+
+}
+
+.our-offers {
+
+    padding: 4rem 0;
+
+}
+
+.our-offers .myBtnContainer .filterButton{
+
+    border-radius: 0!important;
+
+    border: 1px solid #000!important;
+
+    text-transform: capitalize!important;
+
+    width: 90px!important;
+
+    height: 20px!important;
+
+}
+
+.our-offers .myBtnContainer .filterButton:hover{
+
+    color: #000!important;
+
+}
+
+.our-offers .myBtnContainer .text-white {
+
+    background-color: #000!important;
+
+    padding: 7px 14px!important;
+
+    text-transform: capitalize!important;
+
+    border: 1px solid #000!important;
+
+}
+
+.our-offers .myBtnContainer .text-white:hover{
+
+    color: #fff!important;
+
+}
+
+
+
+/* .our-offers .grid .swiper-wrapper .image img {
+
+    height: 400px;
+
+    width: 100%!important;
+
+    object-fit: cover;
+
+} */
+.swiper-wrapper.abc {
+    display: flex;
+    gap: 0px; /* Adds space between slides */
+    /* justify-content: center; */
+}
+
+.swiper-wrapper.abc .swiper-slide {
+    margin-right: 0px !important; /* Removes conflicting margin */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    overflow: hidden; /* Prevents image cropping */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-wrapper.abc .swiper-slide img {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 415px; /* Prevent excessive scaling */
+    padding:10px;
+    width: 100% !important;
+    object-fit: cover; /* Ensures the full image is visible */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+.swiper-wrapper.abc .swiper-slide .img-fluid:hover {
+    transform: scale(1.05) !important;
+}
+
+.our-offers .offer-name {
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+
+    color: #000;
+
+    margin-top: 2rem;
+
+    font-family: 'Agatho' !important;
+
+    font-size: 20px !important;
+
+    margin: 0;
+
+    padding: 1rem 0;
+
+}
+
+.our-offers .offer-name:after {
+
+    background: #000 !important;
+
+}
+
+
+.enqiure-inner .form-control {
+
+    height: 51px;
+
+    border: 1px solid #b7b7b7;
+
+    border-radius: 3px;
+
+    font-size: 14px;
+
+    color: #000;
+
+    background: 0 0;
+
+    box-shadow: none;
+
+    display: inline-block;
+
+    width: 100%
+
+}
+
+
+
+.custom-form-outer-div .btn-primary,
+
+.custom-form-outer-div .btn-primary.focus,
+
+.custom-form-outer-div .btn-primary:focus,
+
+.custom-form-outer-div .btn-primary:hover {
+
+    background: #000;
+
+    border-color: #000
+
+}
+
+
+
+.custom-form-outer-div {
+
+    width: 100% !important;
+
+    padding-left: 7px !important;
+
+    padding-right: 7px !important;
+
+    margin: 3px 0;
+
+    float: left;
+
+    height: 90px
+
+}
+
+
+
+.custom-form-outer-div span,
+
+.custom-form-outer-div-full span {
+
+    display: inline-block;
+
+    width: 100%;
+
+    color: #000;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    margin-bottom: 7px
+
+}
+
+
+
+.custom-form-outer-div .btn-primary {
+
+    color: #fff;
+
+    font-size: 16px;
+
+    height: 51px;
+
+    margin-left: 0;
+
+    margin-right: 0;
+
+    width: 100%
+
+}
+
+
+
+div#quickbook-widget .MbsSearchWidget {
+
+    align-items: center;
+
+    background: #fff;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin: auto;
+
+    max-width: 1090px;
+
+    padding:20px 0px !important;
+
+    width: 100%
+
+}
+
+
+
+div#quickbook-widget .MbsSearchWidget.dayUseSearch {
+
+    gap: 20px !important
+
+}
+
+
+
+div#quickbook-widget .MbsSearchWidget .formGroup .input.inputRoom .d-flex span {
+
+    right: 19px !important
+
+}
+
+
+
+.enqiure-inner .input-group-addon {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 12px;
+
+    background: 0 0;
+
+    border: none
+
+}
+
+
+
+.enqiure-inner .input-group-addon i {
+
+    color: #00528a;
+
+    font-size: 17px
+
+}
+
+
+
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+
+    border-top-right-radius: 3px;
+
+    border-bottom-right-radius: 3px
+
+}
+
+
+
+.enqiure-inner .form-select {
+
+    background-color: transparent;
+
+    border: 1px solid #b7b7b7;
+
+    border-radius: 3px;
+
+    height: 51px;
+
+    color: #000;
+
+    font-size: 14px;
+
+    box-shadow: none;
+
+    display: inline-block;
+
+    width: 100%;
+
+    background-repeat: no-repeat;
+
+    background-size: 12px;
+
+    background-position: right .75rem center;
+
+    padding: 6px 12px
+
+}
+
+
+
+.enqiure-inner .form-select option,
+
+.offers-section h2,
+
+.offers-section p,
+
+.service-block-inner p b {
+
+    color: #000
+
+}
+
+
+
+.form-control:focus {
+
+    outline: 0;
+
+    box-shadow: none
+
+}
+
+
+
+.offers-section {
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 50px 0 80px;
+
+    background: #fffbf4;
+
+    margin-top: -5px
+
+}
+
+
+
+.btn-social:focus i,
+
+.btn-social:hover i,
+
+.f-links li a:focus,
+
+.f-links li a:hover,
+
+.footer-link a:focus,
+
+.footer-link a:hover,
+
+.offers-section h4 {
+
+    color: #d4d4d4
+
+}
+
+
+
+.f-links li,
+
+.offers-section .icon-box.icon-box-body p {
+
+    font-size: 16px
+
+}
+
+
+
+footer {
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 50px 0 10px;
+
+    background: #000;
+
+    margin-bottom: -5px
+
+}
+
+
+
+footer h4 {
+
+    font-weight: 500;
+
+    color: #fff;
+
+    margin-bottom: 22px
+
+}
+
+
+
+.f-links {
+
+    display: inline-block;
+
+    width: 100%;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0
+
+}
+
+
+
+.btn-social,
+
+.footer-link,
+
+.trip-logo {
+
+    margin-bottom: 15px
+
+}
+
+
+
+.f-links li {
+
+    float: left;
+
+    color: #fff;
+
+    font-weight: 400;
+
+    width: 100%;
+
+    margin-bottom: 10px
+
+}
+
+
+
+.f-links li a,
+
+.footer-link a,
+
+.footer-link i {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: .4s;
+    font-size:13px;
+
+}
+
+
+
+.footer-link,
+
+.ftr-location {
+
+    position: relative;
+
+    padding-left: 34px;
+
+    color: #fff
+
+}
+
+
+
+.footer-link .social-icon,
+
+.ftr-location i {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 1px;
+
+    z-index: 1
+
+}
+
+
+
+.footer-link i {
+
+    margin-right: 10px
+
+}
+
+
+
+footer .form-inline .form-control {
+
+    width: 100%;
+
+    height: 51px;
+
+    border: 1px solid #fff;
+
+    border-radius: 3px;
+
+    font-size: 14px;
+
+    color: #fff;
+
+    background: 0 0;
+
+    box-shadow: none;
+
+    display: inline-block
+
+}
+
+
+
+footer .form-inline .btn-primary {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    z-index: 9;
+
+    content: '';
+
+    height: 51px;
+
+    border-radius: 3px;
+
+    background: #000;
+
+    border-color: #000
+
+}
+
+
+
+footer .form-inline p {
+
+    font-size: 12px;
+
+    color: #fff;
+
+    margin-top: 7px;
+
+    margin-bottom: 0
+
+}
+
+
+
+footer .form-inline p a {
+
+    color: #000;
+
+    text-decoration: none;
+
+    transition: .4s;
+
+    font-weight: 600
+
+}
+
+
+
+footer .form-inline p a:focus,
+
+footer .form-inline p a:hover {
+
+    color: #fff;
+
+    font-weight: 600
+
+}
+
+
+
+footer .top-t {
+
+    color: #fff;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+    display: inline-block;
+
+    width: 100%
+
+}
+
+
+
+.ftr-social-section {
+
+    display: inline-block;
+
+    width: 100%;
+
+    text-align: left;
+
+    margin-top: 20px
+
+}
+
+
+
+.btn-social {
+
+    height: 40px;
+
+    width: 40px;
+
+    border-radius: 50%;
+
+    padding: 6px;
+
+    font-size: 20px;
+
+    background: transparent;
+
+    color: #fff;
+
+    margin-right: 7px;
+
+    transition: .5s linear
+
+}
+
+
+
+.btn-social:focus,
+
+.btn-social:hover {
+
+    background-color: transparent;
+
+    transition: .5s linear;
+
+    transform: rotate(360deg);
+
+    color: #fff
+
+}
+
+
+
+img.social-icon {
+
+    display: block;
+
+    width: 28px;
+
+    margin: 2px
+
+}
+
+img.social-icon-map {
+
+    display: block;
+
+    width: 52px;
+margin-bottom: 20px;
+    
+
+}
+img.map-marker.social-icon {
+
+    width: 52px;
+
+    left:-8px;
+
+    top:-10px
+
+}
+
+
+img.social-icon-hoften {
+
+    display: block;
+
+    width: 28px;
+
+    margin: 2px
+
+}
+
+img.social-icon-map-hoften {
+
+    display: block;
+
+    width: 52px;
+margin-bottom: 20px;
+    
+
+}
+img.map-marker.social-icon-hoften {
+
+    width: 52px;
+
+    left:-8px;
+
+    top:-10px
+
+}
+
+/* .contact-icons-2{
+    
+    height: 48px;
+
+    width: 48px;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    display: inline-block;
+}
+
+.contact-icons-2 img{
+    width: 48px;
+    margin: -11px 0 0 -2px;
+} */
+
+.bottom-footer,
+
+.main-facilities,
+
+.main-facilities li,
+
+.rating-info-section,
+
+.room-main-info small,
+
+.service-listing,
+
+.service-listing li,
+
+.service-listing li a,
+
+.service-listing2,
+
+.service-listing2 li,
+
+.trip-logo,
+
+.width-7 {
+
+    display: inline-block
+
+}
+
+
+
+.min-h-5 {
+
+    min-height: 400px
+
+}
+
+
+
+.bottom-footer {
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #fff;
+
+    border-top: 1px solid #383838;
+
+    padding: 10px 0 0
+
+}
+
+
+
+.direction,
+
+.loc {
+
+    padding-left: 15px
+
+}
+
+
+
+.rating-info-section {
+
+    width: 100%;
+
+    text-align: left
+
+}
+
+
+
+.loc i {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 2px
+
+}
+
+
+
+.rating-stars {
+
+    float: left;
+
+    font-size: 12px;
+
+    position: relative;
+
+    padding-right: 15px
+
+}
+
+
+
+.rating-stars i {
+
+    color: #dbc300;
+
+    font-size: 11px
+
+}
+
+
+
+.direction {
+
+    float: left;
+
+    position: relative;
+
+    text-align: left;
+
+    font-size: 13px
+
+}
+
+
+
+.rating-stars::after {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    width: 1px;
+
+    background: #dedede;
+
+    height: 100%;
+
+    content: ''
+
+}
+
+
+
+.about-us h2, h2 ,.inner-hd{
+    color: rgb(74 74 74) !important;
+    font-family: 'Agatho' !important;
+    font-size: 30px !important;
+    margin-bottom:10px;
+    font-weight: 500;
+}
+.space_in {
+    padding: 4em;
+}
+
+.mt_n8{ margin-top:-8em;}
+.room-features {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 15px;
+    }
+    
+    .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .feature-icon {
+    font-size: 24px;
+    color: #000000;
+    }
+    
+    .feature-item span {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    }
+    
+    /* In your CSS file (e.g., styles.css or module.css) */
+    .auto-width-btn {
+    display: inline-block;
+    max-width: 44%; text-align:center;
+    }
+    .room_cs {
+        padding: 0em;
+        margin-bottom: 2em;
+    }
+
+    .bg_gray {
+        background: #e5e5e4;
+    }
+.sub-head{ color:#002d62; font-size:16px; margin-bottom:27px; margin-top:10px; padding:0px !important;}
+.sub-head:after{ content:none !important;}
+
+.rd_more {
+    cursor: pointer;
+    color: #3b3b3b;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    font-size: 13px !important;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.hotel_rd_more h4{ text-align:center; padding:0px; padding-top:20px; margin-top:1.8rem !important; font-size:22px !important; font-family:"VERDANA" !important}
+.hotel_rd_more .content-boxx{ width: 100% !important;
+    margin-left: 0px !important;}
+
+.contact-us h2 {
+    font-family:verdana !important;
+
+    font-size: 26px !important;
+
+}
+
+
+
+.trip-logo {
+
+    max-width: 100%
+
+}
+
+
+
+.ft-26 {
+
+    font-size: 26px
+
+}
+
+
+
+.white-bg {
+
+    background: #fff !important
+
+}
+
+
+
+.voffset-20 {
+
+    margin-top: 250px
+
+}
+
+
+
+.custom-img-responsive,
+
+.popup-img-responsive {
+
+    display: inline-block;
+
+    max-width: 100%
+
+}
+
+
+
+.room-block img {
+
+    max-height: 500px;
+
+    width: 90%
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .room-block img {
+
+        max-height: 700px;
+
+        width: 100%
+
+    }
+
+  }
+
+
+
+
+  
+.room-main-info-n {
+
+    position: relative;
+    width: 100%;
+    padding: 14px;
+    background: #fff;
+    z-index: 9;
+    /* bottom: -205px; */
+    left: 20px;
+    /* border-radius: 2px; */
+    max-width: 96%;
+    text-align: center;
+
+}
+
+
+
+.room-main-info-n.right-block {
+
+    left: auto;
+
+    right: 50px
+
+}
+
+
+/* .faci-vid{     */
+    /* width: 60%; */
+    /* height: 425px; */
+    /* object-position:center bottom; */
+    /* object-fit: cover; */
+/* } */
+.faci-vid1{    
+    /* width: 60%; */
+    height: 425px;
+    object-position:center bottom;
+    /* object-fit: cover; */
+}
+.room-main-info-n small {
+
+    color: #000;
+
+    width: 100%;
+
+    text-align: left;
+
+    font-size: 18px;
+
+    margin-bottom: 3px
+
+}
+
+
+
+.room-main-info-n small span {
+
+    color: #333;
+
+    font-size: 14px
+
+}
+
+
+
+.room-main-info-n h3 {
+
+    font-size: 27px;
+
+    margin-top: 0
+
+}
+
+
+
+.room-main-info-n p {
+
+    font-size: 14px;
+
+    text-align: justify;
+
+    line-height: 25px;
+
+    color: #3b3b3b;
+
+}
+
+
+
+
+
+.room-main-info {
+
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+
+    position: absolute;
+
+    width: 500px;
+
+    padding: 14px;
+
+    background: #fff;
+
+    z-index: 9;
+
+    bottom: -220px;
+
+    left: 20px;
+
+    border-radius: 2px;
+    height: 84% !important;
+
+    max-width: 750px;
+
+    text-align: left
+
+}
+
+
+
+.room-main-info.right-block {
+
+    left: auto;
+
+    right: 50px
+
+}
+
+
+
+.room-main-info small {
+
+    color: #000;
+
+    width: 100%;
+
+    text-align: left;
+
+    font-size: 18px;
+
+    margin-bottom: 3px
+
+}
+
+
+
+.room-main-info small span {
+
+    color: #333;
+
+    font-size: 14px
+
+}
+
+
+
+.room-main-info h3 {
+
+    font-size: 27px;
+
+    margin-top: 0
+
+}
+
+
+
+.room-main-info p {
+
+    font-size: 14px;
+
+    text-align: justify;
+
+    line-height: 25px;
+
+    color: #3b3b3b;
+
+}
+
+
+
+.width-7 {
+
+    width: 75%
+
+}
+
+
+
+.color-grey {
+
+    color: #3b3b3b
+
+}
+
+
+
+.service-listing,
+
+.service-listing2 {
+
+    width: 100%;
+
+    list-style: none;
+
+    padding: 15px 0;
+
+    margin: 0;
+
+    text-align: left;
+
+    border-top: 1px solid #e4e4e4;
+
+    border-bottom: 1px solid #e4e4e4
+
+}
+
+
+
+.service-listing li a {
+
+    border: 1px dashed #dedede;
+
+    width: 36px;
+
+    height: 36px;
+
+    line-height: 36px;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    vertical-align: middle;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    padding: 11px 5px;
+
+    color: #000;
+
+    margin-right: 5px
+
+}
+
+
+
+.service-listing2 li {
+
+    width: 100%;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    color: #3b3b3b;
+
+    position: relative;
+
+    padding-left: 15px;
+
+    line-height: 24px
+
+}
+
+
+
+.service-listing2 li:before {
+
+    width: 6px;
+
+    height: 6px;
+
+    background: #000;
+
+    border-radius: 3px;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 10px;
+
+    z-index: 1;
+
+    content: ''
+
+}
+
+
+
+.service-listing li a i {
+
+    display: block;
+
+    font-size: 12px
+
+}
+
+
+
+.service-listing li a:hover {
+
+    background: #000;
+
+    color: #fff;
+
+    border-color: #000;
+
+    transition: .4s
+
+}
+
+
+
+.main-facilities {
+
+    width: 100%;
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 10px 0 0
+
+}
+
+
+
+.main-facilities li {
+
+    width: 33%;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #3b3b3b;
+
+    padding: 15px;
+
+    border-right: 1px solid #ddd;
+
+    vertical-align: top
+
+}
+
+
+
+.main-facilities li p {
+
+    color: #3b3b3b;
+
+    font-size: 14px;
+
+    text-align: justify;
+
+    line-height: 24px
+
+}
+
+
+
+.main-facilities li:last-child {
+
+    border: 0
+
+}
+
+
+
+.main-facilities li i {
+
+    font-size: 30px;
+
+    color: #000;
+
+    margin-bottom: 10px
+
+}
+
+
+
+.main-facilities li h6 {
+
+    font-size: 22px !important;
+
+    color: #000
+
+}
+
+
+
+.voffset-9 {
+
+    margin-top: 150px
+
+}
+
+
+
+.dine-service-block .image-b {
+
+    margin-right: -25px;
+
+    overflow: hidden
+
+}
+
+
+
+.dine-service-block .image-b:hover img {
+
+    transform: scale(1.1);
+
+    cursor: pointer
+
+}
+
+
+
+.image-b {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    opacity: 1
+
+}
+
+/* .navbar-brand{
+
+    line-height: 0;
+
+} */
+
+.search-content.about-us.new-rj-block .content-boxx .read-more-btnn {
+
+      cursor: pointer;
+
+      color: #3b3b3b;
+
+      text-decoration: underline;
+
+      border: none;
+
+      background: none;
+
+      font-size: 15px;
+
+      margin-left: 5px;
+
+      padding: 0;
+
+    }
+
+
+
+.dine-service-block .content {
+
+    background: #fff;
+
+    padding: 45px;
+
+    margin-left: -120px;
+
+    margin-top: 60px;
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-bottom: 115px;
+
+    min-height: 400px;
+
+    text-align: left
+
+}
+
+
+
+.dine-service-block .content:before {
+
+    position: absolute;
+
+    content: '';
+
+    top: -12px;
+
+    right: 0;
+
+    bottom: -12px;
+
+    left: -12px;
+
+    background-color: rgb(255 255 255 / 18%);
+
+    z-index: -1
+
+}
+
+
+
+.inner-p .dine-service-block .sub-title {
+
+    color: #006492
+
+}
+
+
+
+.dine-service-block .sub-title {
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.6em;
+
+    color: #04542d;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin-bottom: 10px
+
+}
+
+
+
+.dine-service-block .sec-title {
+
+    font-size: 35px;
+
+    line-height: 24px;
+
+    color: #000;
+
+    margin-bottom: 15px;
+
+    position: relative;
+
+    margin-top: 0
+
+}
+
+
+
+.dine-service-block .text-two {
+
+    font-size: 14px;
+
+    line-height: 24px;
+
+    color: #3b3b3b;
+
+    font-weight: 400
+
+}
+
+
+.global-heading-gurugram.event-hoften{
+    
+    color: #000000!important;
+
+    font-family: 'VERDANA' !important;
+    transform: translate(50px, 0px);
+}
+.content-boxx.gurugram-para {
+
+    font-size: 13px;
+    line-height: 25px;
+    color:#3b3b3b;
+    width: 100%;
+    text-align: center;
+    /* transform: translate(130px, 10px); */
+    font-weight: 250;
+
+}
+
+.dine-service-block .link-btn {
+
+    position: relative;
+
+    padding: 20px 0
+
+}
+
+
+
+.light-bg {
+
+    background: #fffbf4
+
+}
+
+
+
+.contact-icons,
+
+.gallery-tabs.nav-tabs>li.active>a,
+
+.gallery-tabs.nav-tabs>li.active>a:focus,
+
+.gallery-tabs.nav-tabs>li.active>a:hover {
+
+    background: #002d62;
+
+    color: #fff
+
+}
+
+.up-exp-sec .new-bg-block .inner .category-image img{
+
+ width: 12rem!important;
+
+}
+
+.up-exp-sec .offers-slider{
+    transform: translate(0px, -50px) !important;
+   
+   }
+   
+.up-exp-sec .offers-slider .swiper-slide .new-bg-block{
+    height: 370px;
+   
+   }
+.up-exp-sec .offers-slider .swiper-wrapper{
+
+    width: 100px!important;
+   
+   }
+
+   /* .up-exp-sec .offers-slider .swiper-nav{
+    transform: translate(0px, -50px) !important;
+   } */
+   .up-exp-sec .swiper-nav {
+    position: absolute;
+    z-index: 9;
+    transform: translate(-50px, -100px) !important;
+    display: flex;
+  }
+  .up-exp-sec .custom-swiper-button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .up-exp-sec .custom-swiper-button:hover {
+    background: #f0f0f0;
+  }
+   /* .up-exp-sec .swiper .swiper-nav{
+    transform: translate(0px, -50px) !important;
+    overflow: visible !important;
+   } */
+   .experience-section.about-us.media-n-news.media-news{
+
+    transform: translate(0px, -100px) !important;
+   }
+.pad-65 {
+
+    padding: 65px
+
+}
+
+
+
+.contactus-form,
+
+.service-block-inner {
+
+    text-align: left
+
+}
+
+
+
+.service-block-inner h6 {
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    margin-top: 20px
+
+}
+
+
+
+.service-block-inner h3 {
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #000;
+
+    margin-top: 5px;
+
+    margin-bottom: 12px
+
+}
+
+
+
+.service-block-inner p {
+
+    color: #3b3b3b;
+
+    line-height: 24px
+
+}
+
+
+
+/* .tab-content>.active.fade {
+
+    opacity: 1 !important
+
+} */
+
+
+
+.main-gal-inner-block>div {
+
+    padding: 5px
+
+}
+
+
+
+.gallery-tabs.nav-tabs>li>a {
+
+    color: #fff;
+
+    font-weight: 500;
+
+    background-color: #000;
+
+    padding: 10px 25px
+
+}
+
+
+
+.contact-icons {
+
+    height: 44px;
+
+    width: 44px;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding-top: 10px
+
+}
+
+.contact-icons-hoften {
+
+    height: 44px;
+
+    width: 44px;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding-top: 10px
+
+}
+
+
+.contactus-section h6 {
+
+    font-size: 24px;
+
+    color: #000;
+
+    font-weight: 650
+
+}
+
+
+
+.contactus-section p {
+
+    font-size: 14px;
+
+    color: #3b3b3b;
+
+    margin-bottom: 5px
+
+}
+
+
+
+.contactus-section p a {
+    color: #3b3b3b; text-decoration: none;}
+
+.dining-form .form-control{ margin-bottom: 0px !important; margin-top: 15px;}
+.dining-form small{ display:block; text-align:left;}
+
+
+.dining-form .btn-primary {
+    border-radius: 0;
+    padding: 7px 20px;
+    color: #fff;
+    position: relative;
+    font-size: 14px;
+    background: #002d62 !important;
+    border: 1px solid #fff !important;
+    border-color: #fff !important;
+}
+.contactus-form .form-control {
+
+    border: 1px solid #000 !important;
+
+    background: 0 0;
+
+    color: #000;
+
+
+    padding: 14px .75rem;
+
+    border-radius: 3px;
+
+    margin-top: 15px;
+
+    height: 44px
+
+}
+
+
+
+.contactus-form textarea.form-control {
+
+    height: 200px
+
+}
+
+
+.mob_design{ z-index:99;}
+.contactus-form .input-group-addon {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 7px;
+
+    color: #000;
+
+    font-size: 20px;
+
+    background-color: transparent;
+
+    border: 0
+
+}
+
+
+
+.contactus-form .input-group {
+
+    width: 100%;
+
+    position: relative;
+
+    display: table;
+
+    border-collapse: separate
+
+}
+
+
+
+.color-dark hr {
+
+    border-top: 1px solid #dcdcdc
+
+}
+
+
+
+.modal-content .enqiure-inner {
+
+    margin-top: 0;
+
+    background: #fff;
+
+    box-shadow: none;
+
+    padding: 0 20px;
+
+    margin-bottom: 10px
+
+}
+
+
+
+.modal-content .enqiure-inner .custom-form-outer-div {
+
+    width: 50% !important
+
+}
+
+
+
+.modal-content .enqiure-inner .custom-form-outer-div-full {
+
+    width: 100% !important;
+
+    float: left;
+
+    padding-left: 7px !important;
+
+    padding-right: 7px !important;
+
+    margin: 3px 0
+
+}
+
+
+
+.facility-icon-btm {
+
+    display: inline-block;
+
+    width: 40px;
+
+    margin: 10px 0
+
+}
+
+.sectiontop{ margin-top:2em;}
+
+.featur_modal .btn-close{ font-size:12px;}
+.featur_modal .modal-header{ padding:12px;     background-color: #000;
+    text-align: center;
+    color: #fff;}
+.featur_modal .modal-title{ font-size:14px;}
+
+.desk-video {
+    display: block;
+  }
+  
+  .mob-video {
+    display: none;
+  }
+
+  .meeting_ev .conf-hall, .meeting_ev .ball-room1{ height:70% !important;}
+  div#quickbook-widget .MbsSearchWidget .rdrDateRangePickerWrapper{width: 100%;
+    position: fixed !important;
+    
+    top: -40px;}
+  .offer_gn .book-now-headerr{ margin-bottom:20px;}
+
+  .glry-right-block{ transform:translate(10px, -110px) !important;}
+  .mt5{ margin-top:3em !important}
+
+.resto-timing{ margin:0em auto;}
+.resto-timing ul li{ list-style:none;}
+.resto-timing ul li .hd1{ font-size:14px;}
+.resto-timing ul{ margin-left:0; padding-left:0px; margin-top:5px !important;}
+.resto-timing ul strong{ font-weight:bold;}
+.bgalivablue{ background:#002d62;}
+.htlslder .swiper-pagination{ position:relative; margin-top:1em;}
+.htlslder .swiper-pagination-bullet-active{ background:#002d62;}
+/* .room-main-infoVehicle{ transform:translate(10px, 80px) !important;} */
+@media (max-width: 768px) {
+    .meeting_ev .room-main-info{ height:100% !important;}
+    .mt5{ margin-top:0em !important}
+.mob1_none{ display:none !important;}
+    .desk-video {
+      display: none !important;
+    }
+    
+    .mob-video {
+      display: block;
+    }
+  }
+
+  
+@media (min-width:767px) {
+
+
+    #offermodal .modal-dialog{width:749px}
+
+    .diwali-offer-mobile{display: none;}
+
+}
+
+@media (max-width:767px) {
+    .carddd .read-more-btnnn{ display:block;}
+    .navbar-default .navbar-brand{        margin-left: 0px;
+        margin-right: 1em !important;}
+      .facilitycardcontent {
+    height: 54% !important;
+    bottom: 27px !important;
+}
+  .offertab ul.nav-tabs{ margin-left:0px !important;
+        justify-content: center;
+        gap: 3px;
+    }
+  .offertab ul.nav-tabs li{ 
+            width: 48%;
+        display: grid;
+  }
+  section.new-our-offers.our-offers.about-us {
+    margin-top: 1rem!important;
+}
+.new-our-offers.our-offers div#myTabContent .tab-content .row.my-5{
+    margin-top: 0rem!important;
+    margin-bottom: 1rem!important;
+    padding-top: 0rem!important;
+}
+section.rooms-info-block.gurgaon-hotel-facilities {
+    margin-top: 4rem !important;    margin-bottom: 4rem !important;
+}
+.icon-box.icon-box-body {
+    bottom: 25px !important;
+}
+  .offertab ul.nav-tabs li button{ line-height: 15px; padding: 8px;}
+    .contact-icons{ margin-top:20px;}
+       section.search-content.new-pc-block{ transform:translate(0, 180px) !important}
+    .winter-box .winter-box-content .winter-box-para{ font-size: 15px;}
+     .navbar .nav li .dropdown-menu{  min-width: 85px;}
+     .menu1 li ul.inner_menu{ position:relative !important;}
+    .navbar .nav li:hover .dropdown-menu{margin:8px 0px;}
+    .menu1 li ul.inner_menu{ top:30px; z-index:1 !important;}
+    .menu1 li ul.inner_menu {
+    position: relative;
+    left: 10px !important;
+    top: 0;}
+    .menu1 .inner_menu li:last-child{ border-bottom:none;}
+    .menu1 .inner_menu{    height: auto;
+    min-width: 185px !important;
+    width: 185px !important;
+}
+    .ballroom-section{ margin-top:10em;}
+    .ballroom-section img{ margin-left:0px !important;}
+    .content-boxx.gurugram-para{    transform: translate(10px, 10px) !important;}
+    .ps-5 {
+        padding-left: 0rem !important;
+    }
+    footer{ margin-top:9em;}
+    /* .contactus-form, .icon-box.icon-box-body, .new-our-offers, .glryallcity {        margin-bottom: 10em !important;} */
+    .experience-section .swiper-3d .swiper-wrapper{ right:-20px !important;}
+    #offermodal .modal-dialog{width:483px;margin: 0 auto;max-width:100%}
+
+    .diwali-offer{display: none;}
+
+    .diwali-offer-mobile{display: block;}
+
+}
+
+
+
+@media only screen and (min-width:1024px) {
+
+    .dine-listing-block:nth-child(2n) .content {
+
+        margin-left: 0;
+
+        margin-right: -160px
+
+    }
+
+    .dine-listing-block:nth-child(2n) .content::before {
+
+        right: -12px;
+
+        left: 0
+
+    }
+
+    .dine-listing-block:nth-child(2n) .image-column {
+
+        order: 2
+
+    }
+
+}
+
+
+
+.offers-main-section .dine-service-block .sec-title {
+
+    line-height: 30px;
+
+    font-size: 26px
+
+}
+
+
+
+.offers-main-section .dine-service-block .content {
+
+    min-height: 360px;
+
+    padding: 25px
+
+}
+
+
+
+.ui-widget.ui-widget-content {
+
+    z-index: 999 !important
+
+}
+
+.navbar-toggle {
+
+    position: relative;
+
+    float: left;
+
+}
+
+
+
+@media (max-width:767px) {
+    .header_booking_engine{ width:100% !important;}
+    .booking-form-section{ z-index: 11; width:100% !important;}
+    .banner-section { margin-top: 84px }
+    .book-now-headerr { font-size: 13px;position: absolute !important; right: 0px; top: 20px; background: #000 !important; border-radius: 0; padding: 6px 7px;
+
+    color: #fff;
+
+    border: 1px solid #fff !important;
+
+    border-color: #fff !important;
+
+}
+.mobile-center-items .footer-link {
+    text-align: center;
+}
+    .mobile-center-items .footer-link img {
+        display: block;
+        position: static;
+        margin: auto;
+    }
+    footer h4{
+        text-align: center;
+    }
+.footer-link, .ftr-location{
+    padding-left: 0;
+}
+    .banner-section::after {
+
+        background: rgba(0, 0, 0, .3);
+
+    position: absolute;
+
+    z-index: 1;
+
+    height: calc(100% - 0px);
+
+    width: 100%;
+
+    margin: auto;
+
+    left: 0;
+
+    top: 0;
+
+    content: '';
+
+    }
+
+    .navbar-default .navbar-collapse,
+
+    .navbar-default .navbar-form {
+
+        background: rgba(0, 0, 0, .7)
+
+    }
+
+    .mobile-video {
+
+        display: block
+
+    }
+
+    .navbar-nav {
+
+        display: inline;
+
+        margin: 10px 15px 0
+
+    }
+
+    .enqiure-inner,
+
+    .service-block-inner .btn {
+
+        margin-bottom: 20px
+
+    }
+
+    .navbar-nav>li>a {
+
+        padding-left: 0;
+
+        padding-right: 0
+
+    }
+
+    .navbar-default .navbar-brand {
+
+        display: inline;
+
+        padding-left: 0
+
+    }
+
+    .navbar-toggle {
+
+        margin-top: 22px;
+
+        margin-right: 0
+
+    }
+
+    .navbar-default .navbar-toggle:focus,
+
+    .navbar-default .navbar-toggle:hover {
+
+        background-color: #000
+
+    }
+
+    .navbar-default .navbar-toggle {
+
+        border-color: #fff
+
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+
+        background-color: #000;
+
+    }
+
+    .navbar-default .navbar-nav .dropdown-menu>li>a {
+
+        color: red;
+
+        background-color: #ccc;
+
+        border-radius: 4px;
+
+        margin-top: 2px
+
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+
+        color: #333
+
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+
+        background-color: #ccc
+
+    }
+
+    .navbar-nav .open .dropdown-menu {
+
+        border-bottom: 1px solid #fff;
+
+        border-radius: 0
+
+    }
+
+    .dropdown-menu {
+
+        padding-left: 10px
+
+    }
+
+    .dropdown-menu .dropdown-menu {
+
+        padding-left: 20px
+
+    }
+
+    .dropdown-menu .dropdown-menu .dropdown-menu {
+
+        padding-left: 30px
+
+    }
+
+    li.dropdown.open {
+
+        border: 0 solid red
+
+    }
+
+    .banner-img {
+
+        min-height: 410px;
+
+        object-fit: cover
+
+    }
+
+    .content-section {
+
+        position: absolute;
+
+        top: 180px
+
+    }
+
+    .content-section small {
+
+        font-size: 1.5rem;
+
+        display: inline-block;
+
+        width: 100%;
+
+        text-align: center
+
+    }
+
+    .content-section h1 {
+
+        font-size: 2.5rem;
+
+        text-align: center
+
+    }
+
+    .content-section h1 br,
+
+    .custom-form-outer-div.btn-div span,
+
+    .owl-theme .owl-nav {
+
+        display: none
+
+    }
+
+    .banner-list {
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-top: 5px
+
+    }
+
+    .banner-list li a {
+
+        width: 90px;
+
+        height: 90px;
+
+        margin: 0 1px
+
+    }
+
+    .enqiure-inner {
+
+        margin-top: 15px;
+
+        padding: 10px 15px
+
+    }
+
+    .custom-form-outer-div .input-group-addon,
+
+    .enqiure-inner .form-control {
+
+        padding: 6px
+
+    }
+
+    .custom-form-outer-div {
+
+        width: 50% !important;
+
+        height: auto !important
+
+    }
+
+    .custom-form-outer-div.btn-div,
+
+    .custom-form-outer-div.optional-div,
+
+    .modal-content .enqiure-inner .custom-form-outer-div {
+
+        width: 100% !important
+
+    }
+
+    .about-us {
+
+        padding: 0 0 40px;
+        margin-bottom:-50px;
+            z-index: 99;
+    position: relative;
+
+    }
+
+    .about-us h2,
+
+    .gallery-section h2,
+
+    .rooms-info-block h2,
+
+    .services-block h2,
+
+    .testimonials h2 {
+
+        margin: 10px 0;
+
+        font-size: 24px;
+
+        color: #000;
+
+        text-align: center
+
+    }
+
+    .about-us h4,
+
+    .gallery-section h4,
+
+    .rooms-info-block h4,
+
+    .services-block h4,
+
+    .testimonials h4 {
+
+        text-align: center;
+
+        font-size: 22px;
+
+        color: #000
+
+    }
+
+    .min-h-5 {
+
+        min-height: 100px
+
+    }
+
+    .about-us img {
+
+        margin: 10px 0 0;
+
+        width: 100%!important;
+
+        max-width: 100%!important;
+
+
+
+    }
+
+    .res-no-margin {
+
+        margin-top: 0 !important
+
+    }
+
+    .res-text-center {
+
+        text-align: center !important
+
+    }
+
+    .image img {
+
+        min-height: 250px;
+
+        margin-bottom: 15px
+
+    }
+
+    .contactus-form,
+
+    .icon-box.icon-box-body {
+
+        text-align: center
+
+    }
+
+    .gallery-section,
+
+    .offers-section,
+
+    .rooms-info-block,
+
+    .services-block {
+
+        padding: 35px 0
+
+    }
+
+    .elementor-602 .elementor-element.elementor-element-4fa77851 {
+
+        padding: 0 !important
+
+    }
+
+    .elementor-602 .elementor-element.elementor-element-5e1344a4>.elementor-widget-container {
+
+        margin: 0 !important
+
+    }
+
+    .inner-testimonial {
+
+        height: auto
+
+    }
+
+    .owl-carousel.testimonial-slider .owl-item p {
+
+        margin-top: 20px
+
+    }
+
+    .width-7 {
+
+        width: 100%
+
+    }
+
+    .room-main-info {
+
+        width: 100%;
+
+        position: relative;
+
+        bottom: auto;
+
+        left: auto;
+
+        margin-top: 5px
+
+    }
+
+    .room-main-info.right-block {
+
+        left: auto;
+
+        right: auto
+
+    }
+
+    .main-facilities li {
+
+        width: 100%;
+
+        border-right: 0;
+
+        border-bottom: 1px solid #dedede
+
+    }
+
+    .dine-service-block .content {
+
+        min-height: 250px;
+
+        padding: 10px;
+
+        margin-left: 0;
+
+        margin-top: -120px;
+
+        margin-bottom: 20px
+
+    }
+
+    .res-pull-left {
+
+        float: left
+
+    }
+
+    .pad-65 {
+
+        padding: 15px 15px 35px
+
+    }
+
+    .service-block-inner h3,
+
+    .service-block-inner h6,
+
+    .service-block-inner p {
+
+        text-align: left
+
+    }
+
+    .service-block-inner h6 {
+
+        margin-top: 15px;
+
+        font-size: 30px
+
+    }
+
+    p.voffset-bottom2.text-justify {
+
+        text-align: justify !important
+
+    }
+
+    .wow {
+
+        animation-name: none !important;
+
+        visibility: visible !important
+
+    }
+
+}
+
+
+
+@media (min-width:768px) {
+
+    /* ul.nav li:hover>ul.dropdown-menu {
+
+        display: block
+
+    } */
+
+    #navbar {
+
+        text-align: center
+
+    }
+
+}
+.banner-img {
+    display: inline-block;
+    width: 91% !important;
+    height: 70vh !important;
+}
+
+
+/* 🎯 Target iPad Air & Pro (Portrait Mode) */
+@media screen and (device-width: 820px) and (orientation: portrait),
+       screen and (device-width: 834px) and (orientation: portrait),
+       screen and (device-width: 1024px) and (orientation: portrait) {
+        .swim1{ transform: translateX(200px) translateY(-316px) !important}
+        
+        .conf-hall{transform:translateX(250px) translateY(-327px) !important}
+        .roof-ton{transform: translateX(200px) translateY(-335px) !important}
+        .ball-room1 {
+            transform: translateX(-525px) translateY(-320px) !important;
+        }
+        .electera{transform: translateX(-500px) translateY(-280px) !Important}
+        .Gymnas{transform: translateX(-500px) translateY(-308px) !important;}
+        .meeting_ev .room-main-info{ height:100% !important;}
+        .m3m{transform: translateX(-550px) translateY(-308px) !important;}
+   .dlf-golf{ transform: translateX(-550px) translateY(-280px) !Important}
+        .auto-width-btn {
+            display: inline-block;
+            max-width: 60%; text-align:center;
+            }
+    .banner-img, .banner_img_room, .banner-img-home  {
+        height: 56vh !important;
+    }
+}
+
+/* 🎯 Target iPad Air & Pro (Landscape Mode) */
+@media screen and (device-width: 1024px) and (orientation: landscape),
+       screen and (device-width: 1180px) and (orientation: landscape),
+       screen and (device-width: 1194px) and (orientation: landscape),
+       screen and (device-width: 1366px) and (orientation: landscape) {
+        .oftennabvar .navbar-toggler {
+            top: -53px !important;
+        }
+        .other-page .navbar-toggler {
+            margin-top: 75px !important;
+        }
+        header .navbar-toggler {
+            margin-top: 15px !important;
+        }
+      
+        .electera{transform: translateX(-550px)translateY(-262px) !important}
+        .Gymnas{transform: translateX(-513px)translateY(-259px) !important}
+        .dlf-golf{transform:translateX(-650px) translateY(-250px) !important;}
+        .conf-hall{transform: translateX(250px) translateY(-223px) !important}
+        .roof-ton{transform:translateX(200px) translateY(-210px) !important;} 
+        .roof-ton{ height:100%;}
+        .ball-room1{transform: translateX(-630px) translateY(-219px) !important}
+        .meeting_ev .room-main-info{ height:100% !important;}
+        .meeting_ev .room-main-info.lt{ height:105% !important;}
+    .banner-img, .banner_img_room, .banner-img-home  {
+        height: 56vh !important;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:1023px) {
+    .ball-room1{ transform:translateX(-525px) translateY(-285px) !important;}
+    .electera{transform: translateX(-450px) translateY(-280px) !Important}
+    .Gymnas{transform: translateX(-500px) translateY(-308px) !important;}
+    .m3m {transform: translateX(-550px) translateY(-308px) !important;}
+    .dlf-golf{ transform: translateX(-550px) translateY(-280px) !Important}
+    .h95b{ height:95% !important}
+    .proprty-hdr .nav>li{ width:100%}
+    .mob_design{ z-index:99}
+    .meeting_ev { margin-bottom:5em;}
+    .btm_n89{ bottom:-89% !important}
+    .btm_n89 .btn-primary-hoften{ margin:3px;}
+    .room-main-info.right-block {
+        left: auto;
+        right: -22px;
+        bottom: -73%;
+        height: 100% !important;
+    }
+
+    .contact-us h2{ margin-top:20px;}
+    .banner-img{ width:89% !important;}
+  .room-main-info{ width:65% !important;}
+    .room-main-info p{ line-height:21px;}
+    .meeting_ev .room-block img{ height:400px !important;}
+    .mob1_none {
+        display: none !important;
+    }
+    .other-page .navbar-collapse.show{ right:0px; left:auto !important}
+    .other-page .navbar-toggler[aria-expanded="true"]{ right:12em; left:auto !important}
+
+    .navbar .nav li .dropdown-menu li a:hover, .navbar .nav li .dropdown-menu li a:focus
+    { background-color: transparent;}
+    .banner_img_room, .banner-img  { width:89% !important;}
+    .navbar-toggle {
+
+        float: right;
+
+        padding: 9px 10px;
+
+        margin-top: 22px;
+
+        margin-right: 0;
+
+        margin-bottom: 8px;
+
+        background-color: transparent;
+
+        background-image: none;
+
+        border: 1px solid transparent;
+
+        border-radius: 4px
+
+    }
+
+    .nav>li,
+
+    .navbar-header {
+
+        float: none
+
+    }
+
+    .navbar-collapse.collapse {
+
+        display: none !important
+
+    }
+
+    .navbar-collapse.collapse.show {
+
+        display: block !important
+
+    }
+
+    .collapse.in {
+
+        display: block
+
+    }
+
+    .collapse {
+
+        display: none
+
+    }
+    .new-our-brands .inner{ left:-36px;}
+
+    .other-page .navbar-toggler {
+        top: 0px !important;
+        right: 32px;
+    }
+
+    .mob_design .nav>li{ width:100%;}
+    .nav>li {
+
+        position: relative;
+
+        display: inline-block;
+
+        /* width: 100%; */
+
+        text-align: left
+
+    }
+
+    .navbar-nav {
+
+        display: inline;
+
+        margin: 10px 15px 0
+
+    }
+
+    .navbar-right .dropdown-menu {
+
+        right: auto;
+
+        left: 0
+
+    }
+
+    .navbar-nav .open .dropdown-menu {
+
+        position: static;
+
+        float: none;
+
+        width: auto;
+
+        margin-top: 0;
+
+        background-color: transparent;
+
+        border: 0;
+
+        -webkit-box-shadow: none;
+
+        box-shadow: none
+
+    }
+
+    .content-section {
+
+        top: 25%
+
+    }
+
+    .banner-list {
+
+        width: 100%;
+
+        margin-top: 5px
+
+    }
+
+    .about-us img,
+
+    .contact-us img,
+
+    .offers-section .image,
+
+    .rooms-info-block img {
+
+        margin-bottom: 30px
+
+    }
+
+    .min-h-5 {
+
+        min-height: 300px
+
+    }
+
+    .dine-service-block .content {
+
+        min-height: 250px;
+
+        padding: 10px;
+
+        margin-left: 0;
+
+        margin-top: -120px;
+
+        margin-bottom: 20px
+
+    }
+
+    .res-pull-left {
+
+        float: left
+
+    }
+
+    .pad-65 {
+
+        padding: 35px
+
+    }
+
+    .service-block-inner h6 {
+
+        margin-top: 15px
+
+    }
+
+    .service-block-inner .btn {
+
+        margin-bottom: 20px
+
+    }
+
+}
+
+.experience-section .swiper-slide.swiper-slide-active {
+
+    opacity: 1;
+    /* margin: 50px; */
+    transform: scale(1);
+
+}
+
+.experience-section .swiper-slide-active img {
+    /* margin-left: 500px; */
+    max-width: 140%;
+
+    height: 60vh!important;
+
+    object-fit: cover;
+    margin-top:0px;
+
+    width: 140%;
+    transform: translate(-100px, 0px) !important;
+
+}
+
+
+
+.rrr{
+
+    
+
+    color: #3b3b3b;
+
+    line-height: 24px;
+
+}
+
+@media (min-width:768px) and (max-width:1180px) {
+  
+    .winter-box-btn .box-btn.know-more{
+        font-size: 12px;
+        padding: 3px 2px;
+    }
+    header .navbar-toggler{ margin-top:15px;}
+}
+@media (min-width:1024px) and (max-width:1099px) {
+   
+
+
+    .nav>li>a {
+
+        padding: 18px 8px
+
+    }
+
+    .navbar-nav {
+
+        margin: 10px 0 0 5px
+
+    }
+
+    .content-section {
+
+        top: 25% !important;
+
+    }
+
+    .banner-list {
+
+        width: 100%;
+
+        margin-top: 35px
+
+    }
+
+    .about-us img,
+
+    .contact-us img,
+
+    .offers-section .image,
+
+    .rooms-info-block img {
+
+        margin-bottom: 30px
+
+    }
+
+    .min-h-5 {
+
+        min-height: 300px
+
+    }
+
+}
+
+
+
+div#quickbook-widget .MbsSearchWidget .searchBtn {
+
+    background-color: #000 !important
+
+}
+
+.Configure-quickBook-Widget .MbsSearchWidget .searchBtn{
+     background-color: #002d62 !important
+}
+
+@media screen and (max-width:767px) {
+
+    .custom-form-outer-div {
+
+        width: 100% !important;
+
+        height: auto !important
+
+    }
+
+    div#quickbook-widget .MbsSearchWidget.dayUseSearch {
+
+        gap: 0 !important
+
+    }
+
+    .wow {
+
+        animation-name: none !important;
+
+        visibility: visible !important
+
+    }
+
+    .offers-main-section .dine-service-block .content .sec-title,
+
+    .offers-main-section .dine-service-block .content p,
+
+    .rooms-page .room-block .room-main-info h3 {
+
+        text-align: left
+
+    }
+
+    .rooms-page .room-block .room-main-info p {
+
+        text-align: justify
+
+    }
+
+    .navbar-default .navbar-nav>.active>a::after {
+
+        position: absolute;
+
+        content: "";
+
+        height: 2px;
+
+        width: 60px;
+
+        background-color: #fff;
+
+        bottom: 6px;
+
+        left: 0;
+
+        right: auto;
+
+        text-align: center;
+
+        margin: auto
+
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+
+        color: #fff !important
+
+    }
+
+    .rooms-page .voffset-9 {
+
+        margin-top: 26px
+
+    }
+
+    .offers-main-section .dine-service-block .content {
+
+        padding: 20px 0 0
+
+    }
+
+}
+
+
+
+.navbar-default .navbar-nav>li>a,
+
+.f-links li,
+
+.f-links li a,
+
+.footer-link {
+
+    font-family: 'VERDANA' !important
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:833.98px) and (max-width:1279.98px){
+
+    .banner-img {
+
+    display: inline-block;
+
+    width: calc(100% - 0);
+
+    height: 90vh;
+
+    object-fit: cover;
+
+    padding-top: 80px;
+
+}
+
+.new-rj-block .global-heading{
+
+    margin-top: 3rem !important;
+
+}
+
+}
+
+
+
+@media screen and (max-width:767px){
+
+    .banner-img {
+
+    padding-top: 20px;
+
+}
+.offer_sec .inner{ position:relative !important}
+.brand-new-content {position:relative !important}
+.experience-section .inner {
+
+    padding: 1rem;
+
+    width: 180px;
+
+    height: 173px;
+
+    bottom: 30px;
+
+    left: 50px;
+
+    right: 0;
+
+}
+
+.experience-section .inner a {
+
+    font-size: 21px;
+
+    padding-top: 1rem;
+
+}
+
+.experience-section .inner .category {
+
+    margin-bottom: 1rem;
+
+}
+
+.experience-section .swiper-slide img {
+
+    height: 400px!important;
+
+    object-fit: cover!important;
+
+}
+
+
+
+.new-our-brands .inner {
+
+    padding: 1rem;
+
+    width: 135px !important;
+
+    height: calc(100% - 0px) !important;
+
+    left: 0px!important;
+
+}
+
+.new-our-brands .category-image img {
+
+    width: 60px;
+
+    height: auto!important;
+
+}
+
+/* .new-bg-block .brand-new-content .our-brand-paragraph {
+
+    font-size: 19px;
+    font-family: 'VERDANA !important';
+    line-height: 15px;
+
+} */
+
+} 
+
+
+
+.f-cat {
+
+    margin-bottom: 3rem;
+
+}
+
+      select.form-control {
+
+    display: block;
+
+    width: 100%;
+
+    height: 42px;
+
+    padding: 6px 12px;
+
+    background-image: none;
+
+    border: 2px solid rgb(74 74 74) !important;
+
+    color: rgb(74 74 74) !important;
+
+    border-radius: 0px;
+
+  }
+
+
+
+      .filter-cat-results .f-cat {
+
+/*  opacity: 0;*/
+
+  display: none;
+
+}
+
+.filter-cat-results .f-cat.activee{
+
+/*  opacity: 1;*/
+
+  display: block;
+
+}
+
+
+
+      .modal-header {
+
+        display: flex !important;
+
+        justify-content: end !important;
+
+        padding: 0 1rem;
+
+      }
+
+
+
+      .btn-close {
+
+        border: none;
+
+        background-color: white;
+
+        font-size: 2.8rem;
+
+      }
+
+      #reviewModalBtn{
+
+        display: none!important;
+
+      }
+
+      .gal-slider1 .test-item span i {
+
+    color: #000;
+
+}
+
+.gal-slider1 .test-item span{
+  display: flex;
+  margin-block: 1rem;
+  margin-top: 1rem;
+}
+
+.gal-slider1 .owl-nav button {
+
+    height: 30px;
+
+    width: 30px;
+
+    background-color: #000!important;
+
+}
+
+.gal-slider1 .owl-nav button span{
+
+          font-size: 35px;
+
+    line-height: 25px;
+
+    color: #fff;
+
+         }
+
+
+
+.gal-slider1 .owl-nav button:hover{
+
+   background-color: #000!important;
+
+}
+
+
+
+.gal-slider1 .test-item span i{
+
+  margin: 0 1px;
+
+}
+
+.gal-slider1 .testimonials_inner_profile {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: start;
+
+}
+
+.gal-slider1 .testimonials_inner_profile a img{
+
+        width: 25px!important;
+
+      }
+
+     
+
+.gal-slider1 .test-item {
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    list-style: none;
+
+    background: white;
+
+    margin: 0;
+
+    border-radius: 4px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    min-height: 335px;
+
+    align-items: start;
+
+    text-align: left;
+
+    height: 100%;
+
+}
+
+      .first_loading_animation{
+
+        display:none;
+
+      }
+
+
+
+      .services-block {
+
+    padding: 0 !important;
+
+}
+
+
+
+.about-us {
+
+    background-color: #fff;
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 0 !important;
+    position: relative;
+    z-index: 99;
+
+}
+
+/* .search-content.about-us{
+
+    margin-top: -256px;
+
+} */
+
+.slide-in + .about-us{margin-top: -20px;}
+
+.new-hover-event .onhover-text{
+
+  display: none;
+
+}
+
+
+
+.new-hover-event:hover .onhover-text{
+
+  display: block;
+
+}
+
+
+
+header{
+
+  background-color: #fff!important;
+
+}
+
+
+
+
+
+.contact-us {
+
+    background-color: #fff;
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 0 !important;
+
+}
+
+
+
+.slide-in + .contact-us{margin-top: -20px;}
+
+.new-hover-event .onhover-text{
+
+  display: none;
+
+}
+
+.tab-content.special-offers.about-us.new-rj-block {
+
+    display: inline-block;
+
+    border: 1px solid rgb(74 74 74) !important;
+
+    border-top: none;
+
+    padding: 2rem;
+
+    height: 100%;
+
+}
+
+.new-our-offers .nav-tabs {
+
+    margin: 30px 0 0px;
+
+}
+
+
+
+.new-hover-event:hover .onhover-text{
+
+  display: block;
+
+}
+
+
+
+header{
+
+  background-color: #fff!important;
+
+}
+
+
+
+@media(max-width:767px){
+
+  .new-hover-event .onhover-text{
+
+  display: none;
+
+}
+
+
+
+.new-hover-event:hover .onhover-text{
+
+  display: none;
+
+}
+
+}
+
+
+
+
+
+.corporatebannerbutton:hover {
+
+  border: 1px solid #fff !important;
+
+    color: #fff !important;
+
+    transition: .4s !important;
+
+    background: #000 !important;
+
+}
+
+
+
+
+
+
+
+
+
+#cat-hoften .text-center {
+
+  width: 57%;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  #cat-hoften .text-center {
+
+  width: 100%;
+
+}
+
+}
+
+@media only screen and (max-width: 5760px) {
+
+    .corporatebannerbutton {
+
+       bottom:330px
+
+      }
+
+      }
+
+@media only screen and (max-width: 3840px) {
+
+    .corporatebannerbutton {
+
+       bottom:320px
+
+      }
+
+      }
+
+@media only screen and (max-width: 2560px) {
+
+    .corporatebannerbutton {
+
+       bottom:300px
+
+      }
+
+      }
+
+@media only screen and (max-width: 1920px) {
+
+.corporatebannerbutton {
+
+   bottom:250px
+
+  }
+
+  }
+
+@media only screen and (max-width: 1680px) {
+
+    .corporatebannerbutton {
+
+       bottom:200px
+
+      }
+
+      }
+
+@media only screen and (max-width: 1440px) {
+
+        .corporatebannerbutton {
+
+           bottom:170px
+
+          }
+
+          }
+
+@media only screen and (max-width: 1280px) {
+
+            .corporatebannerbutton {
+
+               bottom:170px
+
+              }
+
+              }          
+
+@media only screen and (max-width: 1024px) {
+
+                .corporatebannerbutton {
+
+                    top: 18em !important;
+
+                  }
+
+                  }
+
+
+
+/* .content-section {
+
+    position: absolute;
+
+    z-index: 9;
+
+    left: 0;
+
+    right: 0;
+
+    margin: 0 auto;
+
+    top: 40%;
+
+} */
+
+.innerbutton {
+
+    padding: 9px !important;
+
+    line-height: 13px;
+
+    bottom: 150px;
+
+    left: 47%;
+
+    transform: translateX(-43%);
+
+    right: auto;
+
+    top:auto;
+
+    text-align: center;
+
+    line-height: 1.42857143;
+
+    margin-left: 150px;
+
+}                 
+
+/* 
+
+.enqiure-inner-book-now {
+
+    display: inline-block;
+
+    width: 100%;
+
+    background: #fff;
+
+    padding: 10px 25px 30px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+
+    margin: -70px 0 50px;
+
+    position: relative
+
+} */
+
+#archives{ text-align:left;}
+div#quickbook-widget .MbsSearchWidget .addRoomBtn{ padding-bottom:0px !important}
+ .commerce-blog-sidebar{ margin-top:10em}
+.content-boxx{ text-align:center !important;}
+.content-boxx2{ text-align:left !important;}
+.search-content.about-us.new-rj-block .content-boxx {
+
+    font-size: 13px;
+    color:#3b3b3b;
+    font-family: 'Verdana' !important;
+    margin-top: 5px;
+
+}
+
+/* section.search-content.about-us-main-footer h2{
+   
+    font-size: 25px;
+    color:#3b3b3b;
+} */
+section.search-content.new-rj-block .content-boxx{
+   
+    font-size: 13px;
+    color:#3b3b3b;
+    margin-left: 50px;
+    width: 100%;
+    font-family: 'Verdana' !important;
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+section.search-content.new-rj-block.gurgaon-contact .content-boxx{
+   
+    font-size: 13px;
+    color:#3b3b3b;
+    margin-left: 50px;
+    width: 100%;
+    font-family: 'Verdana' !important;
+    margin-top: 5px;
+    line-height: 25px;
+}
+.content-boxx {
+
+    font-size: 13px;
+
+    line-height: 24px;
+
+    color:#535553;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+
+    font-weight: 250;
+
+}
+/* .winter-sec{
+
+} */
+
+
+.global-heading-about {
+
+    margin-top: 15px;
+    text-align: left;
+
+    color: #3b3b3b !important;
+
+    font-size: 30px !important;
+
+    font-family: 'Agatho' !important;
+
+    text-transform: capitalize !important;
+
+}
+
+
+
+.about-us-inner h1:after,
+
+.about-us-inner h2:after,
+
+.about-us-inner h4:after{
+
+    transition: width .3s;
+
+    left: 0;
+
+    right: 0;
+
+    margin: auto;
+
+    bottom: -5px;
+
+    height: 2px;
+
+    width: 60px!important;
+
+    background: #3b3b3b !important;
+
+}
+
+.offers-text-home {
+
+    /* text-transform: uppercase; */
+
+    /* font-weight: 600; */
+
+    font-family: 'verdana' !important;
+
+    font-size: 13px !important;
+
+    color: #000;
+
+}
+
+.commerce-blog-link {
+
+    background: #002d62 !important;
+
+    border-radius: 0 !important;
+
+    padding: 8px 20px !important;
+
+    color: #fff !important;
+
+    border:  #00a3e0 !important;
+
+    position: relative !important;
+
+    font-size: 13px !important;
+
+    font-family: 'VERDANA' !important;
+
+    text-transform: capitalize;
+
+}
+
+
+.commerce-blog-link.gurugram-hotel {
+
+    background: #000000 !important;
+
+    border-radius: 0 !important;
+
+    padding: 8px 20px !important;
+
+    color: #fff !important;
+
+    border:  #000000 !important;
+
+    position: relative !important;
+
+    font-size: 13px !important;
+
+    font-family: 'VERDANA' !important;
+
+    text-transform: capitalize;
+
+}
+
+.nnnn{
+
+    font-family: 'VERDANA' !important;
+
+}
+
+.inline-block{
+
+    font-size: 13px !important;
+
+    font-family: 'VERDANA' !important;
+
+    color: #fff !important;
+
+    font-weight: 400 !important;
+
+    line-height: 24px !important;
+
+}
+
+.commerce-blog-link .inline-block-read{
+
+    background: #000 !important;
+
+    border-radius: 0 !important;
+
+    padding: 8px 20px !important;
+
+    color: #fff !important;
+
+    border:  #000 !important;
+
+    position: relative !important;
+
+    font-weight: 400 !important;
+
+    font-size: 13px !important;
+
+    font-family: 'VERDANA'
+
+}
+
+
+
+.archive-link {
+
+    display: block;
+
+    font-family: "VERDANA";
+
+    color: #3b3b3b;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    margin: 10px 0;
+
+  }
+
+  
+
+  a {
+
+    text-decoration: none;
+
+  }
+
+
+
+ .related-post-heading {
+
+   margin-top: 7; color: black;font-size: 9px; text-transform: Uppercase; font-family: 'VERDANA' !important;
+
+  font-weight: 600;
+
+
+
+  }
+
+  
+
+
+
+  .commerce-blog-link-hoften {
+
+    background: #000 !important;
+
+    border-radius: 0 !important;
+
+    padding: 8px 20px !important;
+
+    color: #fff !important;
+
+    border:  #000 !important;
+
+    position: relative !important;
+
+    font-size: 13px !important;
+
+    font-family: 'VERDANA' !important;
+
+    text-transform: capitalize;
+
+}
+
+
+
+.commerce-blog-link-hoften .inline-block-read{
+
+    background: #000 !important;
+
+    border-radius: 0 !important;
+
+    padding: 8px 20px !important;
+
+    color: #fff !important;
+
+    border:  #000 !important;
+
+    position: relative !important;
+
+    font-weight: 400 !important;
+
+    font-size: 13px !important;
+
+    font-family: 'VERDANA'
+
+}
+
+
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-hoften.current-item:before {
+
+    position: absolute;
+
+    content: "";
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    z-index: 1;
+
+    background: rgba(0, 0, 0, .1)
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info .info-title-hoften {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info1 .info-title-hoften {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info2 .info-title-hoften {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info3 .info-title-hoften {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+.jeg-elementor-kit.jkit-portfolio-gallery .row-item-info4 .info-title-hoften {
+
+    font-size: 26px;
+
+    color: #fff
+
+}
+
+
+
+.row-item:hover .row-item-info .info-title-hoften {
+
+    color: #000 !important
+
+}
+
+.row-item:hover .row-item-info1 .info-title-hoften {
+
+    color: #000 !important
+
+}
+
+.row-item:hover .row-item-info2 .info-title-hoften {
+
+    color: #000 !important
+
+}
+
+.row-item:hover .row-item-info3 .info-title-hoften {
+
+    color: #000 !important
+
+}
+
+.row-item:hover .row-item-info4 .info-title-hoften {
+
+    color: #000 !important
+
+}
+
+
+
+.btn-primary-hoften:hover::after,
+
+.darkHeader,
+
+header {
+
+    background: #000000
+
+}
+
+
+
+.btn-primary-hoften {
+
+    background: #000000 !important;
+    background-color: #000000 !important;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+
+.btn-primary-hoften:hover {
+
+    background: #000000 !important;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative
+
+}
+.gurgaon-acccc .search-content h4{
+
+    padding: 0!important;
+
+}
+
+.gurgaon-acccc .global-heading {
+
+    margin-top: 0!important;
+
+}
+
+/* .gurgaon-acccc .global-heading a{
+
+    font-size: 26px;
+
+} */
+.hoften-bg-image-section .jeg-elementor-kit.jkit-portfolio-gallery .row-item {
+
+       
+
+    -ms-flex: 0 0 33.3%;
+
+    -webkit-box-flex: 0;
+
+    flex: 0 0 33.3%;
+
+    max-width: 33.3%;
+
+}
+
+.neww-hoften-headerr {
+    z-index:11;
+
+    height: 100px;
+
+}
+
+.neww-hoften-headerr .navbar-brand > img {
+
+    height: auto;
+
+    margin-top: 1rem;
+
+    width: 127px;
+
+    filter: invert(0);
+
+}
+
+.neww-hoften-headerr header .navbar-toggler {
+
+    margin-top: 2rem;
+
+
+
+}
+
+.neww-hoften-headerr .btn.book-now-headerr {
+
+    margin-top: 1rem;
+
+}
+
+.neww-hoften-headerr {
+    height: 90px;
+    background-color: #bababa !important;
+
+}
+
+.oftennabvar{ background:transparent !important; box-shadow:none;}
+/* .alivaabvar{ box-shadow:none; background:transparent !important;} */
+.gurugram-dinign-pagee{
+
+    height: 80vh!important;
+
+    overflow: hidden!important;
+
+}
+
+.content-section-hoften .btn-primary:after{
+
+    width: 100%!important;
+    background: #000000!important;
+
+}
+
+.hoftenn-dining-pagee h1 a, .global-heading-1{
+
+ color: #000!important;
+
+}
+.testimonials_inner_profile img {
+    width: 50px;
+}
+/* .container.gurgaon-hotel .global-heading-gurgaon{
+    
+    transform: translate(0px, 0px) !important;
+} */
+ .container.gurgaon-hotel{
+
+    /* transform: translate(0px, -50px) !important; */
+    color: #00a3e0;
+ }
+.hoftenn-dining-pagee .btn-primary {
+
+    background: #000000!important;
+
+    border-radius: 0;
+
+    padding: 12px 25px;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    position: relative;
+
+}
+
+.booking-form-section.gurgaon-dining{
+    width: 100%;
+    /* transform: translateY(0px, -100px) !important; */
+    transition: transform 1.9s ease-in-out 0.5s;
+        /* transform: translate(10px, -100px) !important; */
+    }
+.booking-form-section.gurugram-offer{
+width: 100%;
+/* transform: translateY(0px, -100px) !important; */
+transition: transform 1.9s ease-in-out 0.5s;
+    /* transform: translate(10px, -100px) !important; */
+}
+.banner-search-btn .banner-search-btn-link img {
+    width: 16px;
+    /* filter: invert(); */
+    padding-top: 0;
+    top: -30px;
+    left: 12px;
+    position: relative;
+}
+
+.react-datepicker__input-container .form-control, #rooms-childs-input{ height:38px;}
+.banner-search-btn .banner-search-btn-link {
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    top: -5em;
+    position:relative;
+}
+.hght100{ height:100px;}
+.homenav{ z-index:1111;}
+.oftennabvar .navbar-toggler{ top:-27px;}
+.booking-toggle-btn[aria-label="Close booking form"] { bottom:9em; position:relative;}
+@media (max-width: 576px) {
+    div#quickbook-widget .MbsSearchWidget .dayUseDiv{z-index:11}
+    div#quickbook-widget .MbsSearchWidget.dayUseSearch .searchinOut.formGroup, div#quickbook-widget .MbsSearchWidget .formGroup  {
+        margin-bottom: 38px !important;
+        margin-top: 0;
+    }
+    div#quickbook-widget .MbsSearchWidget .formGroup .checkinDate {
+        margin-bottom: 30px !important;
+    }
+    div#quickbook-widget .MbsSearchWidget .dayUseDiv {
+        bottom: -16px !important;}
+}
+
+@media (max-width: 420px) {
+    .order-mob{ order:1; ;}
+    .ordermt2{ margin-top:2em}
+    .mtn-at1{ margin-top:-1em !important;}
+    .neww-hoften-headerr, .neww-aliva-headerr .homenav{ z-index:99;}
+    div#quickbook-widget .MbsSearchWidget .rdrCalendarWrapper.rdrDateRangeWrapper.openCal-top{ width:300px; overflow:auto;}
+    .mtn12{ margin-top:-8em !important;}
+    .experience-section{ margin-top:100px;}
+    .new-our-brands .category-image img{ margin-top:30px;}
+    .ball-room1{ margin-bottom:4em;}
+    footer h4 {
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 13px;
+        margin-top: 18px;
+    }
+    .contact_bnr .banner-img{ object-position:75% 10% !important;}
+    .other-page .navbar-toggler {
+      top: -15px !important; 
+    }
+.experience-slider .swiper-slide img {
+max-height: 100%;
+}
+.exp1 .experience-section { margin-top:10px !important;}
+}
+
+
+
+  @media screen and (max-width:767px){
+    .mobile-center-items{
+        text-align: center!important;
+    }
+    .f-links li {
+    margin-bottom: 3px;
+}
+footer {
+    margin-bottom: 0px;
+        padding: 15px 0 10px;
+
+}
+.footer-link{
+    margin-bottom: 6px;
+}
+.f-links {
+    column-count: 2;
+}
+    .banner-search-btn .banner-search-btn-link{ top:-8em;}
+    .navbar-collapse ul li.dropdown ul li{ margin-bottom:0px;}
+    .navbar .nav li .dropdown-menu li a:hover, .navbar .nav li .dropdown-menu li a:focus{ background:transparent;}
+
+    .contact_bnr .banner-img{ object-position: 86% 10%; }
+    header .navbar-toggler{ top:10em;}
+    .hght100 .navbar-toggler{ top:30px;}
+    .neww-hoften-headerr .navbar-toggler-icon{ display:block !important;}
+    .main_togle{ position:relative; z-index:999;}
+/* 
+    .neww-hoften-headerr .navbar-toggler{ top:4em;} */
+    .home-hdr-hght{ height:auto;}
+    .contact_bnr
+    section.banner-section {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 60vh !important;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    
+
+.i-amphtml-form .blog-reply-submit-button {
+
+    margin-left: 80px !important; 
+
+    width: 100px !important;
+
+    display: block !important;
+
+    font-family: VERDANA !important;
+
+    color: #FFFFFF !important;
+
+    background-color: #000 !important;
+
+    border-color: #000 !important;
+
+    font-size: 10px !important;
+
+    text-decoration: none
+
+}
+
+
+.container-footer .ftr-social-section {
+
+
+    width: 100%;
+
+    text-align:center ! important;
+
+    margin-top: 10px
+
+}
+.booking-form-section-inner{
+    
+    width: 100% ! important;
+    transform: translate(0px, -150px) !important;
+}
+.booking-form-section-inner-2{
+    
+    width: 100% ! important;
+    transform: translate(0px, -130px) !important;
+}
+.about-us.accomodation-main-gurugram{
+
+    width: 100% ! important;
+    transform: translate(0px, 0px) !important;
+}
+
+.about-us.accomodation-main-gurugram.accom-hoften .room-main-info{
+
+    width: 100% ! important;
+    transform: translate(0px, 80px) !important;
+}
+.about-us.accomodation-main-gurugram.accom-hoften .container{
+
+    width: 100% ! important;
+    transform: translate(0px, 0px) !important;
+}
+
+.about-us.accomodation-main-gurugram.accom-hoften .container .deluxe-room{
+
+    width: 100% ! important;
+    transform: translate(0px, 100px) !important;
+}
+.deluxe-twin-room{
+
+    width: 100% ! important;
+    transform: translate(0px, 150px) !important;
+}
+.outer-room-info-block{
+    width: 100% ! important;
+    transform: translate(0px, 200px) !important;
+}
+.accomo2{    transform: translate(0px, -50px) !important;}
+.about-us.accomodation-main.new-hoften-acco-fac{
+
+    transform: translate(0px, 200px) !important;
+}
+
+.outer-room-info-block.gurgaon-suite{
+
+    width: 100% ! important;
+    transform: translate(0px, 0px) !important;
+}
+.outer-room-info-block.gurgaon-suite .room-block{
+
+    width: 100% ! important;
+    transform: translateY(-230px) !important;
+}
+.container-footer {
+    width: 100%;
+    text-align:center ! important;
+
+    margin-top: 10px
+
+}
+
+/* .container-footer .row.footer-head{
+
+    margin-left: 20px
+
+} */
+ 
+.banner-img-home, .banner-img, .banner_img_room {
+
+    display: inline-block;
+
+    width: calc(80% - 0px) !important;
+
+    height: 80vh;
+
+    object-fit: cover;
+
+    padding-top: 20px;
+}
+.banner-img {
+
+    display: inline-block;
+
+    width: calc(100% - 0px);
+
+    height: 90vh;
+
+    object-fit: cover;
+
+    padding-top: 20px;
+}
+
+.banner-section .social-icon-banner{
+
+    
+    transform: translate(5px, -102px) !important;
+
+}
+.banner-section .updown-arrow{
+
+    
+    transform: translate(5px, -102px) !important;
+
+}
+    /* .brand-new-content {
+
+        position: absolute;
+
+        width: 50%;
+
+        text-align: left;
+
+        right: 20px;
+
+        transform: translateY(-50%);
+
+        display: block;
+
+        position: absolute;
+
+        top: 50%;
+
+
+        text-align: left;
+
+    } */
+
+    .jeg-elementor-kit.jkit-portfolio-gallery .row-item {
+
+       
+
+        -ms-flex: 0 0 55%;
+
+        -webkit-box-flex: 0;
+
+        flex: 0 0 50%;
+
+        max-width: 50%;
+
+    }
+
+    .new-room-image{
+
+        width: 100%!important;
+
+    }
+
+    .room-main-info.right-block {
+
+        left: 0;
+
+        right: 0;
+
+        width: 94% !important;
+
+        max-width: 100% !important;
+
+        transform: translate(10px, 80px) !important;
+
+    }
+    
+.experience-section .swiper-slide.swiper-slide-active {
+
+    opacity: 1;
+    /* margin-top: -50px; */
+    margin-left: 125px;
+    transform: scale(0.8);
+    /* transform: translate(10px, -80px) !important; */
+
+}
+
+.experience-section .swiper-nav {
+
+    position: absolute;
+
+    bottom: 180px;
+
+    right: 35%;
+
+}
+.gallery-hoften-image{
+    margin: 0px;
+    width: 360px !important;
+    height: 300px !important;
+}
+/* .inner-img-section.hoften-gallery{
+    width: 360px !important;
+    height: 460px !important;
+} */
+.experience-section .inner{
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: -130px;
+
+    right: 0;
+
+    /* text-align: center; */
+
+    background-color: #000000d4;
+
+    display: table;
+
+    padding: 2rem;
+
+    width: 200px;
+
+    height: auto;
+
+
+
+}
+/* .offer_sec .swiper-slide-active img { margin-left: 16em !important;} */
+.offer_sec{ margin-top:4em;}
+.offer_sec p{ padding:10px;}
+.experience-section .swiper-slide-active img {
+    /* margin-left: 500px; */
+    max-width: 140%;
+
+    height: 360px;
+
+    object-fit: cover;
+
+    width: 140%;
+    transform: translate(-100px, 0px) !important;
+
+}
+.our-offers.about-us.event-hoften{
+    
+    width: 100%!important;
+    transform: translate(-30px, 0px) !important;
+}
+.our-offers.about-us.event-hoften h3{
+    
+    width: 90%!important;
+    text-align: center;
+}
+.our-offers.about-us.event-hoften p{
+    
+    width: 90%!important;
+    transform: translate(50px, 0px) !important;
+}
+/* .conference-hall{
+
+} */
+ 
+.our-offers.about-us.event-hoften .conference-section{
+    
+    width: 100%!important;
+    transform: translate(0px, 160px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .custom-img-responsive{
+    
+    width: 100%!important;
+    transform: translate(25px, 0px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .confer-hall{
+    
+    width: 100%!important;
+    transform: translate(25px, 0px) !important;
+}
+
+.gurugram-hotel-offer-main .container .room-main-info.right-block{
+
+    overflow-y: hidden;
+   /* margin-bottom: -50px; */
+
+}
+.our-offers.about-us.event-hoften .room-block .confer-hall p{
+    
+    width: 100%!important;
+    transform: translate(-20px, 0px) !important;
+} 
+
+.corporatebannerbutton {
+
+    padding: 9px !important;
+
+    border: none !important;
+
+    border-radius: 25px;
+
+    height: 35px;
+
+    width: 35px;
+
+    /* line-height: 21px; */
+
+    line-height: 13px;
+
+    background-color: #000;
+
+    /* position: absolute; */
+
+    /* bottom: 0; */
+
+    bottom: 150px;
+
+    /* left: 50%; */
+
+    transform: translate(0%, -50px);
+
+    right: auto;
+
+    top:auto;
+
+    text-align: center;
+
+    border: 1px solid #fff !important;
+
+}
+.our-offers.about-us.event-hoften .ballroom-section{
+    
+    overflow-y: hidden;
+    width: 100%!important;
+    transform: translate(0px, 0px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .custom-img-responsive-2{
+    
+    width: 100%!important;
+    transform: translate(-75px, 200px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .ballroom{
+    
+    width: 100%!important;
+    transform: translate(25px, 200px) !important;
+}
+.our-offers.about-us.event-hoften .room-block .ballroom p{
+    
+    width: 95%!important;
+    transform: translate(-18px, 0px) !important;
+}
+
+.our-offers.about-us.event-hoften .rooftop-section{
+    
+    overflow-y: hidden;
+    width: 100%!important;
+    transform: translate(0px, 0px) !important;
+}
+.our-offers.about-us.event-hoften .rooftop-section .room-block{
+    
+    overflow-y: hidden;
+    width: 100%!important;
+    transform: translate(25px, 10px) !important;
+}
+.our-offers.about-us.event-hoften .rooftop-section .room-block .room-main-info.hoften-rooftop{
+    
+    overflow-y: hidden;
+    width: 90%!important;
+    transform: translate(20px, 10px) !important;
+}
+
+.new-our-brands .category-image img {
+
+    width: 100px;
+
+    height: auto !important;
+
+    text-align: center;
+
+    margin: auto;
+
+}
+
+.our-offers.about-us.event-hoften .rooftop-section .room-block .room-main-info.hoften-rooftop p{
+    
+    overflow-y: hidden;
+    width: 90%!important;
+    transform: translate(-20px, 10px) !important;
+}
+/* .our-offers.about-us.event-hoften .room-block .custom-img-responsive.hoften-rooftop{
+    
+    width: 100%!important;
+    transform: translate(-20px, 50px) !important;
+} */
+/* .our-offers.about-us.event-hoften .room-block .rooftop p{
+    
+    width: 100%!important;
+    transform: translate(-28px, -40px) !important;
+} */
+/* .our-offers.about-us.event-hoften .room-block .hoften-rooftop{
+    
+    width: 100%!important;
+    transform: translate(10px, 170px) !important;
+} */
+.search-content.contact-us.new-rj-block.gurugram-dining {
+    transform: translate(0px, 50px) !important; 
+}
+.search-content.contact-us.new-rj-block.gurugram-dining .global-heading{
+
+    width: 100% !important;
+    transform: translate(0px, -50px) !important;
+}
+.about-us.accomodation-main.gurugram-dining {
+
+    transform: translate(0px, 100px) !important;
+}
+.search-content.contact-us.new-rj-block.gurugram-offers{
+
+    transform: translate(0px, 100px) !important;
+}
+.search-content.contact-us.new-rj-block.gurugram-offers .container .global-heading-gurugram.gurugram-offers{
+
+    transition: transform 1.9s ease-in-out 0.5s;
+    transform: translate(0px, -110px) !important;
+}
+.about-us.accomodation-main.gurugram-dining .room-main-info.gurugram-dining{
+
+    transform: translate(0px, 70px) !important;
+    width:100% !important;
+}
+.booking-form-section.gurugram-offer{
+
+    transform: translate(12px, 0px) !important;
+}
+
+.row.hoften-hotel{
+margin-bottom: 0px;
+}
+section.search-content.new-rj-block.hoften-hotel{
+
+    width: 100% !important;
+    transform: translate(0px, 0px) !important;
+}
+.rooms-gurugram{
+    
+    width: 100% !important;
+    transform: translate(0px, 100px) !important;
+}
+.booking-form-section.gurugram-contact{
+
+    transform: translate(15px, 0px) !important;
+}
+
+.hoften-main-contactt.search-content.contact-us.new-rj-block{
+
+    transform: translate(0px, 10px) !important;
+}
+.hoften-main-contactt.search-content.contact-us.new-rj-block p{
+
+    transform: translate(-5px, 10px) !important;
+    font-size: 15px !important;
+}
+.hoften-main-contactt .heading-2-gurugram-contact{
+    
+    font-size: 18px !important;
+}
+.hoften-main-contactt .para-gurugram-contact{
+    transform: translate(0px, 50px) !important;
+}
+/* .about-us.accomodation-main.gurugram-dining .gurugram-contact{
+
+    transform: translate(0px, -130px) !important;
+} */
+.search-content.contact-us.new-rj-block.gurgaon-acc{
+
+    transform: translate(0px, 50px) !important;
+}
+/* .search-content.contact-us.new-rj-block.gurgaon-acc .center{
+
+    transform: translate(0px, 0px) !important;
+} */
+    .search-content .container .center .global-heading{
+
+        transform: translate(0px, 100px) !important;
+        font-size: 18px !important;
+    }
+    .home-page-class .header_booking_engine{    top: 4em;
+}
+.navbar-collapse.show .booking-search-bar-btn-div{ display:none;}
+.booking-search-bar-btn-div{    transform: translateX(-35%) translateY(65%) !important;
+        bottom: 0 !important;}
+.booking-toggle-btn[aria-label="Close booking form"] { top: -26em; position:relative;}
+.rooms-child-outer-block{ z-index:0 !important;}
+.booking-search-bar-btn-div{ bottom: 2em !important;}
+.header_booking_engine{ top:5em;}
+ .booking-form-section {
+        left: 0;
+        right: 0;
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        transform: translate(0px, -50px) !important;
+
+    }
+    
+    .booking-form-section.gurgaon-hotel {
+
+        left: 8px;
+        right: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: translate(0, -50px) !important;
+
+    }
+    .booking-form-section.gurgaon-accom {
+
+        left: 5px;
+        right: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: translate(0, 0px) !important;
+
+    }
+    
+    .booking-form-section.gurgaon-dining {
+
+        left: 2px;
+        right: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: translate(0, 0px) !important;
+
+    }
+    
+    .booking-form-section.gurgaon-offers {
+
+        left: 2px;
+        right: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: translate(0px, 0px) !important;
+
+    }
+    .gurgaon-dinign-inner{
+
+        width: 100%!important;
+        transform: translate(0px, 0px) !important;
+
+    }
+
+    .custom-img-responsive{
+
+        width: 100%!important;
+
+        max-width: 100%!important;
+
+        margin: 0!important;
+
+        transform: translate(0px, 80px) !important;
+
+    }
+
+    .gurgaon-dinign-inner img{
+
+        width: 100%!important;
+
+        margin: 0!important;
+
+    }
+    .new-our-offers.our-offers.about-us{
+
+        width: 100%!important;
+        margin-bottom: -100px;
+    }
+    
+    .new-our-offers.our-offers.about-us .executive{
+    height: 420px;
+    }
+    .new-our-offers.our-offers.about-us .executive .book-now-headerr{
+
+        margin-top: 740px !important;
+    }
+    
+    .new-our-offers.our-offers.about-us .day-rooms{
+        /* height: 890px; */
+        margin-bottom:20px;
+        }
+        .new-our-offers.our-offers.about-us .day-rooms .book-now-headerr{
+    
+            margin-top: 2140px !important;
+        }
+        
+    .new-our-offers.our-offers.about-us .staycation{
+        height: 460px;
+        }
+        .new-our-offers.our-offers.about-us .staycation .book-now-headerr{
+    
+            margin-top: 2850px !important;
+        }
+    .gurgaon-dinign-inner img{
+
+        width: 100%!important;
+
+        margin: 0!important;
+
+    }
+
+    .about-us.accomodation-main.gurgaon-dinign-inner{
+
+        width: 100%!important;
+
+        transform: translate(0px, 50px) !important;
+
+    }
+    .acco-main-article{
+        margin-bottom: 100px !important;
+        /* transform: translate(0px, 0px) !important; */
+    }
+    .justify-content-center{
+        transform: translate(0px, -10px) !important;
+    }
+    /* .about-us.accomodation-main.gurgaon-dinign-inner.acco-main{
+
+        width: 100%!important;
+
+        transform: translate(0px, 50px) !important;
+
+    } */
+    .about-us.accomodation-main.gurgaon-dinign-inner .gurgaon-dining-content{
+
+        width: 100%!important;
+margin-bottom: -100px;
+ }
+    .about-us.accomodation-main.gurgaon-dinign-inner .room-main-info.accc-suite{
+
+        width: 100%!important;
+
+        transform: translate(0px, 50px) !important;
+
+    }
+    
+    .about-us.accomodation-main.gurgaon-dinign-inner .studio-room{
+
+        width: 100%!important;
+
+        transform: translate(0px, -20px) !important;
+
+    }
+    
+    .about-us.accomodation-main.gurgaon-dinign-inner .custom-img-responsive.studio-room{
+
+        width: 100%!important;
+
+        transform: translate(0px, 80px) !important;
+
+    }
+    .about-us.accomodation-main.gurgaon-dinign-inner .room-main-info.studio-room{
+
+        width: 100%!important;
+
+        transform: translate(0px, 80px) !important;
+
+    }
+    
+    .about-us.accomodation-main.gurgaon-dinign-inner .deluxe-room{
+
+        width: 100%!important;
+
+        transform: translate(0px, 40px) !important;
+
+    }
+    .about-us.accomodation-main.gurgaon-dinign-inner .executive-room{
+
+        width: 100%!important;
+
+        transform: translate(0px, 100px) !important;
+
+    }
+    .search-content.contact-us.new-rj-block.gurgaon-dinning{
+
+        transform: translate(0px, 60px) !important;
+    }
+    .search-content.contact-us.new-rj-block.gurgaon-dinning .content-boxx.gurgaon-dinning{
+
+        transform: translate(0px, 60px) !important;
+    }
+    
+    .search-content.contact-us.new-rj-block.gurgaon-dinning .global-heading{
+
+        transform: translate(0px, 50px) !important;
+    }
+    .global-heading_dn{  transform: translate(0px, 0px) !important;}
+    .about-us.accomodation-main.gurgaon{
+        transform: translate(0px, -50px) !important;
+        margin-bottom: 0% !important;
+    }
+    
+.swiper-wrapper.abc .swiper-slide {
+
+    margin-right: 20px;
+
+}
+h2.react-datepicker__current-month{ font-size:16px;}
+
+.add-rooms-div div.justify-content-center{margin-top: 15px;}
+.swiper-wrapper.abc .swiper-slide img{
+
+    height: 450px;
+    width: 100%!important;
+    /* margin-right: 70px; */
+
+}
+.main-contact-us-form{ margin-bottom: -100px;}
+/* .swiper-wrapper.abc.swiper-slide.swiper-slide-active{
+    
+    margin-right: 50px;
+} */
+
+
+.global-heading-about {
+
+    margin-top: 45px;
+
+    color: #3b3b3b !important;
+
+    font-size: 30px !important;
+
+    font-family: 'Agatho' !important;
+
+    text-transform: capitalize !important;
+
+}
+
+.global-heading-about h3:after {
+    transition: width .3s;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    height: 2px;
+    content: "";
+    display: block;
+    width: 60px !important;
+    background: #3b3b3b !important;
+
+}
+.row .container .container .nav-tabs{
+    margin-left: 20%;
+    margin-bottom: 80px;
+}
+
+.row .container .container .nav-tabs .nav-item .nav-link.active{
+    background-color: #fff;
+    color: #000;
+    /* transform: translate(0px, -15px); */
+    border: 1px solid #ddd;
+    margin-left: 2px;
+}
+.row .container .container .nav-tabs .nav-item .nav-link{
+    
+    color: #fff;
+    background-color: #002d62;
+    /* transform: translate(0px, -15px); */
+    border: 1px solid #ddd;
+    margin-left: 2px;
+}
+
+
+.ourbrand.our-offers.about-us .container .container .nav-tabs1{
+    margin-left: 15%;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.ourbrand.our-offers.about-us .container .container .nav-tabs1 .nav-item1 .nav-link.active{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    font-size: 15px;
+}
+.ourbrand.our-offers.about-us .container .container .nav-tabs1 .nav-item1 .nav-link{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ddd;
+    font-family: 'VERDANA' !important;
+    font-size: 13px; 
+    width: 130px ; 
+    height: 42px; 
+    padding:2px 12px;
+    border-radius: 0;
+}
+
+.ourbrand.our-offers.about-us .container .tab-content.special-offers.about-us.new-rj-block .global-heading-about{
+    margin-top: 10px;
+    text-align: left;
+    margin-top: 15px;
+    color: #3b3b3b !important;
+    font-weight: 600;
+    font-size: 30px !important;
+    font-family: 'Agatho' !important;
+
+}
+
+/* .ourbrand.our-offers.about-us .container .tab-content.special-offers.about-us.new-rj-block .global-heading-about h1::after{
+    margin-top: 10px;
+    text-align: left;
+    margin-top: 15px;
+    color: #3b3b3b !important;
+    font-weight: 600;
+    font-size: 30px !important;
+    font-family: 'Agatho' !important;
+
+} */
+.ourbrand.our-offers.about-us .container .tab-content.special-offers.about-us.new-rj-block .align-items-start{
+   width: 100%;
+
+}
+
+.ourbrand.our-offers.about-us .container .tab-content.special-offers.about-us.new-rj-block .custom-img-responsive.img-thumbnail.alivaa{
+
+    width: 100%!important;
+
+    max-width: 100%!important;
+    height: fit-content;
+    margin: 0!important;
+
+    transform: translate(0px, 0px) !important;
+
+}
+
+.ourbrand.our-offers.about-us .container .tab-content.special-offers.about-us.new-rj-block .custom-img-responsive.img-thumbnail.hoften{
+
+    width: 100%!important;
+
+    max-width: 100%!important;
+    height: fit-content;
+    margin: 0!important;
+
+    transform: translate(0px, 30px) !important;
+
+}
+
+.ourbrand.our-offers.about-us .container .container{
+    margin-bottom: -50px;
+
+}
+
+.banner-section .about-us-main{
+    transform: translate(-100px, 0px) !important;
+}
+/* .ourbrand .row{margin: 0;height: 100%;
+
+    display: flex;
+
+    align-content: center;
+
+    padding: 10px;
+} */
+ 
+.search-content.contact-us.new-rj-block .global-heading-about.special-offer-head{
+    margin-top: 20px;
+
+}
+.content-boxx {
+
+    font-size: 14px;
+    line-height: 20px;
+    color:#535553;
+    width: 100%;
+    text-align: justify;
+    margin-top: 5px;
+    font-weight: 250;
+
+}
+
+.content-boxx-gurugram-para {
+
+    font-size: 13px;
+    line-height: 20px;
+    color:#535553;
+    width: 90%;
+    text-align: justify;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: 250;
+
+}
+.our-brands.experience-section.about-us.new-our-brands.up-exp-sec{
+    width: 100%;
+    transform: translate(0px, -50px) !important;
+
+}
+
+.our-brands.experience-section.about-us.new-our-brands.up-exp-sec .offers-slider{
+    width: 500px;
+    transform: translate(-100px, 0px) !important;
+
+}
+.brand-new-content {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    font-family: Verdana !important;
+    font-size: 15px;
+    font-weight: 550;
+    transform: translateY(0%);
+    display: block;
+    position: absolute;
+    /* top: 50%; */
+    right: 0px;
+    text-align: left;
+}
+.new-our-brands .inner .category-image{ position:relative;}
+/* .offer_sec.inner .category-image{} */
+.offer_sec .swiper-slide.swiper-slide-active .inner{ width: 100% !important;}
+.brand-new-content p{ text-align:left}
+/* .our-brands.experience-section.about-us.new-our-brands.up-exp-sec .offers-slider .brand-new-content p{
+   
+    margin-left: -20px;
+    font-size: 13px;
+    line-height: 18px;
+
+} */
+.up-exp-sec .offers-slider{
+    transform: translate(0px, -50px) !important;
+   
+   }
+   
+.up-exp-sec .offers-slider .swiper-slide .new-bg-block{
+    height: 370px;
+   
+   }
+.up-exp-sec .offers-slider .swiper-wrapper{
+
+    width: 100px!important;
+   
+   }
+
+   .up-exp-sec .offers-slider .swiper-nav{
+    transform: translate(0px, -50px) !important;
+   }
+   .experience-section.about-us.media-n-news.media-news{
+margin-bottom: -150px;
+    transform: translate(0px, -150px) !important;
+   }
+
+   .media-box{
+
+    margin-top: 1rem;
+
+}
+/* .content-boxx {
+ text-align: center;
+    width: 90%;
+
+
+
+} */
+ /* .gurgaon-hotel-facilities{
+    margin-bottom: -100px;
+ } */
+  .gallery-section.gurgaon-hotel{
+
+    display: inline-block;
+    width: 100%;
+    transform: translateY(0px) !important;
+  }
+  .pmt-0{ padding:0px;}
+  .gallery-section.gurgaon-hotel-testimonials{
+    display: inline-block;
+    width: 100%;
+    transform: translateY(-350px) !important;
+    margin-bottom: -200px;
+  }
+    .about-us.accomodation-main.gurgaon-resorts-wifi{
+        transform: translate(0px, 100px) !important;
+        margin-bottom: 0% !important;
+    }
+    .our-offers.about-us.gurgaon-fac{
+
+        transform: translate(10px, 0px) !important;
+    }
+    .booking-form-section.gurgaon-fac{
+        
+        transform: translate(0px, 0px) !important;
+    }
+    .our-offers.about-us .container .new-rj-block .global-heading.gurgaon-fac{
+
+        font-size: 25px !important;
+        width: 100%!important;
+        transform: translate(0px, 0px) !important;
+    }
+    .our-offers.about-us .container .new-rj-block .content-boxx.gurgaon-fac{
+
+        font-size: 14px !important;
+        width: 90%!important;
+        transform: translate(-40px, 0px) !important;
+    }
+    .special-offers.about-us.new-rj-block .content.gurgaon-fac{
+
+        transform: translate(-10px, 150px) !important;
+    }
+    
+    
+    
+    .our-offers.about-us.gurgaon-attrac{
+
+        transform: translate(10px, 0px) !important;
+    }
+    .booking-form-section.gurgaon-attrac{
+        
+        transform: translate(10px, 0px) !important;
+    }
+    /* .booking-form-section.gurgaon-attrac .new-rj-block{
+        margin-top: 300px;
+    } */
+    .our-offers.about-us .container .new-rj-block .global-heading.gurgaon-attrac{
+
+        font-size: 25px !important;
+        width: 100%!important;
+        transform: translate(0px, 100px)!important;
+    }
+    .our-offers.about-us .container .new-rj-block .content-boxx.gurgaon-attrac{
+
+        font-size: 14px !important;
+        width: 90%!important;
+        transform: translate(10px, 110px) !important;
+    }
+    .special-offers.about-us.new-rj-block .content.gurgaon-attrac{
+
+        transform: translate(-10px, 150px) !important;
+    }
+    .special-offers.about-us.new-rj-block .swimming-pool{
+
+        transform: translate(-10px, 190px) !important;
+     }
+         .special-offers.about-us.new-rj-block .swimming-pool2{
+
+        transform: translate(-10px, 0px) !important;
+     }
+    .special-offers.about-us.new-rj-block .swimming-pool-attrac{
+
+        transform: translate(-10px, 220px) !important;
+     }
+    .special-offers.about-us.new-rj-block .electric-vehicle{
+margin-bottom: 0px;
+        transform: translate(-10px, 15px) !important;
+     }
+     
+    .special-offers.about-us.new-rj-block .electric-vehicle-attrac{
+        margin-bottom: 0px;
+                transform: translate(-10px, 250px) !important;
+             }
+     .gymnasuim-para p, .swimming-pool-para p, .electric-vehicle-para p, .dining-para p{
+      width: 100% !important;
+      margin-top: 10px !important;
+      margin-left: 0px !important;
+     }
+     .gymnasuim-para h3, .swimming-pool-para h3, .electric-vehicle-para h3, .dining-para h3{
+      width: 100% !important;
+      margin-left: -8px !important;
+      text-align: center !important;
+     }
+     .dining-para a{
+      margin-left: 0px !important;
+     }
+    .our-offers.about-us.alivaa-new-offers-see{
+
+        transform: translate(0px, -320px);
+    }
+      .contacthoften{transform: translate(0, 5px) !important;}
+    .our-offers{transform: translate(0, -185px) !important;}
+    .content-section-hoften.gurgaon-offers{
+        width: 100%!important;
+        transform: translate(5px, 50px) !important;
+    }
+    /* .booking-form-section.gurgaon-offers{
+        width: 100% !important;
+        transform: translate(5px, -150px) !important;
+    } */
+    .search-content.about-us.new-rj-block.gurgaon-offers{
+        width: 100% !important;
+        transform: translate(5px, -150px) !important;
+    }
+    
+    .booking-form-section.gururaon-attrac{
+        width: 100% !important;
+        transform: translate(5px, -70px) !important;
+    }
+
+    section.search-content.new-rj-block .content-boxx{
+   
+        font-size: 13px;
+        color:#3b3b3b;
+        margin-left: 20px;
+        width: 90%;
+        font-family: 'Verdana' !important;
+        margin-top: 5px;
+        line-height: 25px;
+    }
+     
+section.search-content.new-rj-block.gurgaon-contact .content-boxx{
+   
+    font-size: 15px;
+    color:#3b3b3b;
+    margin-left: 30px;
+    width: 90%;
+    font-family: 'Verdana' !important;
+    margin-top: 5px;
+    line-height: 25px;
+    transform: translate(-10px, 100px);
+}
+
+    .row.gurgaon-offers{
+
+        width: 100% !important;
+        margin-bottom: 0px !important;
+    }
+section.search-content.new-rj-block.gurgaon-offers{
+    width: 100% !important;
+    transform: translate(0px, -150px) !important;
+    margin-bottom: -180px !important;
+}
+section.search-content .container.gurgaon-offers .new-rj-block .global-heading.gurgaon-offers{
+    font-size: 25px !important;
+    width: 100%!important;
+    margin-left: 0px!important;
+    margin-top: 150px!important;
+}
+section.search-content .container.gurgaon-offers .new-rj-block .content-boxx.gurgaon-offers{
+    font-size: 13px !important;
+    width: 100%!important;
+    margin-left: 0px!important;
+}
+.dayrooms-sec-offers-para{
+    margin-left: -10px;
+}
+    .our-offers.about-us .new-rj-block.gururaon-attrac{
+        width: 100% !important;
+        transform: translate(10px, 100px) !important;
+    }
+    
+    .special-offers.about-us.new-rj-block .gururaon-attrac-worldmark-gurgaon{
+        width: 100% !important;
+        transform: translate(0px, 150px) !important;
+    }
+    
+    .special-offers.about-us.new-rj-block .m3m-ifc{
+        width: 100% !important;
+        transform: translate(0px, 155px) !important;
+    }
+
+    .special-offers.about-us.new-rj-block .cyberhub{
+        width: 100% !important;
+        transform: translate(0px, 160px) !important;
+    }
+    .special-offers.about-us.new-rj-block .golf-club{
+        width: 100% !important;
+        transform: translate(0px, 165px) !important;
+    }
+    
+    .booking-form-section.gurgaon-contact{
+        width: 100% !important;
+        transform: translate(0px, 0px) !important;
+    }
+    .gurgaon-contact-row .global-heading.gurgaon-contact p{
+        width: 100% !important;
+        transform: translate(0px, -150px) !important;
+    }
+/*     
+    .booking-form-section .global-heading.gurgaon-contact{
+        width: 100% !important;
+        transform: translate(0px, -150px) !important;
+    } */
+    
+    .search-content.contact-us.new-rj-block .global-heading.gurgaon-contact{
+        width: 100% !important;
+        transform: translate(5px, 50px) !important;
+    }
+    
+    .search-content.contact-us.new-rj-block .gurgaon-contact-h2{
+        font-size: 15px !important;
+        width: 100% !important;
+        transform: translate(5px, 50px) !important;
+    }
+    
+    .search-content.contact-us.new-rj-block .text-justify.gurgaon-contact-p{
+        width: 100% !important;
+        transform: translate(5px, 50px) !important;
+    }
+    .about-us-main{
+        transform: translate(-160px, 0px) !important;
+    }
+    
+    .booking-form-section.special-offer{
+        width: 100% !important;
+        transform: translate(5px, 0px) !important;
+    }
+    
+    .booking-form-section.contact-us-main{
+        width: 100% !important;
+        transform: translate(0px, 50px) !important;
+    }
+    
+    .main-contact-us.search-content.new-rj-block{
+        width: 100% !important;
+        transform: translate(0px, 30px) !important;
+        margin-bottom: -50px;
+    }
+    .our-offers.contact-us-2.contact-us-main{
+        width: 100% !important;
+        transform: translate(0px, -50px) !important;
+    }
+    .booking-form-section.slide-in-inner{
+        
+        width: 100% !important;
+        transform: translate(0px, 0px) !important;
+    }
+    
+.rooms-info-block.gurgaon-hotel-facilities {
+
+    display: inline-block;
+
+    width: 100%;
+transform: translate(0px, -350px) !important;
+    border-bottom: 1px solid #f0f0f0
+
+}
+    .rooms-info-block.gurugram-hotel-meeting{
+        width: 100% !important;
+        transform: translate(0px, 10px) !important;
+    }
+    
+    .rooms-info-block.gurugram-hotel-meeting .tab-content{
+        width: 100% !important;
+        transform: translate(0px, 0px) !important;
+    }
+ .gallery-section.gurugram-hotel{
+
+    width: 100% !important;
+    transform: translate(5px, 50px) !important;
+    }
+    
+ /* .gallery-section.gurgaon-hotel{
+
+    width: 100% !important;
+    transform: translate(0px, -350px) !important;
+    } */
+    
+/* .gurgaon-hotel-content-section{
+    margin-bottom: -450px !important;
+    } */
+    .our-offers.about-us{
+
+        width: 100% !important;
+        transform: translate(0px, -50px) !important;
+    }
+
+       .our-offers.about-us_attract{
+
+        width: 100% !important;
+        transform: translate(0px, 0px) !important;
+    }
+    
+    /* .booking-form-section.slide-in-inner{
+        
+        width: 100% !important;
+        transform: translate(0px, 0px) !important;
+    } */
+     
+    /* .booking-form-section.gurgaon-hotel-booking{
+        width: 100% !important;
+        transform: translate(5px, 50px) !important;
+    } */
+    .booking-form-section.slide-in{
+        
+        width: 100% !important;
+        transform: translate(0px, -50px) !important;
+    }
+    .trnsf{        transform: translate(0, 0px) !important;}
+    .about-us h2, h2, .inner-hd{ font-size:24px !important;}
+    .room-block{
+
+        transform: translateX(0px)!important;
+        transform: translateY(-80px)!important;
+
+    }
+
+    .up-exp-sec .new-bg-block{
+
+        min-height: 620px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+    margin-top: 3rem;
+    
+    margin-bottom: 2rem;
+    
+    position: relative;
+    transform: translate(-150px , -50px);
+    
+    }
+    
+   .up-exp-sec .swiper-nav {
+    position: absolute;
+    z-index: 9;
+    transform: translate(-50px, -130px) !important;
+    display: flex;
+  }
+  .up-exp-sec .custom-swiper-button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .up-exp-sec .custom-swiper-button:hover {
+    background: #f0f0f0;
+  }
+    .search-content .special-offers .book-now-headerr{
+
+        position: relative!important;
+
+        top: 0;
+
+        left: 10px;
+
+    }
+    .contact-us-main-form{
+        
+        width: 100% !important;
+        transform: translate(-15px, 0px) !important;
+    }
+    .banner-section .content-section h2{
+
+        color: #fff!important;
+
+    }
+
+    .neww-hoften-headerr .navbar-brand > img {
+
+        width: 94px;
+
+        filter: invert();
+
+        margin: auto;
+
+        height: auto;
+
+        margin-top: 1rem;
+
+    }
+
+    .special-offers .alivaa-album {
+
+        display: block;
+
+    }
+
+    /* body{
+
+        overflow: hidden!important;
+
+        overflow-x: hidden!important;
+
+    } */
+
+    .commerce-blog-wrapper{
+
+        margin-left: 15px !important;
+    
+    }
+    .gurgaon-acccc .search-content h4{
+
+        padding: 0!important;
+
+    }
+
+    .accomodation-main .main-facilities .facility-icon-btm{
+
+        width: 40px!important;
+        transform: translate(0px, -20px) !important;
+
+    }
+    .accomodation-main .main-facilities .valet-parking-h{
+
+        transform: translate(0px, -20px) !important;
+
+    }
+    .accomodation-main .main-facilities .valet-parking-p{
+
+        transform: translate(0px, -20px) !important;
+
+    }
+
+    .accomodation-main .main-facilities .high-speed-h{
+
+        transform: translate(0px, -20px) !important;
+
+    }
+    .accomodation-main .main-facilities .high-speed-p{
+
+        transform: translate(0px, -20px) !important;
+
+    }
+    .location-div{
+
+        transform: translate(0px, -130px) !important;
+
+    }
+    .banner-section:after{
+
+        display: none!important;
+
+    }
+
+    .content-section-hoften{
+
+        width: 100%!important;
+        top: 30%!important;
+
+        overflow-x: hidden !important; 
+
+        overflow-y: hidden !important; 
+
+
+
+    }
+    .gurugram-accom-header{
+        width: 100%!important;
+    }
+    .hoften-bg-image-section .jeg-elementor-kit.jkit-portfolio-gallery .row-item {
+
+        -ms-flex: 0 0 100%;
+
+        -webkit-box-flex: 0;
+
+        flex: 0 0 100%;
+
+        max-width:100%;
+
+        height: 300px!important;
+
+    }
+
+    .hoften-bg-image-section{
+        transform: translate(0px, -50px) !important;
+    }
+    .neww-hoften-headerr {
+
+        height: 100px;
+
+    }
+
+    .neww-hoften-headerr .navbar-brand > img {
+
+        height: auto;
+
+        margin-top: 1rem;
+
+        width: 127px;
+
+        filter: invert(0);
+
+    }
+
+    .neww-hoften-headerr header .navbar-toggler {
+
+        margin-top: 1rem;
+
+    
+
+    }
+
+    .neww-hoften-headerr .btn.book-now-headerr {
+
+        margin-top: 0rem;
+
+    }
+
+    .neww-hoften-headerr {
+
+        height: 84px;
+
+        background-color: #fff !important;
+
+    }
+
+    .new-hoften-mt-20{
+
+        margin-top:3rem;
+
+    }
+
+    /* .new-our-brands .inner.alivaa-bg{
+
+        background-color: #00a3e0!important;
+        width: 150px;
+    
+    }
+    
+    .new-our-brands .inner.hoften-bg{
+    
+        background-color: #c3dd35!important;
+        width: 150px;
+    
+    } */
+    .up-exp-sec .new-bg-block .inner .category-image img {
+
+        width: 100px !important;
+
+    }
+
+    .about-conteeent.heading {
+
+       width:90%;
+       margin-left: 17px;
+    
+      }
+   
+
+      .about-conteeent.heading .content-boxx{
+
+        margin-left: 17px;
+        font-size: 13px;
+     
+       }
+
+
+
+  }
+
+  .facilitycardcontent {
+    height: 54% !important;
+    bottom: -150px;
+}
+
+.alivactacolor {
+    background-color:#002d62 !important;
+    border-color:#002d62 !important;
+}
+.hoftenctacolor {
+    background-color:#245704 !important;
+    border-color:#245704 !important;
+}
+
+.hoften-main-contactt .contact-icons-hoften {
+    background-color:#245704 !important;
+    border-color:#245704 !important;
+}
+.hoften-main-contactt .our-offers .btn-primary {
+    background-color:#245704 !important;
+    border-color:#245704 !important;
+}
+
+.ntp-con{
+    font-family: VERDANA;
+    color: #3b3b3b; 
+    font-weight: "400";
+    line-height: "24px";
+}
+.h4.nh{
+    color: black;
+    font-size: 16px;
+     text-transform: uppercase;
+}
+.showmoreT.add-rooms-block{
+    position: absolute; top: 100%; left: 0; width: 100%;
+}
+.showmoreT.add-rooms-block .yellow-btn.rmv{
+    display: block;
+}
+.plus-min-style span{
+    margin: 0px 5px;
+}
+.modal{
+    z-index: 9999999999;
+}
+.tab-pane-for-Lansdowne-overview-facilities .swiper-wrapper{
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .our-brands .new-bg-block .alivaa-bg .category-image, 
+    .our-brands .new-bg-block .hoften-bg .category-image{
+            transform: translate(100px, 0px);
+    }
+    .our-brands .swiper-slide.swiper-slide-active{
+        transform: scale(1);
+                margin-left: 0px;
+    }
+    .our-brands.new-our-brands .new-bg-block{
+        transform: translate(0px, -50px)!important;
+    }
+    .new-our-brands .new-rj-block.mt-5{
+        margin-top: 0px!important;
+    }
+    .our-brands.new-our-brands{
+        margin-top: 0!important;
+    }
+    .sectiontop .home-our-offers .new-rj-block.mt-5{
+        margin-top: 0px!important;
+    }
+        footer {
+        margin-top: 5em;
+    }
+        .container-footer .ftr-social-section {
+        margin-bottom: .5rem;
+        }
+        .contact-us-main span img{
+            margin-top: 0px !important;
+                    width: 35px!important;
+        }
+        .contact-us-main span img.social-icon-map{
+            width: 48px!important;
+        }
+            .main-contact-us-form {
+                    margin-bottom: 0px;
+                }
+     .contact-us-main-form {
+        width: 100% !important;
+        transform: translate(16px) !important;
+    }
+        .our-offers.about-us {
+        margin-bottom: 1rem!important;
+    }
+    #special-offer .container{
+        width: 100%!important;
+    }
+    .about-us h1, .about-us h2, .about-us h4, .contact-us {
+    padding: 0px 0 10px;
+}
+.alivaa-inner-offer-section-overview .gurgaon-hotel-facilities{
+transform: translate(0, 0px) !important;
+    padding: 0px 0 40px;
+}
+    .alivaa-inner-offer-section-overview .gallery-section.gurgaon-hotel-testimonials {
+        transform: translateY(0) !important;
+            margin-bottom: 0em !important;
+    }
+    .alivaa-inner-offer-section-overview .testimonials_inner_profile img {
+    width: 50px!important;
+}
+.alivaa-inner-offer-section-overview{
+    margin-top:1rem!important;
+    padding-top: 1rem!important;
+}
+#gurgaon-attraction .gurgaon-attrac{
+    width: 100%!important;
+}
+.gurgaon-contact-row .container  .contact-us.new-rj-block .contact-us{
+    width:100%!important;
+}
+.gurgaon-contact-row .container .contact-us{
+            transform: translate(0, 0px) !important;
+}
+.rooms-info-block.gurgaon-hotel-facilities{
+            transform: translate(0, 0px) !important;
+}
+.tab-pane-for-Lansdowne-overview-facilities .swiper-wrapper {
+    justify-content: normal;
+}
+.lansdowne-room-sec-new .swiper .winter-box img{
+    min-height:300px!important;
+}
+.lansdowne-room-sec-new .gurgaon-hotel-facilities .offers-slider .swiper img{
+    min-height:400px!important;
+}
+.lansdowne-hotel-gallery-page
+ {
+    z-index: 99999;
+    position: relative;
+}
+
+   .lansdownee-hotel-facilities-mainn    .special-offers.about-us.new-rj-block .swimming-pool {
+        transform: translate(-10px, 46px) !important;
+    }
+        .mob_design .navbar-collapse {
+       
+        padding-top: 89px!important;
+    }
+        
+            
+}
+
+.lansdowne-hotel-gallery-page .nav.nav-tabs .nav-item .nav-link.bg-dark {
+    background-color: #002d62!important;
+    color: #fff!important;
+
+}
+
+.coming-hero-title{
+        width: 80%!important;
+    left: 0!important;
+    right: 0!important;
+    text-align: center!important;
+    font-size: 2rem!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+        display: ruby-text;
+}
+@media screen and (max-width:1600px) and (min-width:768px) {
+.overview-alivaa-offer-slider .swiper-wrapper {
+    justify-content: center;
+} 
+    
+}
+@media screen and (max-width:767px){
+    .coming-hero-title {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+    display: block;
+}
+.tab-content .special-offers .content-boxx{
+    text-align: left!important;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .jawai-hotell-facilities .swiper-slide  img{
+    max-height: 450px!important;
+    }
+    .jawai-new-facalities .space_in{
+        padding: 0rem 2rem 0rem 2rem !important;
+
+    }
+    .jawai-new-attractions .room-main-info.right-block {
+        transform: translate(10px, 49px) !important;
+    }
+    .jawai-new-attractions .gurgaon-attrac{
+        margin-top:0!important;
+    }
+    .jawai-new-attractions {
+        margin-bottom: 5rem!important;
+    }
+    .jawai-new-diining .global-heading-sec .space_in .inner-head {
+        margin-top: 0!important;
+}
+.jawai-new-diining img{
+    margin-left: 1rem!important;
+}
+.jawai-contactt-form .contactus-form{
+    margin-left: 2rem!important;
+}
+.jawai-contactt-form iframe{
+    margin-left: 1rem!important;
+}
+.jawai-new-facalities img{
+    padding-left: 1rem!important;
+    object-fit: cover!important;
+}
+.search-content.contact-us.new-rj-block.text-center.mt-1.gurgaon-dinning.jaawai-dinging-enquiry-sec{
+    transform: none!important;
+}
+
+    }

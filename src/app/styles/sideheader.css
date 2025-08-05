@@ -1,0 +1,487 @@
+.navbar-collapse {
+
+    width: 0;
+
+    background-color: #ffffff;
+
+    color: white;
+
+    position: fixed;
+
+    top: 90px;
+
+    left: auto;
+
+    right: 100%;
+
+    /* transition: width 0.5s ease, box-shadow 0.3s ease; */
+
+    -webkit-transition: all 0.5s ease 0s;
+
+    -moz-transition: all 0.5s ease 0s;
+
+    -ms-transition: all 0.5s ease 0s;
+
+    transition: all 0.5s ease 0s;
+
+    padding-top: 0px;
+
+    box-shadow: none;
+
+    z-index: 999;
+
+    display: flex;
+
+    justify-content: center;
+
+    height: 85px!important;
+
+  }
+
+
+
+  .navbar-collapse.show {
+
+    width: 100%;
+
+    right: 0;
+
+  }
+
+
+
+  .navbar-collapse h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+  }
+
+
+
+  .navbar-collapse ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    display: flex;
+
+    color: #fff;
+
+    justify-content: center;
+
+    height: 69px;
+
+    align-items: center;
+
+    flex-direction: row;
+
+    gap: 20px;
+
+  }
+
+  .navbar-collapse ul.dropdown-menu{
+
+    flex-direction: column;
+
+  }
+
+
+
+  .navbar-collapse ul li {
+
+    padding: 0px;
+
+    /* position: relative; */
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    color: #000;
+
+    font-size: 15px;
+
+  }
+
+  .navbar-collapse ul li.dropdown{
+
+    position: relative;
+
+  }
+
+
+
+  .navbar .nav li .dropdown-menu {
+
+    min-width: 130px;
+
+    text-align: center;
+
+    flex-direction: column;
+
+    position: absolute;
+
+    top:80px;
+
+    display: block;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.2);
+
+    background-color: var(--bs-white);
+
+    border:none;
+
+    height: auto;
+
+    border-radius: 0;
+
+    -webkit-transition: all 0.5s ease 0s;
+
+    -moz-transition: all 0.5s ease 0s;
+
+    -ms-transition: all 0.5s ease 0s;
+
+    transition: all 0.5s ease 0s;
+
+}
+
+.navbar .nav li:hover .dropdown-menu{
+
+  top: 25px;
+
+  opacity: 1;
+
+  visibility: visible;
+
+}
+
+.navbar .nav li .dropdown-menu li a:hover, .navbar .nav li .dropdown-menu li a:focus{
+
+  background-color: var(--bs-black);
+
+  color: var(--bs-white);
+
+}
+
+  
+
+
+
+  .navbar-collapse ul li a {
+
+    color: #000000;
+
+    text-decoration: none;
+
+    display: block;
+
+  }
+
+
+
+  .navbar-collapse ul li a:hover {
+
+    background-color: transparent;
+
+    text-decoration: underline;
+
+  }
+
+
+
+  
+
+  .navbar-collapse .dropdown-content {
+
+    display: none;
+
+    background-color: #ffffff00;
+
+    padding-left: 12px;
+
+    padding-top: 10px;
+
+  }
+
+
+
+  .navbar-collapse .dropdown-content a {
+
+    padding: 10px 0;
+
+    color: #000000;
+
+    text-align: left;
+
+    display: block;
+
+  }
+
+
+
+  .navbar-collapse .dropdown-content a:hover {
+
+    background-color: transparent;
+
+    text-decoration: underline;
+
+  }
+
+
+
+ 
+
+  .navbar-collapse .toggle-button {
+
+    position: fixed;
+
+      top: 30px;
+
+  left: 30px;
+
+  background-color: transparent;
+
+  color: #000000;
+
+  border: none;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  border-radius: 5px;
+
+  box-shadow: none;
+
+  }
+
+
+
+  .navbar-collapse .toggle-button:hover {
+
+    background-color: transparent;
+
+  }
+
+
+
+  .navbar-collapse .toggle-button.show {
+
+    transform: rotate(180deg);
+
+  }
+
+  .navbar-collapse.show .toggle-button {
+
+  color: #000000;
+
+  font-size: 25px;
+
+  left: 30px;
+
+  top: 10px;
+
+}
+
+
+
+  
+
+  .navbar-collapse .hidden {
+
+    display: none;
+
+    animation: slideUp 0.3s ease backwards;
+
+  }
+
+
+
+  .navbar-collapse .visible {
+
+    display: block;
+
+    animation: slideDown 0.3s ease forwards;
+
+  }
+
+  header .navbar-toggler {
+
+    width: 40px;
+
+    height: 40px;
+
+    position: relative;
+
+    z-index: 99;
+
+    margin-left: 25px;
+
+    border:none
+
+}
+
+header .navbar-toggler:focus{
+
+  box-shadow: none;
+
+}
+
+  header .navbar-toggler span {
+
+    width: 0;
+
+    height: 0;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%
+
+}
+
+header .navbar-toggler:after,
+
+header .navbar-toggler:before {
+
+    position: absolute;
+
+    background: var(--bs-black);
+
+    content: '';
+
+    top: 30px;
+
+    height: 2px;
+
+    width: 28px;
+
+    left: 50%;
+
+    margin-left: -18px;
+
+    border-radius: 6px;
+
+    transition: ease 0.4s;
+
+    opacity: 1
+
+}
+
+header .navbar-toggler[aria-expanded="true"]:before {
+
+    top: -10px;
+
+    opacity: 0
+
+}
+
+header .navbar-toggler[aria-expanded="true"]:after {
+
+    bottom: -10px;
+
+    opacity: 0
+
+}
+
+header .navbar-toggler span:after,
+
+header .navbar-toggler span:before {
+
+    position: absolute;
+
+    background: var(--bs-black);
+
+    content: '';
+
+    top: 50%;
+
+    height: 2px;
+
+    width: 28px;
+
+    left: 50%;
+
+    margin-top: -1px;
+
+    margin-left: -18px;
+
+    border-radius: 6px;
+
+    transition: ease 0.4s;
+
+}
+
+header .navbar-toggler[aria-expanded="true"] span:before {
+
+    transform: rotate(45deg);
+
+}
+
+header .navbar-toggler[aria-expanded="true"] span:after {
+
+    transform: rotate(-45deg);
+
+}
+
+header .navbar-toggler:after {
+
+    bottom: 30px;
+
+    top: auto;
+
+}
+
+
+
+  @keyframes slideDown {
+
+    from {
+
+      opacity: 0;
+
+      transform: translateY(-10px);
+
+    }
+
+    to {
+
+      opacity: 1;
+
+      transform: translateY(0);
+
+    }
+
+  }
+
+
+
+  @keyframes slideUp {
+
+    from {
+
+      opacity: 1;
+
+      transform: translateY(0);
+
+    }
+
+    to {
+
+      opacity: 0;
+
+      transform: translateY(-10px);
+
+    }
+
+  }

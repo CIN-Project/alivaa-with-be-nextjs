@@ -1,0 +1,133 @@
+:root{
+
+    --bs-fadewhite:#fafafa;
+
+}
+.mb5n{ bottom:-3em !important; position:absolute;}
+/* @media only screen and (max-width: 1366px) {
+.mb5n {
+    bottom: -6em !important;
+    position: absolute;
+}
+} */
+body{ overflow-x:hidden !important}
+.ourbrand .row{margin: 0;height: 100%;
+
+    display: flex;
+
+    align-content: center;
+
+    padding: 10px;
+}
+.mt-0{ margin-top:0px !important;}
+.ourbrand .row div[class*='col-']{padding: 0;}
+
+.ourbrand .row .alivaa-pagecontent{padding: 50px;height: 100%;box-shadow: 0 .25rem .75rem #0000000d;}
+
+.ourbrand .row .alivaa-pagecontent p{text-align: justify;}
+
+.special-offers .row{background-color: var(--bs-fadewhite);box-shadow: 0 .25rem .75rem #0000000d;}
+
+.special-offers ul{list-style: none;margin: 0;padding: 15px 0 0 0;}
+
+.special-offers ul li{
+
+    align-items: center;
+
+    display: flex;
+
+    font-size: 14px;
+
+    gap: 16px;
+
+    margin-bottom: 10px;
+
+    position: relative;
+
+    padding-left: 30px;
+
+}
+
+.special-offers ul li.room-only{
+
+    flex-direction: column;
+
+    justify-content: left;
+
+    align-items: baseline;
+
+    gap: 0;
+
+}
+
+.special-offers .row:nth-child(2) .alivaa-album{justify-content: end;}
+
+.special-offers ul li:before {
+
+    position: absolute;
+
+    content: '';
+
+    left: 0;
+
+    top: 3px;
+
+    right: auto;
+
+    width: 15px;
+
+    height: 15px;
+
+    border: 1px solid #000000;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    margin: 0 5px;
+
+}
+
+.special-offers ul li:after {
+
+    width: 5px;
+
+    height: 5px;
+
+    background: #000000;
+
+    border-radius: 50%;
+
+    display: block;
+
+    position: absolute;
+
+    content: '';
+
+    z-index: 11;
+
+    left: 10px;
+
+    top: 8px;
+
+    transform: none;
+
+    margin: auto;
+
+}
+
+.special-offers .global-heading{text-align: left;}
+
+.special-offers .global-heading:after{left: 0;right: auto;}
+
+.special-offers .alivaa-album{display: flex;}
+
+
+
+.contactSubmit{
+
+	/* background-color: #8c7459 !important;
+
+    border-color:  #8c7459 !important; */
+
+}
