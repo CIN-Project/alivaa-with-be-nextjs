@@ -1250,10 +1250,11 @@ p.hotel-info {
 .package-main-box .winter-box-content .offer-footer-part .priceText {
     font-weight: 500;
     font-size: 12px;
+    margin-bottom: 0!important;
 }
 
 .package-main-box .winter-box-content .offer-footer-part .priceText small {
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .package-main-box .winter-box-content .package-desc-content {
@@ -1761,7 +1762,7 @@ p.hotel-info {
 
 .property-popup-modal-content .property-amenitiess ul li {
     font-size: 10px;
-    margin: 13px 0;
+    margin: 6px 0;
 }
 
 .property-popup-modal-content .property-amenitiess ul.amenity-list li::before {
@@ -2317,6 +2318,9 @@ a.view-all-hotel-btn {
     line-height: 20px;
     text-align: center;
     margin-left: auto;
+}
+.flatpickr-calendar{
+    z-index: 9999999999999999;
 }
 
 .popup-box-contentrj {
@@ -3417,8 +3421,26 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
 }
 
 .modal .modal-content .btn-close {
-    padding: 0px;
-    background-color: transparent;
+    padding: 0;
+    background-color: #1b1b1b8a;
+    color: var(--bs-white);
+    border-radius: 0%;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    right: 5;
+    z-index: 9999;
+    background-image: none;
+    font-size: 16px;
+}
+.popup-box-contentrj .popup-amenity-items span{
+    text-align: left;
+}
+/* .modal .modal-content .btn-close {
+    padding: 0;
+    background-color: #0000;
     color: var(--bs-white);
     border-radius: 0%;
     width: 90px;
@@ -3428,7 +3450,7 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
     right: 0;
     z-index: 9999;
     background-image: none;
-}
+} */
 
 .modal .modal-content .btn-close:focus {
     box-shadow: none;
@@ -3471,20 +3493,22 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
 .hide-booking-engine {
     cursor: pointer;
     position: absolute;
-    top: -10px;
-    right: 50%;
-    left: 50%;
+    top: -13px;
+    right: 0;
+    /* left: 50%; */
     text-align: center;
-    background-color: transparent;
+    background-color: #000000;
     display: flex;
     width: 78px;
-    padding: 5px;
-    transform: translate(-50%, -50%);
+    padding: 1px;
+    transform: translate(0%, -50%);
     align-items: center;
     justify-content: center;
     color: var(--bs-white);
 }
-
+.property-reviewss{
+    margin-top: 5px;
+}
 .hide-booking-engine.this-is-for-desktop-close {
     top: -15px;
 }
@@ -3571,6 +3595,15 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
+}
+.wizard-sidebar .accordion .accordion-item .room-count-d-flex p{
+margin-bottom: 0;
+}
+.wizard-sidebar .accordion .accordion-item .f-12-new{
+    margin-bottom: 0;
+}
+.wizard-sidebar .accordion .accordion-item .total-member-count{
+margin-bottom: 0;
 }
 
 .confirmation-top .confirmation-number {
@@ -4224,6 +4257,13 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
     .wizard-sidebar {
         width: calc(100% - 5px);
         max-width: 100%;
+        height: 100vh;
+    }
+        .booking-form-section {
+        /* transform: translate(0, 0px) !important; */
+        transform: translateY(30px) !important;
+        transform:none!important;
+
     }
 
     .wizard-bottom-fixed {
@@ -4267,7 +4307,7 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
     .booking-bar {
         border-radius: .7rem !important;
         padding-top: 3rem !important;
-        padding-bottom: 30%;
+        padding-bottom: 1%;
         /* height: 80vh !important; */
         transform: translateY(0%) !important;
         position: relative !important;
@@ -4345,6 +4385,10 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
         display: inline-block;
         text-align: initial;
         float: none;
+        font-size: 10px!important;
+    }
+    .booking-bar.fullscreen {
+    height: calc(96vh - 2px)!important;
     }
 
     .card .book-now-content .accordion-body .price-detail-right {
@@ -4364,6 +4408,9 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
         display: block;
         height: 100%;
     }
+    .card .book-now-content .accordion-body .room-type-single .bold-text1{
+        margin-bottom: 0;
+    }
 
     .wizard-sidebar.active .side-overlay.isActive {
         max-width: 85%;
@@ -4377,8 +4424,16 @@ input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio"
         width: 100%;
         max-width: 85%;
         min-width: 84%;
+        /* position: sticky;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%; */
     }
-
+.hotels-rooms-list .book-a-stay .btn-primary{
+    font-size: 11px!important;
+}
     .search-only-in-mob {
         display: block;
         position: absolute;

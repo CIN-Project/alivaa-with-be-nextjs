@@ -583,7 +583,7 @@ const StayStep = ({ goNext, onClose }) => {
                 </div>
               </div>
             )}
-            <div className="room-flex mb-2">
+            <div className="room-flex mb-0">
               <p
                 className="total-member-count f-12-new"
                 onClick={openRoomPage}
@@ -627,7 +627,7 @@ const StayStep = ({ goNext, onClose }) => {
                     Price
                   </button>
                   {selectedRoom && (
-                    <p className="amount-in-wizard">₹ {basePrice}</p>
+                    <p className="amount-in-wizard mb-0">₹ {basePrice}</p>
                   )}
                 </div>
                 <div
@@ -724,7 +724,7 @@ const StayStep = ({ goNext, onClose }) => {
           </div>
         </div>
         <div className="cancellation-policy p-2">
-          <p className="f-12-new high-stay">Cancellation Policy</p>
+          <p className="f-12-new high-stay mb-0">Cancellation Policy</p>
           <span className="f-12-new">
             {cancellationPolicyState?.slice(0, 35)}...
             <a
@@ -755,9 +755,9 @@ const StayStep = ({ goNext, onClose }) => {
           aria-labelledby="rateDetailsModalLabel"
           aria-hidden="true"
         >
-          <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-dialog modal-dialog-centered modal-lg text-start">
             <div className="modal-content">
-              <div className="modal-header">
+              <div className="p-3  text-start">
                 {/* <h5 className="modal-title" id="rateDetailsModalLabel">
                   Rate Details
                 </h5> */}
@@ -768,14 +768,7 @@ const StayStep = ({ goNext, onClose }) => {
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 >
-                  {" "}
-                  CLOSE{" "}
-                  <Image
-                    src="./images/white_close_icon.svg"
-                    alt="close icon"
-                    width={25}
-                    height={25}
-                  />
+                  x
                 </button>
               </div>
               <div className="modal-body">

@@ -1013,10 +1013,10 @@ const FilterBar = ({
         }
       }
     };
-    if (promoCodeContext1 || promoCodeContext) {
+    // if (promoCodeContext1 || promoCodeContext) {
       setPromoCodeContext(promoCodeContext || promoCodeContext1);
       fetchPrices();
-    }
+    // }
   }, [isHandleSearched, promoCodeContext1, promoCodeContext]);
 
   // useEffect(() => {
@@ -1975,9 +1975,9 @@ const FilterBar = ({
           className={`booking-bar ${isClassAddedBook ? "fullscreen" : ""}`}
         >
           <div className="hide-booking-engine" onClick={hideBookingEngine}>
-            CLOSE
+            CLOSE &nbsp;
             {/* <Image alt="close icon" width="25" height="25" src="/cin-booking/images/white_close_icon.svg" style={{ width: '25px', height: '25px' }} /> */}
-            <FontAwesomeIcon icon={faXmark} />
+             <FontAwesomeIcon icon={faXmark} />
           </div>
           <div className="booking-bar-form">
             {/* {selectedProperty == 0 && (
@@ -2095,7 +2095,7 @@ const FilterBar = ({
                                       </span>
                                     </p>
 
-                                    <div className="property-reviewss mt-3">
+                                    <div className="property-reviewss">
                                       <div className="d-flex">
                                         <Image
                                           src="/booking-engine-imgs/images/google-icon.svg"
@@ -2119,7 +2119,7 @@ const FilterBar = ({
                                       </div>
                                     </div>
 
-                                    <div className="hotel-dist mt-3">
+                                    <div className="hotel-dist mt-2">
                                       <Image
                                         src="/booking-engine-imgs/images/location-map.png"
                                         height={30}
@@ -2136,7 +2136,7 @@ const FilterBar = ({
                                       </span>
                                     </div>
 
-                                    <p className="hotel-info mt-3 pb-2 text-justify mobile-hidden-text">
+                                    <p className="hotel-info mt-2 pb-2 mb-0 text-justify mobile-hidden-text">
                                       {/* {property.PropertyData.PropertyDescription} */}
                                       {stripHtml(
                                         property.PropertyData
@@ -2179,8 +2179,8 @@ const FilterBar = ({
                                               >
                                                 {activeView === "category" ? (
                                                   <>
-                                                    <div className="modal-header border-0">
-                                                      <h5 className="modal-title">
+                                                    <div className="border-0 mb-3 text-start">
+                                                      <h5 className="modal-title text-start">
                                                         {/* Alivaa Hotel, Sohna Road City Center, Gurgaon */}
                                                         {
                                                           property.PropertyData
@@ -2385,7 +2385,13 @@ const FilterBar = ({
                                               </div>
                                               <div className="bottom-modal-content">
                                                 <div className="property-description mt-3">
-                                                  {property.PropertyData
+                                                  
+                                                        <div
+                                                          className="property-amenitiess mt-4"
+                                                          
+                                                        >
+                                                          <div className="row">
+                                                            {property.PropertyData
                                                     ?.Amenities &&
                                                     Object.entries(
                                                       property.PropertyData
@@ -2395,12 +2401,7 @@ const FilterBar = ({
                                                         [category, items],
                                                         catIndex
                                                       ) => (
-                                                        <div
-                                                          className="property-amenitiess mt-4"
-                                                          key={`cat-${catIndex}`}
-                                                        >
-                                                          <div className="row">
-                                                            <div className="col-lg-4 col-md-6 col-sm-6">
+                                                            <div className="col-lg-4 col-md-6 col-sm-6" key={`cat-${catIndex}`}>
                                                               <h6 className="amenity-ttile">
                                                                 <Image
                                                                   src="/booking-engine-imgs/images/bellboy.png"
@@ -2409,7 +2410,6 @@ const FilterBar = ({
                                                                   width={20}
                                                                   alt="Bed icon"
                                                                 />
-                                                                {/* Beds and Bedding */}
                                                                 {category}
                                                               </h6>
                                                               <ul>
@@ -2431,10 +2431,11 @@ const FilterBar = ({
                                                                   )}
                                                               </ul>
                                                             </div>
+                                                            )
+                                                    )}
                                                           </div>
                                                         </div>
-                                                      )
-                                                    )}
+                                                      
                                                 </div>
                                               </div>
                                             </div>
@@ -2494,11 +2495,11 @@ const FilterBar = ({
                                         aria-labelledby={`amenitiesModalLabel-${property.PropertyData.PropertyId}`}
                                         aria-hidden="true"
                                       >
-                                        <div className="modal-dialog modal-dialog-centered modal-lg">
+                                        <div className="modal-dialog modal-dialog-centered modal-lg text-start">
                                           <div className="modal-content">
-                                            <div className="modal-header">
+                                            <div className="p-3">
                                               <h5
-                                                className="modal-title"
+                                                className="modal-title text-start"
                                                 id={`amenitiesModalLabel-${property.PropertyData.PropertyId}`}
                                               >
                                                 {
@@ -2513,18 +2514,8 @@ const FilterBar = ({
                                                 data-bs-dismiss="modal"
                                                 aria-label="Close"
                                               >
-                                                {" "}
-                                                CLOSE{" "}
-                                                <Image
-                                                  src="/booking-engine-imgs/images/white_close_icon.svg"
-                                                  alt="close icon"
-                                                  width={25}
-                                                  height={25}
-                                                  style={{
-                                                    width: "25px",
-                                                    height: "25px",
-                                                  }}
-                                                />
+                                               x
+                                                
                                               </button>
                                             </div>
                                             <div className="modal-body">
@@ -2645,22 +2636,22 @@ const FilterBar = ({
                                               </p>
 
                                               <div className="room-type-single">
-                                                <p className="bold-text1">
+                                                <p className="bold-text1 mb-0">
                                                   {rooms.RoomView} &nbsp; |
                                                   &nbsp;&nbsp;
                                                 </p>
 
-                                                <p className="bold-text1">
+                                                <p className="bold-text1 mb-0">
                                                   Up to {rooms.MaxGuest} Guests
                                                   &nbsp; | &nbsp;&nbsp;
                                                 </p>
 
-                                                <p className="bold-text1">
+                                                <p className="bold-text1 mb-0">
                                                   {rooms.RoomSize}
                                                 </p>
                                               </div>
 
-                                              <div className="tile-placeholder text-justify py-3 pr-3 mobile-hidden-text">
+                                              <div className="tile-placeholder text-justify py-2 pr-3 mobile-hidden-text1">
                                                 {stripHtml(
                                                   rooms.RoomDescription || ""
                                                 ).slice(0, 180)}
@@ -2896,7 +2887,7 @@ const FilterBar = ({
                                                 )}
                                               </div>
 
-                                              <div className="facilities-roomm pb-2 mobile-hidden-text">
+                                              <div className="facilities-roomm pb-2 mobile-hidden-text1">
                                                 <span className="s-room-amenitiess">
                                                   {Object.entries(
                                                     rooms.RoomAmenities
@@ -3250,11 +3241,12 @@ const FilterBar = ({
                                               nextEl: ".swiper-button-next",
                                               prevEl: ".swiper-button-prev",
                                             }}
-                                            pagination={{
-                                              el: ".swiper-pagination",
-                                              clickable: true,
-                                              type: "bullets",
-                                            }}
+                                            // pagination={{
+                                            //   el: ".swiper-pagination",
+                                            //   clickable: true,
+                                            //   type: "bullets",
+                                            // }}
+                                            pagination={false}
                                             autoplay={{
                                               delay: 2000,
                                               disableOnInteraction: false,
@@ -3354,7 +3346,7 @@ const FilterBar = ({
                                                           ]?.OBP?.["1"]
                                                             ?.RateBeforeTax ? (
                                                             <button
-                                                              className="btn btn-primary offer-select-btnn"
+                                                              className="btn offer-select-btnn rounded-0"
                                                               onClick={() => {
                                                                 handleSelectRoom(
                                                                   mapping,
@@ -3576,9 +3568,9 @@ const FilterBar = ({
                                         aria-labelledby="rateDetailsModalLabel"
                                         aria-hidden="true"
                                       >
-                                        <div className="modal-dialog modal-dialog-centered">
+                                        <div className="modal-dialog modal-dialog-centered text-start">
                                           <div className="modal-content">
-                                            <div className="modal-header">
+                                            <div className="p-3">
                                               <h5
                                                 className="modal-title"
                                                 id="rateDetailsModalLabel"
@@ -3594,18 +3586,8 @@ const FilterBar = ({
                                                   setSelectedRoomOffers([])
                                                 }
                                               >
-                                                {" "}
-                                                CLOSE{" "}
-                                                <Image
-                                                  src="./booking-engine-imgs/images/white_close_icon.svg"
-                                                  alt="close icon"
-                                                  width={25}
-                                                  height={25}
-                                                  style={{
-                                                    width: "25px",
-                                                    height: "25px",
-                                                  }}
-                                                />
+                                                x
+                                                
                                               </button>
                                             </div>
                                             <div className="modal-body">
@@ -3616,11 +3598,11 @@ const FilterBar = ({
                                                       key={idx}
                                                       className="offer-item"
                                                     >
-                                                      <h5>{rate.RateName}</h5>
-                                                      <h5>{rate.Meal}</h5>
+                                                      <h6>{rate.RateName}</h6>
+                                                      <h6>{rate.Meal}</h6>
                                                       <div className="popup-amenity-items py-3">
                                                         {/* <div dangerouslySetInnerHTML={{ __html: removeHtmlTags(rate.RateDescription) }} /> */}
-                                                        <p>
+                                                        <p className="f-12-new">
                                                           {stripHtml(
                                                             rate.RateDescription ||
                                                               ""

@@ -164,6 +164,8 @@ const ConfirmStep = ({ onClose, goNext, status }) => {
                             height={100}
                             width={200}
                             alt="brand image"
+                            // style={{"filter":"invert(1)"}}     
+                            //in case of black logo uncomment this css style 
                           />
                         </div>
                       </div>
