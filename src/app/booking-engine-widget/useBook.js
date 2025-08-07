@@ -9,6 +9,7 @@ export default function useBook() {
 
   const [rangeStart, setRangeStart] = useState(today);
   const [rangeEnd, setRangeEnd] = useState(tomorrow);
+  const [promoCodeContext, setPromoCodeContext] = useState("VkpTUFM=");
   const today1 = today;
 
   const selectStartDate = (d) => {
@@ -21,7 +22,7 @@ export default function useBook() {
 
   // Initialize with one row already present
   const [formRows, setFormRows] = useState([
-    { id: Date.now(), name: "", count1: 2, count2: 0, count3: 0 }
+    { id: Date.now(), name: "", count1: 2, count2: 0, count3: 0 },
   ]);
 
   const [editingRowId, setEditingRowId] = useState(null);
@@ -57,7 +58,7 @@ export default function useBook() {
       name: "",
       count1: 1, // Adult count
       count2: 0, // Children count
-      count3: 0 // Any other field if necessary
+      count3: 0, // Any other field if necessary
     };
     setFormRows((prevRows) => [...prevRows, newRow]);
   };
@@ -79,12 +80,11 @@ export default function useBook() {
     }
   }, [formRows, editingRowId]);
 
-// Function to calculate total adults across all rows
-const adult = () => formRows.reduce((total, row) => total + row.count1, 0);
+  // Function to calculate total adults across all rows
+  const adult = () => formRows.reduce((total, row) => total + row.count1, 0);
 
-// Function to calculate total children across all rows
-const children = () => formRows.reduce((total, row) => total + row.count2, 0);
-
+  // Function to calculate total children across all rows
+  const children = () => formRows.reduce((total, row) => total + row.count2, 0);
 
   // Count total rooms
   const countroom = formRows.length;
@@ -109,6 +109,8 @@ const children = () => formRows.reduce((total, row) => total + row.count2, 0);
     handleRemove,
     editingRowId,
     addNewRow,
-    toggleEditMode
+    toggleEditMode,
+    promoCodeContext,
+    setPromoCodeContext,
   };
 }

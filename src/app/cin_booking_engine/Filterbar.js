@@ -36,6 +36,7 @@ import "swiper/css/navigation";
 
 const dummyImage = "/no_image.jpg";
 import { createPortal } from "react-dom";
+import useBook from "app/booking-engine-widget/useBook";
 
 const FilterBar = ({
   contentData,
@@ -45,7 +46,8 @@ const FilterBar = ({
   roomId,
   rangeStart,
   rangeEnd,
-  promoCode,
+  promoCodeParam,
+  promoCodeContext1,
 }) => {
   const {
     setSelectedPropertyId,
@@ -83,13 +85,15 @@ const FilterBar = ({
     setIsAddOnns,
     setAddonList,
   } = useBookingEngineContext();
+
+  //const { promoCodeContext, setPromoCodeContext } = useBook();
   const [filters, setFilters] = useState({
     offer: "",
     query: "",
     dateRange: { start: "", end: "", totalPrice: 0 },
     guests: { adults: 1, children: 0, rooms: 1 },
   });
-  //const [promoCode, setPromoCode] = useState("");
+  const [promoCode, setPromoCode] = useState("");
   const [destination, setDestination] = useState("");
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
@@ -947,7 +951,7 @@ const FilterBar = ({
                 selectedPropertyId,
                 fromDate,
                 toDate,
-                promoCodeContext,
+                promoCodeContext: promoCodeContext || promoCodeContext1,
               }),
             }
           );
@@ -1009,9 +1013,11 @@ const FilterBar = ({
         }
       }
     };
-
-    fetchPrices();
-  }, [isHandleSearched]);
+    if (promoCodeContext1 || promoCodeContext) {
+      setPromoCodeContext(promoCodeContext || promoCodeContext1);
+      fetchPrices();
+    }
+  }, [isHandleSearched, promoCodeContext1, promoCodeContext]);
 
   // useEffect(() => {
   //   const storedData = sessionStorage?.getItem("paymentResponse");
@@ -1093,7 +1099,7 @@ const FilterBar = ({
     }
   };
   const handlePromocodeChange = (e) => {
-    // setPromoCode(e.target.value);
+    setPromoCode(e.target.value);
     const encoded = encodeBase64(e.target.value);
     setPromoCodeContext(encoded);
   };
@@ -1742,8 +1748,12 @@ const FilterBar = ({
       .replace(/&nbsp;/g, " ")
       .replace(/<span[^>]*>/g, "") // remove opening <span> with any attributes
       .replace(/<\/span>/g, "") // remove closing </span>
+      .replace(/<strong[^>]*>/g, "") // remove opening <strong> with any attributes
+      .replace(/<\/strong>/g, "") // remove closing </strong>
       .replace(/<p[^>]*>/g, "") // remove opening <p> with any attributes
-      .replace(/<\/p>/g, ""); // remove closing </p>
+      .replace(/<\/p>/g, "") // remove closing </p>
+      .replace(/<b[^>]*>/g, "") // remove opening <b> with any attributes
+      .replace(/<\/b>/g, ""); // remove closing </b>
   };
 
   const [isWizardVisible, setIsWizardVisible] = useState(false);
@@ -2027,7 +2037,7 @@ const FilterBar = ({
                 type="text"
                 name="promoCode"
                 maxLength={20}
-                value={promoCode}
+                value={promoCode || promoCodeParam}
                 onChange={handlePromocodeChange}
                 className="form-control"
                 placeholder="Promo Code"

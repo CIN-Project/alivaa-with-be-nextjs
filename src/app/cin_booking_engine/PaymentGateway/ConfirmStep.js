@@ -66,10 +66,13 @@ const ConfirmStep = ({ onClose, goNext, status }) => {
   }, []);
 
   useEffect(() => {
-    if (
-      responseObject?.status === "success" ||
-      responseObject?.status === "paylater"
-    ) {
+    // if (
+    //   responseObject?.status === "success" ||
+    //   responseObject?.status === "paylater"
+    // ) {
+    //   handleConfirm();
+    // }
+    if (responseObject != null) {
       handleConfirm();
     }
   }, [responseObject]);
@@ -216,7 +219,11 @@ const ConfirmStep = ({ onClose, goNext, status }) => {
                               </li>
                               <li>
                                 <p className="f-12-new">
-                                  {BookingDetails?.selectedStartDate}
+                                  {
+                                    new Date(BookingDetails?.selectedStartDate)
+                                      .toISOString()
+                                      .split("T")[0]
+                                  }
                                 </p>
                               </li>
                               <li>
@@ -224,7 +231,11 @@ const ConfirmStep = ({ onClose, goNext, status }) => {
                               </li>
                               <li>
                                 <p className="f-12-new">
-                                  {BookingDetails?.selectedEndDate}
+                                  {
+                                    new Date(BookingDetails?.selectedEndDate)
+                                      .toISOString()
+                                      .split("T")[0]
+                                  }
                                 </p>
                               </li>
                               <li>

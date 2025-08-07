@@ -9,6 +9,7 @@ import md5 from "md5";
 import { useBookingEngineContext } from "../../cin_context/BookingEngineContext";
 import { createSignature } from "../../../utilities/signature";
 import PayLater from "./PayLater";
+import useBook from "app/booking-engine-widget/useBook";
 
 const encryptHash = (partnerKey, data) => {
   let text = "";
@@ -65,6 +66,7 @@ const BookingAndPayment = () => {
     property,
   } = useBookingEngineContext();
 
+  //const { promoCodeContext, setPromoCodeContext } = useBook();
   const [formData, setFormData] = useState({
     title: "",
     firstName: "",
@@ -138,14 +140,14 @@ const BookingAndPayment = () => {
 
         setFormData((prev) => ({
           ...prev,
-          title: result?.memberTitle || "",
-          firstName: result?.firstName || "",
-          lastName: result?.lastName || "",
-          email: result?.email || "",
-          phone: result?.mobileNumber || phone,
+          title: result?.memberTitle ?? prev.title,
+          firstName: result?.firstName ?? prev.firstName,
+          lastName: result?.lastName ?? prev.lastName,
+          email: result?.email ?? prev.email,
+          phone: result?.mobileNumber ?? prev.phone,
           gstNumber: "",
           specialRequests: "",
-          agreeToTerms: false,
+          agreeToTerms: prev.agreeToTerms,
         }));
       } catch (error) {
         console.error("Failed to fetch user data", error);
@@ -190,15 +192,15 @@ const BookingAndPayment = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const openPayLater = () => {
-    if (!validateForm()) {
-      const firstError = Object.values(errors)[0];
-      toast.error(firstError, { position: "top-right", autoClose: 3000 });
-      return;
-    }
-    setError(null);
-    setOpenPayLater(true);
-  };
+  // const openPayLater = () => {
+  //   if (!validateForm()) {
+  //     const firstError = Object.values(errors)[0];
+  //     toast.error(firstError, { position: "top-right", autoClose: 3000 });
+  //     return;
+  //   }
+  //   setError(null);
+  //   setOpenPayLater(true);
+  // };
 
   const generateReservationIdFromAPI = async (selectedPropertyId) => {
     const timestamp = Date.now().toString();
@@ -488,8 +490,12 @@ const BookingAndPayment = () => {
                 ).toString(),
               },
               room: selectedRoom?.map((room) => ({
-                arrival_date: selectedStartDate,
-                departure_date: selectedEndDate,
+                arrival_date: new Date(selectedStartDate)
+                  .toISOString()
+                  .split("T")[0],
+                departure_date: new Date(selectedEndDate)
+                  .toISOString()
+                  .split("T")[0],
                 arrival_time: "00:00",
                 sepcial_request: formData?.specialRequests,
                 bedding: {
@@ -703,7 +709,7 @@ const BookingAndPayment = () => {
           AddonName: addon.AddonName,
         })),
         cancellationPolicyState,
-        termsAndConditions,
+        termsAndConditions: "abcd efg",
         property: {
           PropertyName: property?.PropertyName,
           Address: property?.Address,
@@ -711,7 +717,7 @@ const BookingAndPayment = () => {
       });
       const finalRequestData2 = {
         property_id: selectedPropertyId,
-        property_name: selectedPropertyName,
+        property_name: property?.PropertyName,
         property_tel: selectedPropertyPhone,
         cust_name: `${formData.firstName} ${formData.lastName}`,
         cust_email: formData.email,
@@ -982,7 +988,7 @@ const BookingAndPayment = () => {
               </button>
             </div>
 
-            <div className="wizard-bottom-fixed-1">
+            {/* <div className="wizard-bottom-fixed-1">
               <p className="text-center"> OR </p>
             </div>
             <div className="wizard-bottom-fixed-2">
@@ -994,7 +1000,7 @@ const BookingAndPayment = () => {
               >
                 Pay Later
               </div>
-            </div>
+            </div> */}
           </div>
         </form>
 
@@ -1010,7 +1016,7 @@ const BookingAndPayment = () => {
           <input type="hidden" name="keydata" value={keyData} />
         </form>
 
-        {isOpenPayLater && (
+        {/* {isOpenPayLater && (
           <div className="pay-later-pop-up">
             <div className="modal-overlay">
               <div className="modal-content">
@@ -1024,7 +1030,7 @@ const BookingAndPayment = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

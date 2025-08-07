@@ -51,9 +51,12 @@ export default function BookNowForm({
     handleDecrement,
     addNewRow,
     handleRemove,
+    promoCodeContext,
+    setPromoCodeContext,
   } = useBook();
 
-  const { promoCodeContext, setPromoCodeContext } = useBookingEngineContext();
+  const [promoCodeContext1, setPromoCodeContext1] = useState(null);
+  // let promoCodeContext1 = "";
   const [promoCode, setPromoCode] = useState("");
   console.log(contentData);
   const handleEnquirySubmit = async () => {
@@ -273,6 +276,8 @@ export default function BookNowForm({
   const handlePromocodeChange = (e) => {
     setPromoCode(e.target.value);
     const encoded = encodeBase64(e.target.value);
+    //promoCodeContext1 = encoded;
+    setPromoCodeContext1(encoded);
     setPromoCodeContext(encoded);
   };
   const handleCheckAvailability = () => {
@@ -381,221 +386,238 @@ export default function BookNowForm({
       {!isFormOpen ? (
         <BookingEngineProvider>
           <FilterBar
-            selectedProperty={selectedProperty}
+            selectedProperty={0}
             contentData={contentData}
             tokenKey={tokenKey}
           ></FilterBar>
         </BookingEngineProvider>
       ) : (
-        // <div></div>
-        <div
-          className={`header_booking_engine_container ${
-            isFormOpen ? "show" : ""
-          } ${isHomePage ? "home-page-class" : ""}`}
-        >
+        <div>
           {cinBookingEngine ? (
-            <div className="header_booking_engine">
+            <section className="booking-form-section">
               <BookingEngineProvider>
                 <FilterBar
                   selectedProperty={parseInt(selectedHotel.value)}
                   rangeStart={rangeStart}
                   rangeEnd={rangeEnd}
-                  promoCode={promoCode}
+                  promoCodeParam={promoCode}
+                  promoCodeContext1={promoCodeContext1}
                 ></FilterBar>
               </BookingEngineProvider>
-            </div>
+            </section>
           ) : (
-            <div className="header_booking_engine">
-              <div className="row justify-content-center">
-                {/* Hotel Select */}
-                <div className="header-search-select-option col-12 col-md-3">
-                  <label htmlFor="hotel-select">Hotel/City</label>
-                  <Select
-                    className="form-control p-0 border-0"
-                    id="hotel-select"
-                    options={hotelOptions}
-                    onChange={handleHotelSelect}
-                    value={selectedHotel}
-                  />
-                </div>
-
-                {/* Check-in */}
-                <div className="datepicker-outer col-12 col-md-2">
-                  <label htmlFor="check-in">Check-in</label>
-                  <div className="datepicker-container">
-                    <DatePicker
-                      selectsStart
-                      selected={rangeStart}
-                      dateFormat="dd/MM/yyyy"
-                      onCalendarOpen={() => setIsCalendarOpen(true)}
-                      onCalendarClose={() => setIsCalendarOpen(false)}
-                      minDate={today1}
-                      startDate={rangeStart}
-                      // endDate={rangeEnd}
-                      className="form-control pl-2"
-                      id="check-in"
-                      onChange={(date) => {
-                        setRangeStart(date);
-                        const nextDay = new Date(date);
-                        nextDay.setDate(date.getDate() + 1);
-                        setRangeEnd(nextDay);
-                      }}
-                      monthsShown={monthsToShow}
-                      shouldCloseOnSelect={true}
-                      ref={checkInDatePickerRef}
+            <div
+              className={`header_booking_engine_container ${
+                isFormOpen ? "show" : ""
+              } ${isHomePage ? "home-page-class" : ""}`}
+            >
+              {/* {cinBookingEngine ? (
+            // <div className="header_booking_engine">
+            <BookingEngineProvider>
+              <FilterBar
+                selectedProperty={parseInt(selectedHotel.value)}
+                rangeStart={rangeStart}
+                rangeEnd={rangeEnd}
+                promoCode={promoCode}
+              ></FilterBar>
+            </BookingEngineProvider>
+          ) : (
+            // </div> */}
+              <div className="header_booking_engine">
+                <div className="row justify-content-center">
+                  {/* Hotel Select */}
+                  <div className="header-search-select-option col-12 col-md-3">
+                    <label htmlFor="hotel-select">Hotel/City</label>
+                    <Select
+                      className="form-control p-0 border-0"
+                      id="hotel-select"
+                      options={hotelOptions}
+                      onChange={handleHotelSelect}
+                      value={selectedHotel}
                     />
-                    <span
-                      className="calendar-icon"
-                      onClick={openCheckInCalendar}
-                    >
-                      <Calendar size={20} />
-                    </span>
                   </div>
-                </div>
 
-                {/* Check-out */}
-                <div className="datepicker-outer col-12 col-md-2">
-                  <label htmlFor="check-out">Check-out</label>
-                  <div className="datepicker-container">
-                    <DatePicker
-                      selectsEnd
-                      selected={rangeEnd}
-                      dateFormat="dd/MM/yyyy"
-                      onCalendarOpen={() => setIsCalendarOpen(true)}
-                      onCalendarClose={() => setIsCalendarOpen(false)}
-                      id="check-out"
-                      endDate={rangeEnd}
-                      className="form-control pl-2"
-                      onChange={selectEndDate}
-                      minDate={
-                        new Date(rangeStart.getTime() + 24 * 60 * 60 * 1000)
-                      }
-                      monthsShown={monthsToShow}
-                      shouldCloseOnSelect={true}
-                      // minDate={rangeStart}
-                      ref={checkOutDatePickerRef}
-                    />
-                    <span
-                      className="calendar-icon"
-                      onClick={openCheckOutCalendar}
-                    >
-                      <Calendar size={20} />
-                    </span>
-                  </div>
-                </div>
-
-                {/* Rooms & Guests */}
-                <div className="rooms-child-outer-block col-12 col-md-3 position-relative">
-                  <label htmlFor="rooms-childs-input">Please Select</label>
-                  <input
-                    type="text"
-                    id="rooms-childs-input"
-                    className="rooms-childs-input form-control"
-                    value={`Rooms: ${countroom} - Adults: ${adult()} - Children: ${children()}`}
-                    readOnly
-                    onClick={handleRoomMenuToggle}
-                  />
-                  {isRoomMenuOpen && (
-                    <div
-                      className="showmoreT add-rooms-block"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <div>
-                        {formRows.map((row, index) => (
-                          <div key={row.id} className="add-rooms-div">
-                            <div className="room-name-or-remove">
-                              <span>Room {index + 1}</span>
-                              <button
-                                className="yellow-btn rmv"
-                                onClick={() => handleRemove(row.id)}
-                              >
-                                Remove
-                              </button>
-                            </div>
-                            <div className="row justify-content-center ms-0">
-                              <div className="col-6">
-                                <div className="form-group plus-min-style">
-                                  <p>Adult(s):</p>
-                                  <button
-                                    onClick={() =>
-                                      handleDecrement(row.id, "count1")
-                                    }
-                                    disabled={row.count1 <= 1}
-                                  >
-                                    -
-                                  </button>
-                                  <span>{row.count1}</span>
-                                  <button
-                                    onClick={() =>
-                                      handleIncrement(row.id, "count1")
-                                    }
-                                    disabled={row.count1 >= 2}
-                                  >
-                                    +
-                                  </button>
-                                </div>
-                              </div>
-                              <div className="col-6">
-                                <div className="form-group plus-min-style">
-                                  <p>Child(ren):</p>
-                                  <button
-                                    onClick={() =>
-                                      handleDecrement(row.id, "count2")
-                                    }
-                                    disabled={row.count2 <= 0}
-                                  >
-                                    -
-                                  </button>
-                                  <span>{row.count2}</span>
-                                  <button
-                                    onClick={() =>
-                                      handleIncrement(row.id, "count2")
-                                    }
-                                    disabled={row.count2 >= 2}
-                                  >
-                                    +
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                        <button onClick={addNewRow} className="yellow-btn btn">
-                          Add Room
-                        </button>
-                      </div>
+                  {/* Check-in */}
+                  <div className="datepicker-outer col-12 col-md-2">
+                    <label htmlFor="check-in">Check-in</label>
+                    <div className="datepicker-container">
+                      <DatePicker
+                        selectsStart
+                        selected={rangeStart}
+                        dateFormat="dd/MM/yyyy"
+                        onCalendarOpen={() => setIsCalendarOpen(true)}
+                        onCalendarClose={() => setIsCalendarOpen(false)}
+                        minDate={today1}
+                        startDate={rangeStart}
+                        // endDate={rangeEnd}
+                        className="form-control pl-2"
+                        id="check-in"
+                        onChange={(date) => {
+                          setRangeStart(date);
+                          const nextDay = new Date(date);
+                          nextDay.setDate(date.getDate() + 1);
+                          setRangeEnd(nextDay);
+                        }}
+                        monthsShown={monthsToShow}
+                        shouldCloseOnSelect={true}
+                        ref={checkInDatePickerRef}
+                      />
+                      <span
+                        className="calendar-icon"
+                        onClick={openCheckInCalendar}
+                      >
+                        <Calendar size={20} />
+                      </span>
                     </div>
-                  )}
-                </div>
+                  </div>
 
-                <div className="datepicker-outer col-12 col-md-2">
-                  <label htmlFor="check-out">Check-out</label>
-                  <div className="datepicker-container">
+                  {/* Check-out */}
+                  <div className="datepicker-outer col-12 col-md-2">
+                    <label htmlFor="check-out">Check-out</label>
+                    <div className="datepicker-container">
+                      <DatePicker
+                        selectsEnd
+                        selected={rangeEnd}
+                        dateFormat="dd/MM/yyyy"
+                        onCalendarOpen={() => setIsCalendarOpen(true)}
+                        onCalendarClose={() => setIsCalendarOpen(false)}
+                        id="check-out"
+                        endDate={rangeEnd}
+                        className="form-control pl-2"
+                        onChange={selectEndDate}
+                        minDate={
+                          new Date(rangeStart.getTime() + 24 * 60 * 60 * 1000)
+                        }
+                        monthsShown={monthsToShow}
+                        shouldCloseOnSelect={true}
+                        // minDate={rangeStart}
+                        ref={checkOutDatePickerRef}
+                      />
+                      <span
+                        className="calendar-icon"
+                        onClick={openCheckOutCalendar}
+                      >
+                        <Calendar size={20} />
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Rooms & Guests */}
+                  <div className="rooms-child-outer-block col-12 col-md-3 position-relative">
+                    <label htmlFor="rooms-childs-input">Please Select</label>
                     <input
                       type="text"
-                      name="promoCode"
-                      maxLength={20}
-                      value={promoCode}
-                      onChange={handlePromocodeChange}
-                      className="form-control"
-                      placeholder="Promo Code"
+                      id="rooms-childs-input"
+                      className="rooms-childs-input form-control"
+                      value={`Rooms: ${countroom} - Adults: ${adult()} - Children: ${children()}`}
+                      readOnly
+                      onClick={handleRoomMenuToggle}
                     />
-                    <span
-                      className="calendar-icon"
-                      onClick={openCheckOutCalendar}
-                    >
-                      <Calendar size={20} />
-                    </span>
+                    {isRoomMenuOpen && (
+                      <div
+                        className="showmoreT add-rooms-block"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <div>
+                          {formRows.map((row, index) => (
+                            <div key={row.id} className="add-rooms-div">
+                              <div className="room-name-or-remove">
+                                <span>Room {index + 1}</span>
+                                <button
+                                  className="yellow-btn rmv"
+                                  onClick={() => handleRemove(row.id)}
+                                >
+                                  Remove
+                                </button>
+                              </div>
+                              <div className="row justify-content-center ms-0">
+                                <div className="col-6">
+                                  <div className="form-group plus-min-style">
+                                    <p>Adult(s):</p>
+                                    <button
+                                      onClick={() =>
+                                        handleDecrement(row.id, "count1")
+                                      }
+                                      disabled={row.count1 <= 1}
+                                    >
+                                      -
+                                    </button>
+                                    <span>{row.count1}</span>
+                                    <button
+                                      onClick={() =>
+                                        handleIncrement(row.id, "count1")
+                                      }
+                                      disabled={row.count1 >= 2}
+                                    >
+                                      +
+                                    </button>
+                                  </div>
+                                </div>
+                                <div className="col-6">
+                                  <div className="form-group plus-min-style">
+                                    <p>Child(ren):</p>
+                                    <button
+                                      onClick={() =>
+                                        handleDecrement(row.id, "count2")
+                                      }
+                                      disabled={row.count2 <= 0}
+                                    >
+                                      -
+                                    </button>
+                                    <span>{row.count2}</span>
+                                    <button
+                                      onClick={() =>
+                                        handleIncrement(row.id, "count2")
+                                      }
+                                      disabled={row.count2 >= 2}
+                                    >
+                                      +
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                          <button
+                            onClick={addNewRow}
+                            className="yellow-btn btn"
+                          >
+                            Add Room
+                          </button>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                </div>
-                {/* Submit */}
-                <div className="col-12 col-md-2">
-                  <button
-                    className="yellow-btn btn"
-                    onClick={handleCheckAvailability}
-                  >
-                    Check Availability
-                  </button>
+
+                  <div className="datepicker-outer col-12 col-md-2">
+                    <label htmlFor="check-out">Promo-Code</label>
+                    <div className="datepicker-container">
+                      <input
+                        type="text"
+                        name="promoCode"
+                        maxLength={20}
+                        value={promoCode}
+                        onChange={handlePromocodeChange}
+                        className="form-control"
+                        placeholder="Promo Code"
+                      />
+                      <span
+                        className="calendar-icon"
+                        onClick={openCheckOutCalendar}
+                      >
+                        <Calendar size={20} />
+                      </span>
+                    </div>
+                  </div>
+                  {/* Submit */}
+                  <div className="col-12 col-md-2">
+                    <button
+                      className="yellow-btn btn"
+                      onClick={handleCheckAvailability}
+                    >
+                      Check Availability
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

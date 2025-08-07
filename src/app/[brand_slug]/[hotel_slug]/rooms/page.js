@@ -15,6 +15,7 @@ import {
 import "../../../styles/inner.css";
 import FilterBar from "app/cin_booking_engine/Filterbar";
 import { BookingEngineProvider } from "app/cin_context/BookingEngineContext";
+import useBook from "app/booking-engine-widget/useBook";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
@@ -29,9 +30,19 @@ export default function GurgaonAccommodationPage({ params }) {
   const [activeModalIndex, setActiveModalIndex] = useState(null);
   const [showFilterBar, setShowFilterBar] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState(null);
-
+  const [promoCode, setPromoCode] = useState("");
+  const { promoCodeContext, setPromoCodeContext } = useBook();
   const city_alias = "";
 
+  // useEffect(() => {
+  //   function encodeBase64(str) {
+  //     return btoa(unescape(encodeURIComponent(str)));
+  //   }
+  //   const promoCode = "member";
+  //   setPromoCode(promoCode);
+  //   const encoded = encodeBase64(promoCode);
+  //   setPromoCodeContext(encoded);
+  // }, []);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -52,6 +63,14 @@ export default function GurgaonAccommodationPage({ params }) {
       } catch (err) {
         console.error("API Error:", err);
       }
+
+      // function encodeBase64(str) {
+      //   return btoa(unescape(encodeURIComponent(str)));
+      // }
+      // const promoCode = "member";
+      // setPromoCode(promoCode);
+      // const encoded = encodeBase64(promoCode);
+      // setPromoCodeContext(encoded);
     };
     fetchData();
   }, [hotel_slug]);
@@ -174,6 +193,7 @@ export default function GurgaonAccommodationPage({ params }) {
             <FilterBar
               selectedProperty={parseInt(selectedRoom.propertyId)}
               roomId={selectedRoom.roomId}
+              // promoCode={promoCode}
             />
           </BookingEngineProvider>
         ) : (
